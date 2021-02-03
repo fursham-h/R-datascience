@@ -5,5 +5,7 @@ Authors@R: person("Fursham", "Hamid",
     email = "fursham.h@gmail.com", 
     role = c("aut", "cre"))
 Depends: R (>= 4.0)
-biocViews: AlternativeSplicing, FunctionalPrediction, GenePrediction
+Suggests: 
+  rmarkdown,
+  rmdformats
 VignetteBuilder: knitr
