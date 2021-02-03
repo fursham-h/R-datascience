@@ -5,3 +5,5 @@
 ideas*
 *.Rproj
 .Rbuildignore
+docs
+_pkgdown.yml

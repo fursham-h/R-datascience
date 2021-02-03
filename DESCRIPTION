@@ -1,0 +1,9 @@
+Package: CDN.R.Datascience
+Title: CDN Bioinformatics Seminars
+Version: 0.99.0
+Authors@R: person("Fursham", "Hamid", 
+    email = "fursham.h@gmail.com", 
+    role = c("aut", "cre"))
+Depends: R (>= 4.0)
+biocViews: AlternativeSplicing, FunctionalPrediction, GenePrediction
+VignetteBuilder: knitr
