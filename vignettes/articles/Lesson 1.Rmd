@@ -1,30 +1,33 @@
 ---
-title: 'Lesson 1: Introducing.... RStudio and R Notebook'
+title: 'Lesson 1: Introducing... RStudio and R Notebook'
 output: html_document
 ---
 
-> ### Overview
->
-Teaching: x mins  
-Exercises: x mins    
+> ## Overview  
+><br />
+Teaching: 20 mins  
+Exercises: 0 mins    
 >
 **Objectives**:  
 >
 > 1) Familiarize with RStudio layout
-> 2) Create reports using R Notebook
+> 2) Create reports using RMarkdown
 >
->
+><br />
 
 ## Before Starting the Lesson
 To facilitate the timeliness of the lesson, please ensure that you have these 
 programs installed on your computer.
 
-* [Latest version of R](https://www.r-project.org/)
-* [Latest version of RStudio](https://www.rstudio.com/)
-* Other softwares here <----
+* Latest version of R
+    - [For Windows](https://cran.r-project.org/bin/windows/base/)
+    - [For Mac](https://cran.r-project.org/bin/macosx/)
+    - [For Linux](https://cran.r-project.org/bin/linux/)
+        
+* [Latest version of RStudio](https://www.rstudio.com/https://rstudio.com/products/rstudio/download/)
 
 ## Introduction to RStudio
-Welcome to the first lesson of ______.  
+Welcome to the first lesson of this **Exploring the Tidyverse** series.  
 
 In this lesson, we will go through some of the basics of the R language for
 data analysis as well as share some common practices in documenting reports.  
@@ -116,7 +119,7 @@ and you may refer to this [guide](https://cran.r-project.org/web/packages/ymlthi
 for detailed description of its syntax.  
 <!-- Add image of YAML header -->
 <br />
-```{r RStudio_Rmarkdown_header, fig.cap= "Figure 5: Default RMarkdown metadata header", echo =FALSE, fig.align='center', out.width="80%"}
+```{r RStudio_Rmarkdown_header, fig.cap= "Figure 5: Default RMarkdown metadata header", echo =FALSE, fig.align='center', out.width="50%"}
 knitr::include_graphics("./RStudio_RMarkdown_header.PNG", error = FALSE)
 ```
 <br /><br />
@@ -126,7 +129,7 @@ as the body of the document. To format text as headers, you may prefix the sente
 with a hash (#) symbol. For details on Markdown formatting options, refer to  this 
 [CheatSheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).  
 <br />
-```{r RStudio_Rmarkdown_text, fig.cap= "Figure 6: Text portion of an RMarkdown file", echo =FALSE, fig.align='center', out.width="80%"}
+```{r RStudio_Rmarkdown_text, fig.cap= "Figure 6: Text portion of an RMarkdown file", echo =FALSE, fig.align='center', out.width="50%"}
 knitr::include_graphics("./RStudio_RMarkdown_text.PNG", error = FALSE)
 ```
 <br /><br />
@@ -150,24 +153,65 @@ within a chunk. This can be done by either highlighting the desired code or plac
 the *text cursor* within a code, and then pressing `Ctrl + Enter` 
 (or `Command + Enter` for Mac).  
 
+You may save your RMarkdown document in your local directory by pressing `Ctrl + S`
+(or `Command + S` for Mac) before proceeding.
 
 ### Rendering your RMarkdown document
 Contents of our RMarkdown can be easily converted to HTML (default format chosen above)
-by clicking on the **Knit** button (add button) at the top of the editor pane. If successful,
-a 
+by clicking on the **Knit** button (![](./knit-button.PNG)) at the top of the editor pane. If successful,
+a new window will appear which displays the resulting HTML.  
+<!-- Add image of KNIT output -->
+<br />
+```{r RStudio_Rmarkdown_knitted, fig.cap= "Figure 8: HTML Product of Knit", echo =FALSE, fig.align='center', out.width="80%"}
+knitr::include_graphics("./Knit_output.PNG", error = FALSE)
+```
+<br /><br />
+
+If you wish to create a PDF version of your document, you will need to have a LaTeX distribution installed.
+This can be installed by typing the following code in console:  
+<br />
+```{r, eval = F}
+tinytex::install_tinytex()
+```
+<br /><br />
+
+To render your RMarkdown to PDF, click on the bottom-pointing arrow on the 
+right side of the button **Knit** to reveal Knit options, and click on **Knit to PDF**.  
+<!-- Add image of KNIT options -->
+<br />
+```{r RStudio_Rmarkdown_knit_options, fig.cap= "Figure 9: Revealing Knit options", echo =FALSE, fig.align='center', out.width="50%"}
+knitr::include_graphics("./PDF_knit.PNG", error = FALSE)
+```
+<br /><br />
+
+An example of a PDF output is show in Figure 10 below.
+<!-- Add image of KNIT PDF output -->
+<br />
+```{r RStudio_Rmarkdown_PDF, fig.cap= "Figure 10: PDF product of Knit", echo =FALSE, fig.align='center', out.width="80%"}
+knitr::include_graphics("./PDF_knit_out.PNG", error = FALSE)
+```
+<br /><br />
 
 
-Exercise:
+> ## Practice
+> <br />
+> The Markdown syntax contain various formattings that enhances the body 
+> of your document. Read this 
+[CheatSheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+and attempt the following tasks in a new RMarkdown document.
+>
+> 1) Create an **ordered list** containing 3 of your favorite food
+> 2) Bold the #1 fav from the above list
+> 3) Insert an image of your #1 fav food. Can be from a local image on your computer or from a hyperlink.
+>
+> Render the created RMarkdown as HTML and compare your output with mine ([found here](https://bit.ly/3cFtYX3)).
+>
+><br />
 
 
-An R Notebook is an implementation of [Literate Programming](https://en.wikipedia.org/wiki/Literate_programming)
-that allows direct coding within R while producing a reproducible document
-with publication-grade output. 
-
-
-
-
-
+<br /><br />
+<br /><br />
+<br /><br />
 
 
 
