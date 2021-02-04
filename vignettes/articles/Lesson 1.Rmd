@@ -43,7 +43,7 @@ When you first open RStudio, you will be greeted by three panels:
 <br />
 <!-- Add image of RStudio upon loading-->
 ```{r RStudio_load_image, fig.cap= "Figure 1: RStudio layout", echo =FALSE, fig.align='center',out.width="80%"}
-knitr::include_graphics("RStudio_upon_load.PNG")
+knitr::include_graphics("./RStudio_upon_load.PNG")
 ```
 <br /><br />
 
@@ -51,7 +51,7 @@ Once you open files, such as R scripts, an editor panel will also open in the to
 <br />
 <!-- Add image of RStudio with a script -->
 ```{r RStudio_load_image2, fig.cap= "Figure 2: RStudio layout with editor", echo =FALSE, fig.align='center',out.width="80%"}
-knitr::include_graphics("RStudio_with_editor.PNG")
+knitr::include_graphics("./RStudio_with_editor.PNG")
 ```
 <br /><br />
 
@@ -91,7 +91,7 @@ will be prompted to install dependencies. Click **Yes**.
 
 <br />
 ```{r RStudio_Rmkardown_install, fig.cap= "Figure 3: Prompt to install RMarkdown dependencies", echo =FALSE, fig.align='center',out.width="80%"}
-knitr::include_graphics("RStudio_upon_RMarkdown_load.PNG")
+knitr::include_graphics("./RStudio_upon_RMarkdown_load.PNG")
 ```
 <br /><br />
 
@@ -99,7 +99,7 @@ Once packages are successfully installed, you’ll get a dialog box like this:
 <br />
 <!-- Add image of creating R Markdown -->
 ```{r RStudio_Rmarkdown_start, fig.cap= "Figure 4: Dialog box with RMarkdown document options", echo =FALSE, fig.align='center',out.width="80%"}
-knitr::include_graphics("RStudio_upon_RMarkdown_load2.PNG")
+knitr::include_graphics("./RStudio_upon_RMarkdown_load2.PNG")
 ```
 <br /><br />
 You may choose HTML as the default output format, but this can be changed later.  
@@ -117,7 +117,7 @@ for detailed description of its syntax.
 <!-- Add image of YAML header -->
 <br />
 ```{r RStudio_Rmarkdown_header, fig.cap= "Figure 5: Default RMarkdown metadata header", echo =FALSE, fig.align='center', out.width="80%"}
-knitr::include_graphics("RStudio_RMarkdown_header.PNG")
+knitr::include_graphics("./RStudio_RMarkdown_header.PNG")
 ```
 <br /><br />
 
@@ -127,7 +127,7 @@ with a hash (#) symbol. For details on Markdown formatting options, refer to  th
 [CheatSheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).  
 <br />
 ```{r RStudio_Rmarkdown_text, fig.cap= "Figure 6: Text portion of an RMarkdown file", echo =FALSE, fig.align='center', out.width="80%"}
-knitr::include_graphics("RStudio_RMarkdown_text.PNG")
+knitr::include_graphics("./RStudio_RMarkdown_text.PNG")
 ```
 <br /><br />
 
@@ -136,15 +136,15 @@ by  ```` ```{r}````  and ```` ``` ````. There are a lot of things you can do in
 a code chunk: you can produce text output, tables, or graphics. You have fine 
 control over all these output via chunk options, which can be provided inside 
 the curly braces between ````{r```` and ````}````. Detailed information on 
-chunk options can be found [here](https://bookdown.org/yihui/rmarkdown/r-code.html).  
+chunk options can be found [here](https://bookdown.org/yihui./Rmarkdown./R-code.html).  
 <br />
 ```{r RStudio_Rmarkdown_chunk, fig.cap= "Figure 7: Code chunks within RMarkdown", echo =FALSE, fig.align='center', out.width="80%"}
-knitr::include_graphics("RStudio_RMarkdown_chunk.PNG")
+knitr::include_graphics("./RStudio_RMarkdown_chunk.PNG")
 ```
 <br /><br />
 
 There are several ways to execute code within a chunk. The most straight-forward
-method is to click on the green arrow button (![](green-arrow.PNG)). This sends the 
+method is to click on the green arrow button (![](./green-arrow.PNG)). This sends the 
 entire code chunk to console for execution. Yet another way is to run specific code
 within a chunk. This can be done by either highlighting the desired code or placing
 the *text cursor* within a code, and then pressing `Ctrl + Enter` 
