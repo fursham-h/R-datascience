@@ -5,13 +5,13 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Lesson 1: Introducing.... RStudio and R Notebook • CDN.R.Datascience</title>
+<title>Lesson 1: Introducing... RStudio and R Notebook • CDN.R.Datascience</title>
 <!-- jquery --><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script><!-- Bootstrap --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha256-bZLfwXAP04zRMK2BjiO8iu9pf4FbLqX6zitd+tIvLhE=" crossorigin="anonymous">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha256-nuL8/2cJ5NDSSwnKD8VqreErSWHtnEP9E7AySL+1ev4=" crossorigin="anonymous"></script><!-- bootstrap-toc --><link rel="stylesheet" href="../../bootstrap-toc.css">
 <script src="../../bootstrap-toc.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- pkgdown --><link href="../../pkgdown.css" rel="stylesheet">
-<script src="../../pkgdown.js"></script><meta property="og:title" content="Lesson 1: Introducing.... RStudio and R Notebook">
+<script src="../../pkgdown.js"></script><meta property="og:title" content="Lesson 1: Introducing... RStudio and R Notebook">
 <meta property="og:description" content="CDN.R.Datascience">
 <!-- mathjax --><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js" integrity="sha256-nvJJv9wWKEm88qvoQl9ekL2J+k/RWIsaSScxxlsrv8k=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/config/TeX-AMS-MML_HTMLorMML.js" integrity="sha256-84DKXVJXs0/F8OTMzX4UR909+jtl4G7SPypPavF+GfA=" crossorigin="anonymous"></script><!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
@@ -54,7 +54,7 @@
   </a>
   <ul class="dropdown-menu" role="menu">
 <li>
-      <a href="../../articles/articles/Lesson%201.html">Lesson 1: Introducing.... RStudio and R Notebook</a>
+      <a href="../../articles/articles/Lesson%201.html">Lesson 1: Introducing... RStudio and R Notebook</a>
     </li>
   </ul>
 </li>
@@ -72,7 +72,7 @@
       </header><script src="Lesson%201_files/accessible-code-block-0.0.1/empty-anchor.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
-      <h1 data-toc-skip>Lesson 1: Introducing…. RStudio and R Notebook</h1>
+      <h1 data-toc-skip>Lesson 1: Introducing… RStudio and R Notebook</h1>
             
       
       
@@ -83,29 +83,35 @@
     
     
 <blockquote>
-<h3 id="overview">Overview</h3>
-<p>Teaching: x mins<br>
-Exercises: x mins</p>
+<h2 id="overview">Overview</h2>
+<p><br> Teaching: 20 mins<br>
+Exercises: 0 mins</p>
 <p><strong>Objectives</strong>:</p>
 <ol style="list-style-type: decimal">
 <li>Familiarize with RStudio layout</li>
-<li>Create reports using R Notebook</li>
+<li>Create reports using RMarkdown</li>
 </ol>
+<p><br></p>
 </blockquote>
 <div id="before-starting-the-lesson" class="section level2">
 <h2 class="hasAnchor">
 <a href="#before-starting-the-lesson" class="anchor"></a>Before Starting the Lesson</h2>
 <p>To facilitate the timeliness of the lesson, please ensure that you have these programs installed on your computer.</p>
 <ul>
-<li><a href="https://www.r-project.org/">Latest version of R</a></li>
-<li><a href="https://www.rstudio.com/">Latest version of RStudio</a></li>
-<li>Other softwares here &lt;—-</li>
+<li>Latest version of R
+<ul>
+<li><a href="https://cran.r-project.org/bin/windows/base/">For Windows</a></li>
+<li><a href="https://cran.r-project.org/bin/macosx/">For Mac</a></li>
+<li><a href="https://cran.r-project.org/bin/linux/">For Linux</a></li>
+</ul>
+</li>
+<li><a href="https://www.rstudio.com/https://rstudio.com/products/rstudio/download/">Latest version of RStudio</a></li>
 </ul>
 </div>
 <div id="introduction-to-rstudio" class="section level2">
 <h2 class="hasAnchor">
 <a href="#introduction-to-rstudio" class="anchor"></a>Introduction to RStudio</h2>
-<p>Welcome to the first lesson of ______.</p>
+<p>Welcome to the first lesson of this <strong>Exploring the Tidyverse</strong> series.</p>
 <p>In this lesson, we will go through some of the basics of the R language for data analysis as well as share some common practices in documenting reports.</p>
 <p>We’ll be using RStudio: a free, open source R Integrated Development Environment (IDE). It provides a built in editor, works on all platforms (including on servers) and provides many advantages such as integration with version control and project management.</p>
 <div id="rstudio-layout" class="section level3">
@@ -186,13 +192,13 @@ Figure 4: Dialog box with RMarkdown document options
 <a href="#basic-components-of-an-r-markdown" class="anchor"></a>Basic components of an R Markdown</h3>
 <p>There are three basic components of an R Markdown document: the metadata, text, and code.</p>
 The metadata usually sits at the top of the document and is written between the pair of three dashes <code>---</code>. This section contains information that can affect the code, content, and the rendering process. The content is written in YAML and you may refer to this <a href="https://cran.r-project.org/web/packages/ymlthis/vignettes/yaml-fieldguide.html">guide</a> for detailed description of its syntax.<br><!-- Add image of YAML header --><br><div class="figure" style="text-align: center">
-<img src="./RStudio_RMarkdown_header.PNG" alt="Figure 5: Default RMarkdown metadata header" width="80%"><p class="caption">
+<img src="./RStudio_RMarkdown_header.PNG" alt="Figure 5: Default RMarkdown metadata header" width="50%"><p class="caption">
 Figure 5: Default RMarkdown metadata header
 </p>
 </div>
 <p><br><br></p>
 Text can be written anywhere underneath the metadata header and will be rendered as the body of the document. To format text as headers, you may prefix the sentence with a hash (#) symbol. For details on Markdown formatting options, refer to this <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">CheatSheet</a>.<br><br><div class="figure" style="text-align: center">
-<img src="./RStudio_RMarkdown_text.PNG" alt="Figure 6: Text portion of an RMarkdown file" width="80%"><p class="caption">
+<img src="./RStudio_RMarkdown_text.PNG" alt="Figure 6: Text portion of an RMarkdown file" width="50%"><p class="caption">
 Figure 6: Text portion of an RMarkdown file
 </p>
 </div>
@@ -204,13 +210,45 @@ Figure 7: Code chunks within RMarkdown
 </div>
 <p><br><br></p>
 <p>There are several ways to execute code within a chunk. The most straight-forward method is to click on the green arrow button (<img src="./green-arrow.PNG">). This sends the entire code chunk to console for execution. Yet another way is to run specific code within a chunk. This can be done by either highlighting the desired code or placing the <em>text cursor</em> within a code, and then pressing <code>Ctrl + Enter</code> (or <code>Command + Enter</code> for Mac).</p>
+<p>You may save your RMarkdown document in your local directory by pressing <code>Ctrl + S</code> (or <code>Command + S</code> for Mac) before proceeding.</p>
 </div>
 <div id="rendering-your-rmarkdown-document" class="section level3">
 <h3 class="hasAnchor">
 <a href="#rendering-your-rmarkdown-document" class="anchor"></a>Rendering your RMarkdown document</h3>
-<p>Contents of our RMarkdown can be easily converted to HTML (default format chosen above) by clicking on the <strong>Knit</strong> button (add button) at the top of the editor pane. If successful, a</p>
-<p>Exercise:</p>
-<p>An R Notebook is an implementation of <a href="https://en.wikipedia.org/wiki/Literate_programming">Literate Programming</a> that allows direct coding within R while producing a reproducible document with publication-grade output.</p>
+Contents of our RMarkdown can be easily converted to HTML (default format chosen above) by clicking on the <strong>Knit</strong> button (<img src="./knit-button.PNG">) at the top of the editor pane. If successful, a new window will appear which displays the resulting HTML.<br><!-- Add image of KNIT output --><br><div class="figure" style="text-align: center">
+<img src="./Knit_output.PNG" alt="Figure 8: HTML Product of Knit" width="80%"><p class="caption">
+Figure 8: HTML Product of Knit
+</p>
+</div>
+<p><br><br></p>
+<p>If you wish to create a PDF version of your document, you will need to have a LaTeX distribution installed. This can be installed by typing the following code in console:<br><br></p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span class="fu">tinytex</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/tinytex/man/install_tinytex.html">install_tinytex</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
+<p><br><br></p>
+To render your RMarkdown to PDF, click on the bottom-pointing arrow on the right side of the button <strong>Knit</strong> to reveal Knit options, and click on <strong>Knit to PDF</strong>.<br><!-- Add image of KNIT options --><br><div class="figure" style="text-align: center">
+<img src="./PDF_knit.PNG" alt="Figure 9: Revealing Knit options" width="50%"><p class="caption">
+Figure 9: Revealing Knit options
+</p>
+</div>
+<p><br><br></p>
+An example of a PDF output is show in Figure 10 below. <!-- Add image of KNIT PDF output --> <br><div class="figure" style="text-align: center">
+<img src="./PDF_knit_out.PNG" alt="Figure 10: PDF product of Knit" width="80%"><p class="caption">
+Figure 10: PDF product of Knit
+</p>
+</div>
+<p><br><br></p>
+<blockquote>
+<h2 id="practice">Practice</h2>
+<p><br> The Markdown syntax contain various formattings that enhances the body of your document. Read this <a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet">CheatSheet</a> and attempt the following tasks in a new RMarkdown document.</p>
+<ol style="list-style-type: decimal">
+<li>Create an <strong>ordered list</strong> containing 3 of your favorite food</li>
+<li>Bold the #1 fav from the above list</li>
+<li>Insert an image of your #1 fav food. Can be from a local image on your computer or from a hyperlink.</li>
+</ol>
+<p>Render the created RMarkdown as HTML and compare your output with mine (<a href="https://bit.ly/3cFtYX3">found here</a>).</p>
+<p><br></p>
+</blockquote>
+<p><br><br><br><br><br><br></p>
 </div>
 </div>
   </div>
