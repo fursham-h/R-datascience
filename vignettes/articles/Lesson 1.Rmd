@@ -122,7 +122,33 @@ knitr::include_graphics("RStudio_RMarkdown_header.PNG")
 <br /><br />
 
 Text can be written anywhere underneath the metadata header and will be rendered
-as the body of the document. To format _____
+as the body of the document. To format text as headers, you may prefix the sentence
+with a hash (#) symbol. For details on Markdown formatting options, refer to  this 
+[CheatSheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).  
+<br />
+```{r RStudio_Rmarkdown_text, fig.cap= "Figure 6: Text portion of an RMarkdown file", echo =FALSE, fig.align='center', out.width="80%"}
+knitr::include_graphics("RStudio_RMarkdown_text.PNG")
+```
+<br /><br />
+
+Finally, code can be written and executed within so-called **Chunks** bounded
+by  ```` ```{r}````  and ```` ``` ````. There are a lot of things you can do in 
+a code chunk: you can produce text output, tables, or graphics. You have fine 
+control over all these output via chunk options, which can be provided inside 
+the curly braces between ````{r```` and ````}````. Detailed information on 
+chunk options can be found [here](https://bookdown.org/yihui/rmarkdown/r-code.html).  
+<br />
+```{r RStudio_Rmarkdown_chunk, fig.cap= "Figure 7: Code chunks within RMarkdown", echo =FALSE, fig.align='center', out.width="80%"}
+knitr::include_graphics("RStudio_RMarkdown_chunk.PNG")
+```
+<br /><br />
+
+There are several ways to execute code within a chunk. The most straight-forward
+method is to click on the green arrow button (![](green-arrow.PNG)). This sends the 
+entire code chunk to console for execution. Yet another way is to run specific code
+within a chunk. This can be done by either highlighting the desired code or placing
+the *text cursor* within a code, and then pressing `Ctrl + Enter` 
+(or `Command + Enter` for Mac).  
 
 ### Formatting contents of R Markdown
 Include hyperlinks to formatting
