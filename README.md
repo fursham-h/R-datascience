@@ -7,6 +7,8 @@ be able to perform data manipulation in R using easy to comprehend functions
 from the [Tidyverse](https://www.tidyverse.org/) collection of packages. 
 
 ## Lesson overview
+**In development**
+
 
 ## Our department
 Read more on the research we carry out at our 
