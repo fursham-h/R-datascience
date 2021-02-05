@@ -1,9 +1,16 @@
+url: https://fursham-h.github.io/R-datascience/
+
+home:
+  title: "Exploring data with Tidyverse"
+  links:
+  - text: CDN homepage
+    href: https://devneuro.org/cdn/index.php
+
 template:
   params:
     bootswatch: readable
 
 navbar:
-  title: "Exploring data with Tidyverse"
   type: inverse
   left:
     - text: "Home"
