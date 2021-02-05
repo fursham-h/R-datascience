@@ -1,4 +1,9 @@
+template:
+  params:
+    bootswatch: readable
+
 navbar:
+  title: "Exploring data with Tidyverse"
   type: inverse
   left:
     - text: "Home"
