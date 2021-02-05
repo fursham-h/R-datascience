@@ -3,7 +3,8 @@ pkgdown: 1.6.1
 pkgdown_sha: ~
 articles:
   Lesson1/Lesson 1: Lesson 1.html
-last_built: 2021-02-05T12:07Z
+  Lesson2/Lesson2: Lesson2.html
+last_built: 2021-02-05T16:51Z
 urls:
   reference: https://fursham-h.github.io/R-datascience//reference
   article: https://fursham-h.github.io/R-datascience//articles
