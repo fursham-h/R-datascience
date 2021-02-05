@@ -7,7 +7,7 @@ navbar:
     - text: "Lessons"
       menu:
         - text: "Introducing... RStudio and RMarkdown"
-          href: articles/Lesson%201.html
+          href: articles/articles/Lesson%201.html
   right:
     - icon: fa-github
       href: https://github.com/fursham-h/CDN.R.Datascience
