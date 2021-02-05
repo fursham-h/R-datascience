@@ -19,7 +19,7 @@ navbar:
     - text: "Lessons"
       icon: 'fas fa-book-open'
       menu:
-        - text: "Introducing... RStudio and RMarkdown"
+        - text: "1) Introducing... RStudio and RMarkdown"
           href: articles/Lesson1/Lesson%201.html
   right:
     - icon: 'fab fa-github fa-lg'

@@ -10,8 +10,8 @@ collection of packages. The lessons in this series are intended for researchers
 with beginner to intermediate experience in data analysis. Below are some key
 objectives of this workshop:  
 
-1) Objective 1
-2) Objective 2
+* Objective 1
+* Objective 2
 
 ## Pre-requisites
 
@@ -20,7 +20,7 @@ objectives of this workshop:
 
 |Lesson #|Title|Objectives|
 |:---|:------------|:------------|
-|1|[Introducing... RStudio and R Notebook](https://fursham-h.github.io/CDN.R.Datascience/articles/Lesson1/Lesson%201.html)|1. Familiarize with RStudio layout<br>2. Create reports using RMarkdown|
-|1|[Introducing... RStudio and R Notebook](https://fursham-h.github.io/CDN.R.Datascience/articles/Lesson1/Lesson%201.html)|1. Familiarize with RStudio layout<br>2. Create reports using RMarkdown|
+|1|[Introducing... RStudio and R Notebook](https://fursham-h.github.io/R-datascience/articles/Lesson1/Lesson%201.html)|1. Familiarize with RStudio layout<br>2. Create reports using RMarkdown|
+|1|[Introducing... RStudio and R Notebook](https://fursham-h.github.io/R-datascience/articles/Lesson1/Lesson%201.html)|1. Familiarize with RStudio layout<br>2. Create reports using RMarkdown|
 
 
