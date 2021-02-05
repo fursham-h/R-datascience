@@ -193,7 +193,7 @@ knitr::include_graphics("./PDF_knit_out.PNG", error = FALSE)
 <br /><br />
 
 
-> ## Practice
+> ## Practice on your own
 > <br />
 > The Markdown syntax contain various formattings that enhances the body 
 > of your document. Read this 
