@@ -146,6 +146,9 @@ knitr::include_graphics("./RStudio_RMarkdown_chunk.PNG", error = FALSE)
 ```
 <br /><br />
 
+Code chunks can be easily added to the document by clicking the 
+![](./Chunk_insert.PNG) button at the top of the editor pane and selecting **R**.
+
 There are several ways to execute code within a chunk. The most straight-forward
 method is to click on the green arrow button (![](./green-arrow.PNG)). This sends the 
 entire code chunk to console for execution. Yet another way is to run specific code
@@ -193,7 +196,7 @@ knitr::include_graphics("./PDF_knit_out.PNG", error = FALSE)
 <br /><br />
 
 
-> ## Practice on your own
+> ## Challenge 1
 > <br />
 > The Markdown syntax contain various formattings that enhances the body 
 > of your document. Read this 
