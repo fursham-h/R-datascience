@@ -11,7 +11,6 @@ using easy to comprehend functions from the [Tidyverse](https://www.tidyverse.or
 collection of packages. The lessons in this series are intended for researchers
 with beginner to intermediate experience in data analysis. Below are some key
 objectives of this workshop:  
-<br />
 
 1) Objective 1
 2) Objective 2
