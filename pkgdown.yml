@@ -2,6 +2,6 @@ pandoc: 2.7.3
 pkgdown: 1.6.1
 pkgdown_sha: ~
 articles:
-  articles/Lesson 1: Lesson 1.html
-last_built: 2021-02-05T10:13Z
+  Lesson1/Lesson 1: Lesson 1.html
+last_built: 2021-02-05T10:24Z
 
