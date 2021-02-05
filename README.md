@@ -1,10 +1,8 @@
 # CDN mini workshop 1: Exploring data using Tidyverse
 
-<br />
 
 This is a mini workshop series for researchers of the Centre for Developmental
 Neurobiology (King's College London).   
-<br />
 
 The goal of this workshop is to impart basic data manipulation techniques in R
 using easy to comprehend functions from the [Tidyverse](https://www.tidyverse.org/) 
