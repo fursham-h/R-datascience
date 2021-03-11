@@ -1,7 +1,7 @@
 url: https://fursham-h.github.io/R-datascience/
 
 home:
-  title: "Exploring data with Tidyverse"
+  title: "CDN Bioinformatics Workshops"
   links:
   - text: CDN homepage
     href: https://devneuro.org/cdn/index.php
@@ -19,10 +19,8 @@ navbar:
     - text: "Lessons"
       icon: 'fas fa-book-open'
       menu:
-        - text: "1) Introducing... RStudio and RMarkdown"
-          href: articles/Lesson1/Lesson%201.html
-        - text: "2) Manipulating data frames"
-          href: articles/Lesson2/Lesson2.html
+        - text: "1) R Basics for Data Analysis"
+          href: articles/Lesson1/Lesson_1.html
   right:
     - icon: 'fab fa-github fa-lg'
       href: https://github.com/fursham-h/R-datascience
