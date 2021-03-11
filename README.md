@@ -1,25 +1,21 @@
-# CDN mini workshop 1: R Basics for Data Analysis
+# CDN Bioinformatics Workshop
 
-This is a mini workshop series for researchers of the Centre for Developmental
-Neurobiology (King's College London).   
+This mini workshop series aims to impart essential tools to analyze data
+using R programming language. The lessons in this series are intended for CDN
+researchers with beginner to intermediate programming skills with keen interest
+in using easy to comprehend R functions for routine data analysis. 
 
-The goal of this workshop is to impart basic data manipulation techniques in R
-using easy to comprehend functions from the [Tidyverse](https://www.tidyverse.org/) 
-collection of packages. The lessons in this series are intended for researchers
-with beginner to intermediate experience in data analysis. Below are some key
-objectives of this workshop:  
+### Scheduled workshops
 
-* Objective 1
-* Objective 2
-
-## Pre-requisites
-
-## Lesson overview
-**In development**  
-
-|Lesson #|Title|Objectives|
-|:---|:------------|:------------|
-|1|[Introducing... RStudio and R Notebook](https://fursham-h.github.io/R-datascience/articles/Lesson1/Lesson%201.html)|1. Familiarize with RStudio layout<br>2. Create reports using RMarkdown|
-|1|[Introducing... RStudio and R Notebook](https://fursham-h.github.io/R-datascience/articles/Lesson1/Lesson%201.html)|1. Familiarize with RStudio layout<br>2. Create reports using RMarkdown|
+|Lesson title|Date(s)|
+|:-------|:------------|
+|[R basics for data analysis](https://fursham-h.github.io/R-datascience/articles/Lesson1/Lesson_1.html)|Wed, 24th March. 10am|
 
 
+### Other ideas/Feedback
+You may provide ideas for future workshops or give feedback by emailing me at
+fursham.hamid@kcl.ac.uk or opening a new issue [here](https://github.com/fursham-h/R-datascience/issues).
+
+### Contribute to this repository
+If you would like to contribute to the content of this repository, please make 
+your changes in a "forked" version of this repository and submit a pull request.
