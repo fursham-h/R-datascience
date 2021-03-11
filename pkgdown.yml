@@ -2,9 +2,9 @@ pandoc: 2.7.3
 pkgdown: 1.6.1
 pkgdown_sha: ~
 articles:
-  Lesson1/Lesson 1: Lesson 1.html
-  Lesson2/Lesson2: Lesson2.html
-last_built: 2021-02-05T16:51Z
+  Lesson_1: Lesson_1.html
+  _Lesson2/Lesson2: Lesson2.html
+last_built: 2021-03-11T12:37Z
 urls:
   reference: https://fursham-h.github.io/R-datascience//reference
   article: https://fursham-h.github.io/R-datascience//articles
