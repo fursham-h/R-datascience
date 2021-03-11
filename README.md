@@ -1,5 +1,4 @@
-# CDN mini workshop 1: Exploring data using Tidyverse
-
+# CDN mini workshop 1: R Basics for Data Analysis
 
 This is a mini workshop series for researchers of the Centre for Developmental
 Neurobiology (King's College London).   
