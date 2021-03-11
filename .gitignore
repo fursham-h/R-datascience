@@ -6,4 +6,5 @@ ideas*
 *.Rproj
 .Rbuildignore
 docs
-
+vignettes/_Lesson1/*
+vignettes_Lesson2/*
