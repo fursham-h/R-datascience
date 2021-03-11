@@ -20,7 +20,7 @@ navbar:
       icon: 'fas fa-book-open'
       menu:
         - text: "1) R Basics for Data Analysis"
-          href: articles/Lesson1/Lesson_1.html
+          href: articles/Lesson_1.html
   right:
     - icon: 'fab fa-github fa-lg'
       href: https://github.com/fursham-h/R-datascience
