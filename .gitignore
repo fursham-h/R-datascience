@@ -7,4 +7,4 @@ ideas*
 .Rbuildignore
 docs
 vignettes/_Lesson1/*
-vignettes_Lesson2/*
+vignettes/Lesson2/*

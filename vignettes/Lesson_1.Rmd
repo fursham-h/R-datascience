@@ -1,0 +1,58 @@
+---
+title: 'Workshop 1: R Basics for Data Analysis'
+author: "Fursham Hamid"
+output: html_document
+---
+
+> ### Overview
+><br />
+> **Duration**: 2 hours
+><br />
+><br />
+>
+> **Objectives**
+>
+> 1) Describe the purpose and use of each pane in the RStudio IDE
+> 2) Assign data to a variable
+> 3) Call functions
+> 4) Read data into R
+> 5) Describe the structure of a data-frame
+> 6) Use the six main data frame manipulation ‘verbs’ with pipes in `dplyr`
+> 7) Analyze a subset of data using logical filtering
+>
+><br />
+
+## Before starting the lesson
+To facilitate the timeliness of the lesson, please ensure that you have these 
+programs installed on your computer.
+
+* Latest version of R
+    - [For Windows](https://cran.r-project.org/bin/windows/base/)
+    - [For Mac](https://cran.r-project.org/bin/macosx/)
+    - [For Linux](https://cran.r-project.org/bin/linux/)
+        
+* [Latest version of RStudio](https://www.rstudio.com/https://rstudio.com/products/rstudio/download/)
+
+## Lesson schedule
+||||
+|:---|:------------|:------------|
+|00:00|1.   Introduction and overview||
+|00:15|2.   [Introduction to R and RStudio](http://swcarpentry.github.io/r-novice-gapminder/01-rstudio-intro/index.html)| How do I navigate around RStudio? |
+|00:20|3.   [Basic R commands]((http://swcarpentry.github.io/r-novice-gapminder/01-rstudio-intro/index.html))| How do I interact with R? <br>How do I use R functions?  |
+|00:40|3.   [Read](http://swcarpentry.github.io/r-novice-gapminder/04-data-structures-part1/index.html) and [write](http://swcarpentry.github.io/r-novice-gapminder/11-writing-data/index.html) data in R| How can I read data into R? <br>How can I export R data?  |
+|00:50|Break||
+|01:00|4.  [Data frame Manipulation with dplyr](http://swcarpentry.github.io/r-novice-gapminder/13-dplyr/index.html)| How can I easily manipulate data-frames?   |
+|01:50|Finish| |
+
+
+
+
+
+
+
+
+
+
+
+
+
