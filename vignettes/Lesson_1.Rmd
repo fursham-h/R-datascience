@@ -36,9 +36,9 @@ programs installed on your computer.
 ## Lesson schedule
 ||||
 |:---|:------------|:------------|
-|00:00|1.   Introduction and overview||
-|00:15|2.   [Introduction to R and RStudio](http://swcarpentry.github.io/r-novice-gapminder/01-rstudio-intro/index.html)| How do I navigate around RStudio? |
-|00:20|3.   [Basic R commands]((http://swcarpentry.github.io/r-novice-gapminder/01-rstudio-intro/index.html))| How do I interact with R? <br>How do I use R functions?  |
+|00:00|Introduction and overview||
+|00:15|1.   [Introduction to R and RStudio](http://swcarpentry.github.io/r-novice-gapminder/01-rstudio-intro/index.html)| How do I navigate around RStudio? |
+|00:20|2.   [Basic R commands]((http://swcarpentry.github.io/r-novice-gapminder/01-rstudio-intro/index.html))| How do I interact with R? <br>How do I use R functions?  |
 |00:40|3.   [Read](http://swcarpentry.github.io/r-novice-gapminder/04-data-structures-part1/index.html) and [write](http://swcarpentry.github.io/r-novice-gapminder/11-writing-data/index.html) data in R| How can I read data into R? <br>How can I export R data?  |
 |00:50|Break||
 |01:00|4.  [Data frame Manipulation with dplyr](http://swcarpentry.github.io/r-novice-gapminder/13-dplyr/index.html)| How can I easily manipulate data-frames?   |
