@@ -9,7 +9,7 @@ in using easy to comprehend R functions for routine data analysis.
 
 |Lesson title|Date(s)|
 |:-------|:------------|
-|[R basics for data analysis](https://fursham-h.github.io/R-datascience/articles/Lesson_1.html)|Wed, 24th March. 10am|
+|[R basics for data analysis](https://fursham-h.github.io/R-datascience/articles/Lesson_1/Lesson_1.html)|Wed, 24th March. 10am|
 
 
 ### Other ideas/Feedback
