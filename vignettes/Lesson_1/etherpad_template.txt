@@ -1,0 +1,160 @@
+######> PASTE THIS BLOCK BEFORE CLASSSSS
+
+Welcome to CDN mini-workshop EtherPad!!
+
+This pad is synchronized as you type, so that everyone viewing this page sees the same text. This allows you to collaborate seamlessly on documents.
+
+---------------------------------------------
+Lesson: R basics for Data analysis
+Date: 24th March 2021
+Time: 10am to 12pm
+---------------------------------------------
+
+## Lesson preparation ##
+Before the start of this lesson, please ensure that you have the required software installed on your computer.
+Please visit https://fursham-h.github.io/R-datascience/articles/Lesson_1.html for details on this installation and for more information on the schedule on this class.
+
+Looking forward to learn R with you soon!
+
+
+######>
+
+
+######> INTRODUCTION SECTION
+
+Check-in exercise:
+
+What do you wish to accomplish from this mini-workshop?
+
+Abi Gartner
+Adam Pavlinek
+Ali Asgar Bohra
+Alice Rossi
+Amy Shakeshaft
+Andrea
+Benedikt Berninger
+Catalina Moreno
+Clemens Kiecker
+Corinne Houart
+Daphna Fenchel
+Fiona Coutts
+Grant Wray
+Hannah Bruce
+Marcelo
+Marco massimo
+Noor AL-Hajri
+Pat Gordon
+
+######>
+
+######> 2. Basic R commands
+
+Activity 1
+
+Which of the following are valid R variable names?
+
+Type the number "1" on variable names you think is valid in R and "0" on invalid names.
+
+min_height
+max.height
+_age
+.mass
+MaxLength
+min-length
+2widths
+celsius2kelvin
+
+######>
+
+
+######> 2. Read and Write data in R
+
+Link to gapminder data: https://raw.githubusercontent.com/swcarpentry/r-novice-gapminder/gh-pages/_episodes_rmd/data/gapminder_data.csv
+Shorten this please
+
+######>
+
+
+######> 4. Data frame Manipulation with dplyr
+
+Activity 2:
+
+Write a single command (which can span multiple lines and includes pipes) that will produce a data frame that has the African values for lifeExp, country and year, but not for other Continents. How many rows does your data frame have and why?
+
+Please type your answers out below (1 answer per group)
+
+Group 1
+Group 2
+Group 3
+Group 4
+Group 5
+Group 6
+Group 7
+
+Activity 3:
+
+Calculate the average life expectancy per country. Which has the longest average life expectancy and which has the shortest average life expectancy?
+
+Please type your answers out below (1 answer per group)
+Group 1
+Group 2
+Group 3
+Group 4
+Group 5
+Group 6
+Group 7
+
+
+######>
+
+######> CLOSING SECTION
+
+
+What is the one thing you learn from this workshop?
+
+Abi Gartner
+Adam Pavlinek
+Ali Asgar Bohra
+Alice Rossi
+Amy Shakeshaft
+Andrea
+Benedikt Berninger
+Catalina Moreno
+Clemens Kiecker
+Corinne Houart
+Daphna Fenchel
+Fiona Coutts
+Grant Wray
+Hannah Bruce
+Marcelo
+Marco massimo
+Noor AL-Hajri
+Pat Gordon
+
+
+What is the one thing this workshop can improve on?
+
+Abi Gartner
+Adam Pavlinek
+Ali Asgar Bohra
+Alice Rossi
+Amy Shakeshaft
+Andrea
+Benedikt Berninger
+Catalina Moreno
+Clemens Kiecker
+Corinne Houart
+Daphna Fenchel
+Fiona Coutts
+Grant Wray
+Hannah Bruce
+Marcelo
+Marco massimo
+Noor AL-Hajri
+Pat Gordon
+
+
+######>
+
+
+

@@ -1,0 +1,111 @@
+---
+title: "Lesson 1 instructor instructions"
+author: "Fursham Hamid"
+output: html_document
+---
+
+This lesson is an introductory to R, RStudio and data-frame manipulation. Class
+size is recommended at about 15 participants to maximise instructor-student
+interaction. This lesson can be conducted in a class or an online setting, 
+and will incorporate engaging activities and class participation. We aim to 
+equip participants the knowledge of playing with data. Thus, we will not go through
+the details of R programming such as vectorization and other data structures but 
+we will provide further reading.
+
+## Preparation
+1) An online etherpad for collaborative discussions 
+        - make one from https://etherpad.wikimedia.org before class
+        - https://etherpad.wikimedia.org/p/YY42sJ5avVDELDImVuEQ
+2) Prepare contents to be pasted on etherpad prior (can be saved in this directory)
+2) Remind participants to install R and RStudio and also provide etherpad link.
+
+## Introduction
+Duration: 10-15 mins  
+
+* Begin with introducing the instructors and the lesson purpose. 
+* Go over several ground rules:
+    * What the instructor will be showing on-screen. ie an RStudio IDE
+    * Final reminder on installing R and RStudio
+    * How participant questions will be addressed. If this is a zoom meeting, participants
+    may raise their virtual hands or type their questions and helpers will be available
+    to help troubleshoot. If this is a face-to-face class, consider using coloured
+    post-its to get students to express their concerns during class.
+    * Other materials we will be using (etherpad)
+* Good transition to "check-in" the participants. Can be done with a short activity
+to state "What do you wish to accomplish after completing this mini-workshop?"
+
+## 1. Introduction to R and RStudio
+Duration: 5 mins
+
+* Quick and simple introduction of the 4 panes within RStudio
+
+## 2. Basic R commands
+Duration: 20 mins  
+
+Basically we can follow the lesson outline from 
+[the first lesson of r-novice-gapminder]((http://swcarpentry.github.io/r-novice-gapminder/01-rstudio-intro/index.html))  
+
+* Using R as a calculator
+* Mathematical functions
+    * Good time to touch on how a function look like.
+* Comparing things (expressions)
+    * Can include strings as well
+* Variables and assignments
+    * ACTIVITY: Try Challenge 1 with the group on etherpad. Paste the variable names
+    and get participants to Type 1 if they think that this is a valid variable
+    or 0 if it is not
+* Touch on further readings and exercises from 
+[the first lesson of r-novice-gapminder]((http://swcarpentry.github.io/r-novice-gapminder/01-rstudio-intro/index.html))  
+
+## 3. Read and Write data in R
+Duration: 20 mins  
+
+* Download gapminder data to the current working directory. 
+* Import data into R using read.delim. Can touch on some other similar functions
+* Briefly describe on the object we created and how to preview/view them
+* How to export data
+
+## BREAK
+
+## 4. Data frame Manipulation with dplyr
+Duration: 50 mins
+
+We will follow lesson 13 of [r-novice-gapminder](http://swcarpentry.github.io/r-novice-gapminder/13-dplyr/index.html).  
+
+* Briefly describe the objectives
+* How to install packages such as dplyr
+* Go through `select()`
+    * I recommend using running nested `select()` and `head()` functions
+    to demonstrate the purpose of piping. 
+* Go through pipe `%>%`
+* `rename`
+* `filter`
+    * Activity from Challenge 1. Do in groups of 3 and get them to paste the 
+    answers in Etherpad (5-7 mins)
+* `group_by` and `summarize`
+    * * Activity from Challenge 2. Do in groups of 3 and get them to paste the 
+    answers in Etherpad (5-7 mins)
+* `count()` and `n()`
+* `mutate`
+* Summarize and further reading
+
+## After lesson review
+
+* Wrap up the workshop with several things we learn
+* Activity on 1 good and 1 improvement (on etherpad)
+
+## FINISH
+
+
+
+
+
+
+
+
+
+
+
+
+
+
