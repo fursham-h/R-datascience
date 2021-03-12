@@ -15,7 +15,7 @@ we will provide further reading.
 ## Preparation
 1) An online etherpad for collaborative discussions 
         - make one from https://etherpad.wikimedia.org before class
-        - https://etherpad.wikimedia.org/p/YY42sJ5avVDELDImVuEQ
+        - https://etherpad.wikimedia.org/p/CDNworkshop1
 2) Prepare contents to be pasted on etherpad prior (can be saved in this directory)
 2) Remind participants to install R and RStudio and also provide etherpad link.
 
