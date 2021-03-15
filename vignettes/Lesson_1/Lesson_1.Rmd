@@ -31,7 +31,7 @@ programs installed on your computer.
     - [For Mac](https://cran.r-project.org/bin/macosx/)
     - [For Linux](https://cran.r-project.org/bin/linux/)
         
-* [Latest version of RStudio](https://www.rstudio.com/https://rstudio.com/products/rstudio/download/)
+* [Latest version of RStudio](https://rstudio.com/products/rstudio/download/)
 
 ## Lesson schedule
 ||||
