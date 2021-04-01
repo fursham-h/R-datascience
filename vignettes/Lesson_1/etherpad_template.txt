@@ -24,14 +24,13 @@ Looking forward to learn R with you soon!
 
 Check-in exercise:
 
-What do you wish to accomplish from this mini-workshop?
+How would you use R in your work?
 
 Abi Gartner
 Adam Pavlinek
 Ali Asgar Bohra
 Alice Rossi
 Amy Shakeshaft
-Andrea
 Benedikt Berninger
 Catalina Moreno
 Clemens Kiecker
@@ -44,6 +43,7 @@ Marcelo
 Marco massimo
 Noor AL-Hajri
 Pat Gordon
+Richard Taylor
 
 ######>
 
@@ -70,7 +70,7 @@ celsius2kelvin
 ######> 2. Read and Write data in R
 
 Link to gapminder data: https://raw.githubusercontent.com/swcarpentry/r-novice-gapminder/gh-pages/_episodes_rmd/data/gapminder_data.csv
-Shorten this please
+bit.ly/cdndata
 
 ######>
 
@@ -79,7 +79,8 @@ Shorten this please
 
 Activity 2:
 
-Write a single command (which can span multiple lines and includes pipes) that will produce a data frame that has the African values for lifeExp, country and year, but not for other Continents. How many rows does your data frame have and why?
+Write a single command (which can span multiple lines and includes pipes) that will produce a data frame that has the African values for lifeExp, country and year, but not for other Continents. 
+How many rows does your data frame have and why?
 
 Please type your answers out below (1 answer per group)
 
@@ -90,6 +91,13 @@ Group 4
 Group 5
 Group 6
 Group 7
+
+year_country_lifeExp_Africa <- gapminder %>%
+                           filter(continent == "Africa") %>%
+                           select(year, country, lifeExp)
+624 rows
+
+
 
 Activity 3:
 
@@ -104,20 +112,21 @@ Group 5
 Group 6
 Group 7
 
+Self exercise:
+Calculate the average life expectancy in 2002 of 2 randomly selected countries for each continent. Then arrange the continent names in reverse order. Hint: Use the dplyr functions arrange() and sample_n(), they have similar syntax to other dplyr functions. Export data-frame to a tab-delimited text file.
 
 ######>
 
 ######> CLOSING SECTION
 
 
-What is the one thing you learn from this workshop?
+What is the one key thing you learn from this workshop?
 
 Abi Gartner
 Adam Pavlinek
 Ali Asgar Bohra
 Alice Rossi
 Amy Shakeshaft
-Andrea
 Benedikt Berninger
 Catalina Moreno
 Clemens Kiecker
@@ -130,6 +139,7 @@ Marcelo
 Marco massimo
 Noor AL-Hajri
 Pat Gordon
+Richard Taylor
 
 
 What is the one thing this workshop can improve on?
@@ -139,7 +149,6 @@ Adam Pavlinek
 Ali Asgar Bohra
 Alice Rossi
 Amy Shakeshaft
-Andrea
 Benedikt Berninger
 Catalina Moreno
 Clemens Kiecker
@@ -152,9 +161,13 @@ Marcelo
 Marco massimo
 Noor AL-Hajri
 Pat Gordon
+Richard Taylor
 
 
 ######>
 
 
 
+Questions:
+could you show how do you filter by column number instead of header? 
+How do you know when you need to use the summarize() function and when you don’t? 

@@ -73,7 +73,7 @@ Duration: 50 mins
 We will follow lesson 13 of [r-novice-gapminder](http://swcarpentry.github.io/r-novice-gapminder/13-dplyr/index.html).  
 
 * Briefly describe the objectives
-* How to install packages such as dplyr
+* How to install packages such as dplyr (DONE PREVIOUSLY)
 * Go through `select()`
     * I recommend using running nested `select()` and `head()` functions
     to demonstrate the purpose of piping. 
@@ -88,6 +88,7 @@ We will follow lesson 13 of [r-novice-gapminder](http://swcarpentry.github.io/r-
 * `count()` and `n()`
 * `mutate`
 * Summarize and further reading
+* Self-exercise
 
 ## After lesson review
 
