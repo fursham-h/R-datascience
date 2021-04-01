@@ -5,12 +5,14 @@ using R programming language. The lessons in this series are intended for CDN
 researchers with beginner to intermediate programming skills with keen interest
 in using easy to comprehend R functions for routine data analysis. 
 
-### Scheduled workshops
+### Upcoming workshops
 
-|Lesson title|Date(s)|
-|:-------|:------------|
-|[R basics for data analysis](https://fursham-h.github.io/R-datascience/articles/Lesson_1/Lesson_1.html)|Wed, 24th March. 10am|
-
+|Lesson title|Date(s)|Pre-requisite|Sign-up link|
+|:----------|:---------|:-----|:----|
+|[R basics for data analysis (Repeat)](https://fursham-h.github.io/R-datascience/articles/Lesson_1/Lesson_1.html)|Wed, 14th April, 10am-12pm|None|[Link](https://forms.office.com/r/CN0ukPPvwX)|
+|Data visualisation using R|Wed, 28th April, 10am-12pm|Basics in using R|[Link](https://forms.office.com/r/acX9AbJ474)|
+|Introduction to the Command Line for Genomics|Wed, 12th May, 10am-12pm|None|Link|
+|RNA-seq workflow: Data Retrieval and Quality Control|Wed, 26th May, 10am-12pm|Basics in using shell command line|Link|
 
 ### Other ideas/Feedback
 You may provide ideas for future workshops or give feedback by emailing me at
