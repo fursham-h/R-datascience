@@ -4,8 +4,7 @@ pkgdown_sha: ~
 articles:
   1_R_basics_for_data_analysis/Instructions: Instructions.html
   1_R_basics_for_data_analysis/Overview: Overview.html
-  _Lesson2/Lesson2: Lesson2.html
-last_built: 2021-04-07T15:06Z
+last_built: 2021-04-07T15:17Z
 urls:
   reference: https://fursham-h.github.io/R-datascience//reference
   article: https://fursham-h.github.io/R-datascience//articles
