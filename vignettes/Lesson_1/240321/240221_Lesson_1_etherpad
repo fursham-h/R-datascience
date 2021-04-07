@@ -1,0 +1,143 @@
+Welcome to CDN mini-workshop EtherPad!!
+
+This pad is synchronized as you type, so that everyone viewing this page sees the same text. This allows you to collaborate seamlessly on documents.
+
+---------------------------------------------
+Lesson: R basics for Data analysis
+Date: 24th March 2021
+Time: 10am to 12pm
+---------------------------------------------
+
+## Lesson preparation ##
+Before the start of this lesson, please ensure that you have the required software installed on your computer.
+
+Please visit https://fursham-h.github.io/R-datascience/articles/Lesson_1.html for details on this installation and for more information on the schedule on this class.
+
+Looking forward to learning R with you soon!
+
+#######################################
+Post your questions below:
+Hannah
+Noor 
+Daphna
+Catalina
+Richard
+Marco
+Alice
+Clemens
+Corinne
+Ali
+Amy
+Grant
+Adam
+Abi
+#######################################
+
+Activity 1
+
+Which of the following are valid R variable names?
+
+Type the number "1" on variable names you think is valid in R and "0" on invalid names.
+
+min_height 11111111111111
+max.height000000001111
+_age100000010010
+.mass0000000000
+MaxLength111111111111
+min-length0000010000100
+2widths0000011100100
+celsius2kelvin11111111111
+
+
+
+#### Correction for Downloading data file ##
+download.file(url="http://bit.ly/cdndata",destfile="gapminder") 
+
+# Once downloaded you read the file into a variable (ie into memory)
+gapminder <- read.csv("gapminder")
+
+# The variable name should appear on the righhand pane of Rstudio - clicking should open a view of the data
+# Otherwise  you can issue a command to view the data into  RStudio (Then press CTRL or CMD and ENTER): 
+View(gapminder) 
+
+
+Read data: http://swcarpentry.github.io/r-novice-gapminder/04-data-structures-part1/index.html
+Write data: http://swcarpentry.github.io/r-novice-gapminder/11-writing-data/index.html
+
+
+
+Activity 2:
+
+Write a single command (which can span multiple lines and includes pipes) that will produce a data frame that has the African values for lifeExp, country and year, but not for other Continents. 
+How many rows does your data frame have?
+
+Please type your answers out below (1 answer per group)
+
+Group 1624
+Group 2 624
+Group 3
+Group 4 624
+Group 5624
+Group 6
+
+
+
+http://swcarpentry.github.io/r-novice-gapminder/fig/13-dplyr-fig2.png
+
+https://dplyr.tidyverse.org/articles/programming.html
+https://github.com/rstudio/cheatsheets/blob/master/data-transformation.pdf
+
+
+
+What is the one key thing you learn from this workshop?
+
+Abi Gartnerusing dplyr and review of basics of R studio. Very good workshop, 
+Adam Pavlinek using dplyr
+Ali Asgar Bohra
+Alice Rossi using the "pipe" operator
+Amy Shakeshaft using pipes and mutating columns
+Benedikt Berninger
+Catalina Moreno
+Clemens Kieckergetting a first idea of the scope and possibilities of R
+Corinne Houart
+Daphna Fenchel
+Fiona Coutts
+Grant Wray The structure and syntax of R
+Hannah Bruce
+Marcelo
+Marco massimo
+Noor AL-Hajri
+Pat GordonUsing dplyr
+Richard Taylor
+
+
+What is the one thing this workshop can improve on?
+
+Abi Gartner having the breakout rooms for helping people is good, but I think it should be used more systematically, and quickly, so that the main lesson plan can move on swiftly. Slightly longer breaks, to avoid screen time fatigue. Very good workshop though.
+Adam Pavlinek at the point of data import have a checkpoint to make sure everyone has it so we can move on without getting lost
+Ali Asgar Bohra
+Alice Rossimaybe it could be spread over a longer time, so it can include more info and be thaught at a slower pace, it was very veyr good though
+Amy Shakeshaft statistical analysis and visualisation but this may be covered in future sessions and if so today's session was a good starter!
+Benedikt Berninger
+Catalina Moreno
+Clemens Kieckermaybe more and longer breaks to allow slow burners like me to catch up :)
+Corinne Houart
+Daphna Fenchel
+Fiona Coutts
+Grant Wray Plotting package? Visualisation.
+Hannah Bruce
+Marcelo
+Marco massimo data import
+Noor AL-Hajri
+Pat GordonThe first half was mostly review for me, while the second half was very useful.  Separating those two parts into different classes could target the course better to people who are totally new to R versus people who use it some but not very much
+Richard Taylor
+
+
+
+
+
+
+
+
+
+
