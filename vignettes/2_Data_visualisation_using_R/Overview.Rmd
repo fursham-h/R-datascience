@@ -1,0 +1,58 @@
+---
+title: 'Workshop 2: Data visualisation using R'
+author: "Fursham Hamid"
+output: html_document
+---
+
+> ### Overview
+><br />
+> **Duration**: 2 hours
+><br />
+><br />
+>
+> **Objectives**
+>
+> 1) Format data-frames for visualisation purposes
+> 2) State the various available R packages for plotting
+> 3) Use ggplot2 to generate publication quality graphics
+> 4) Apply geometry, aesthetic, and statistics layers to a ggplot plot
+> 5) Manipulate the aesthetics of a plot using different colors, shapes, and lines
+> 6) Improve data visualization through transforming scales and paneling by group
+> 7) Save a plot created with ggplot to disk
+><br />
+
+## Before starting the lesson
+Please ensure that you have the latest version of R and RStudio installed on 
+your computer. You may refer to this [link](https://datacarpentry.org/R-ecology-lesson/#preparations) 
+for step-by-step instructions on downloading these software.  
+
+We will also be using the `gapminder` data for our hands-on tutorial. You may
+download this [csv file](https://emckclac-my.sharepoint.com/:f:/g/personal/k1768990_kcl_ac_uk/ElAlwol0kydHps1zyu1TqL8BS4Az_IniKS7uReVMjKjSgw?e=JVktTj)
+onto your local directory. **Please take note of the location of this file on your computer.**
+Alternatively, you may run the following code in RStudio to download this file
+to your R working directory (commonly at your home directory).
+```{r}
+download.file("bit.ly/cdndata", "gapminder.csv")
+```
+
+<br/ >
+
+## Lesson schedule
+||||
+|:---|:------------|:------------|
+|00:00|Introduction and overview| Why visualize data using programming language? |
+|00:10|1. Data structure for plotting  | How should I format my data to facilitate visualisation in R? |
+|00:20|2. R packages for data visualisation | What packages can I use to plot data? |
+|00:40|Break and prepare for hands-on session||
+|01:00|3. [Creating Publication-Quality Graphics with ggplot2](http://swcarpentry.github.io/r-novice-gapminder/08-plot-ggplot2/index.html)|  How can I create publication-quality graphics in R?  |
+|02:00|Finish| |
+
+
+
+
+
+
+
+
+
+
