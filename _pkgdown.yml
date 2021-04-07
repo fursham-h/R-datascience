@@ -21,6 +21,8 @@ navbar:
       menu:
         - text: "1) R Basics for Data Analysis"
           href: articles/1_R_basics_for_data_analysis/Overview.html
+        - text: "2) Data visualisation using R"
+          href: articles/2_Data_visualisation_using_R/Overview.html
   right:
     - icon: 'fab fa-github fa-lg'
       href: https://github.com/fursham-h/R-datascience
