@@ -1,0 +1,74 @@
+---
+title: "Data Visualisation using R"
+author: "Fursham Hamid"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+```
+
+### Why visualize data using programming language?
+A myriad of data visualization software are currently available to generate
+beautiful graphs for the purpose of publishing, presenting or sharing data. 
+While most of these software are intuitive and easy-to-use, programming languages
+offer superior advantages in which:
+
+1) It is able to handle large amount of data
+2) It could easily create reproducible publication-grade images
+3) It naturally incorporates statistical anlayses
+4) It drives you to think about data organization
+
+<br/>
+```{r, fig.align='center', out.width="75%"}
+knitr::include_graphics("images/jobsquote.PNG")
+```
+<br/>
+
+### Data structure for plotting 
+Almost everyone is familiar with using spreadsheets to easily create tabular data
+and intuitively generate simple graphs for visualization. Using a graphic user
+interface, spreadsheets make it possible to specify data values by selecting
+the desired "cells" containing your data. Although programming languages such as 
+R and python do not offer the liberty of highlighting desired data values, it
+teaches us to effectively organize our data to facilitate data visualization.  
+
+In this section, we will go through some common data structures for 
+data visualization in R.  
+<br/>
+
+#### **Data-frames**
+Two-dimensional graphs, consisting of an independent variable (x-axis) and a 
+dependent variable (y-axis), are most commonly plotted. 
+Therefore effectively, a two-columned data-frame is the most
+basic data structure for data visualization.
+There are exceptions to this; some plots can be generated from a single-columned 
+data-frame as the dependent variable (y-axis) is derived from the distribution
+of the data-points. Such plots include histograms, density plots 
+and empirical cumulative distribution function (ECDF).  
+
+<!-- IDEA: add a figure on two-columned df for plotting graphs -->
+
+<!-- Formatting data into a two-columned df -->
+<!-- Data types -->
+
+<!-- Grouping data using additional variables, usually as factors -->
+
+#### **Matrices**
+
+#### **Lists/Vectors**
+
+### R packages for data visualisation 
+
+#### **Base R**
+
+#### **Lattice**
+
+#### **ggplot2**
+
+#### **ggplot2 on steroids**
+
+#### **pheatmap**
+
+#### **ggvenn**
