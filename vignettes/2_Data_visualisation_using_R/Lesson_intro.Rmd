@@ -26,7 +26,7 @@ knitr::include_graphics("images/jobsquote.PNG")
 ```
 <br/>
 
-### Data structure for plotting 
+### Data structure for plotting {#datastruct}
 Almost everyone is familiar with using spreadsheets to easily create tabular data
 and intuitively generate simple graphs for visualization. Using a graphic user
 interface, spreadsheets make it possible to specify data values by selecting
@@ -34,41 +34,93 @@ the desired "cells" containing your data. Although programming languages such as
 R and python do not offer the liberty of highlighting desired data values, it
 teaches us to effectively organize our data to facilitate data visualization.  
 
-In this section, we will go through some common data structures for 
-data visualization in R.  
+The few most common data structures for visualisation of data include data-frames,
+matrices and lists/vectors. Do refer to this 
+[teaching material](http://swcarpentry.github.io/r-novice-gapminder/04-data-structures-part1/index.html)
+for details on these types of data structures.
+
+#### Converting data for data visualisation
+Sometimes, raw data can be in a format not desirable for visualisation. For example,
+we have a matrix with species names as columns and mean_weight at different
+timepoints as data as rows (see figures below). While this data structure is 
+ideal for creating heatmaps, it is incompatible for creating line plots for of
+mean_weight across time for each species. Therefore, such wide-format matrices
+have to be converted to a long-format data-frame before a line plot can be 
+generated.  
+
+The `tidyr` package contain 2 easy-to-use functions that can facilitate data
+reshaping. `spread()` converts data from a wide-format to a long-format while
+`gather()` performs the reverse operation. See the two figures below on
+the visual illustrations of the function and its usage.
+```{r, fig.align='center', out.width="75%"}
+knitr::include_graphics("images/gather_data_R.png")
+knitr::include_graphics("images/spread_data_R.png")
+```
+
+For detailed information on running these functions, see this 
+[teaching material](https://datacarpentry.org/R-ecology-lesson/03-dplyr.html#Reshaping_with_gather_and_spread).
+`tidyr` also contain a slew of other functions for data cleanup. You may refer
+to this [cheatsheet](https://tidyr.tidyverse.org/) for an overview of these functions.
+
+### R packages for data visualisation {#rpackages}
+
+1. [**Base R**](http://www.sthda.com/english/wiki/r-base-graphs)
+    - Easy to use for quick data visualisation
+    - Plots a variety of graphs with the ability to present confidence intervals
+    - Require some work to customize colours and data labels
+2) [**Lattice**](http://www.sthda.com/english/wiki/lattice-graphs)
+    - Able to plot complex plots such as contour plots and 3d plots
+    - Steeper learning curve with the use of formulas
+    - Plots are visually pleasing but require some work for publication
+3) [**ggplot2**](http://www.sthda.com/english/wiki/ggplot2-essentials)
+    - Highly popular package for its default image quality
+    - Highly customisable with a variety of function parameters
+    - Need practice
+4) [**ggpubr**](https://rpkgs.datanovia.com/ggpubr/)
+    - Built upon ggplot2 framework
+    - Outputs even more visually pleasing graphs by default
+    - Labels statistical comparisons
+    - Limited type of plots
+5) [**pheatmap**](https://towardsdatascience.com/pheatmap-draws-pretty-heatmaps-483dab9a3cc)
+    - Easy to use as compared to other heatmap plotting packages
+    - Pretty (pheatmap == pretty-heatmap)
+    - Slow, depending on the size of the data
+6) [**ggvenn**](https://github.com/yanlinlin82/ggvenn)
+    - Built upon ggplot2 framework
+    - Easy to use with ability to draw complex intersections
+        
+### Great packages to complement `ggplot2`
+1. [**ggrepel**](https://ggrepel.slowkow.com/)
+2. [**gganimate**](https://gganimate.com/articles/gganimate.html)
+
+
+
+<br/>
+<br/>
 <br/>
 
-#### **Data-frames**
-Two-dimensional graphs, consisting of an independent variable (x-axis) and a 
-dependent variable (y-axis), are most commonly plotted. 
-Therefore effectively, a two-columned data-frame is the most
-basic data structure for data visualization.
-There are exceptions to this; some plots can be generated from a single-columned 
-data-frame as the dependent variable (y-axis) is derived from the distribution
-of the data-points. Such plots include histograms, density plots 
-and empirical cumulative distribution function (ECDF).  
 
-<!-- IDEA: add a figure on two-columned df for plotting graphs -->
 
-<!-- Formatting data into a two-columned df -->
-<!-- Data types -->
 
-<!-- Grouping data using additional variables, usually as factors -->
 
-#### **Matrices**
 
-#### **Lists/Vectors**
 
-### R packages for data visualisation 
 
-#### **Base R**
 
-#### **Lattice**
 
-#### **ggplot2**
 
-#### **ggplot2 on steroids**
 
-#### **pheatmap**
 
-#### **ggvenn**
+
+
+
+
+
+
+
+
+
+
+
+
+
