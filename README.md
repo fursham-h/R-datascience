@@ -11,8 +11,8 @@ in using easy to comprehend R functions for routine data analysis.
 |:----------|:---------|:-----|:----|
 |[R basics for data analysis (Repeat)](https://fursham-h.github.io/R-datascience/articles/1_R_basics_for_data_analysis/Overview.html)|Wed, 14th April, 10am-12pm|None|[Link](https://forms.office.com/r/CN0ukPPvwX)|
 |[Data visualisation using R](https://fursham-h.github.io/R-datascience/articles/2_Data_visualisation_using_R/Overview.html)|Wed, 28th April, 10am-12pm<br>Thurs, 29th April, 10am-12pm|Basics in using R|[Link](https://forms.office.com/r/acX9AbJ474)|
-|Introduction to the Command Line for Genomics|Tue, 11th May, 10am-12pm [NEW DATE!]|None|TBA|
-|RNA-seq workflow: Data Retrieval and Quality Control|Tue, 25th May, 10am-12pm [NEW DATE!]|Basics in using shell command line|TBA|
+|RNA-seq workflow basics [Day 1]: Introduction to the Command Line for Genomics|Tue, 11th May, 10am-12pm [NEW DATE!]|None|[Link](https://forms.office.com/r/MyRDXB1gdE)|
+|RNA-seq workflow basics [Day 2]: Data Retrieval and Quality Control|Tue, 25th May, 10am-12pm [NEW DATE!]|Basics in using shell command line|[Link](https://forms.office.com/r/MyRDXB1gdE)|
 
 ### Other ideas/Feedback
 You may provide ideas for future workshops or give feedback by emailing me at
