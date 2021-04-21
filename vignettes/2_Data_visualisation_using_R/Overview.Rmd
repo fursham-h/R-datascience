@@ -37,7 +37,7 @@ install.packages("ggplot2", "ggpubr")
 ## Lesson schedule
 ||||
 |:---|:------------|:------------|
-|10:00|[Introduction and overview](https://fursham-h.github.io/R-datascience/articles/2_Data_visualisation_using_R/Lesson_intro.html| Why visualize data using programming language? |
+|10:00|[Introduction and overview](https://fursham-h.github.io/R-datascience/articles/2_Data_visualisation_using_R/Lesson_intro.html)| Why visualize data using programming language? |
 |10:10|[1. Data structure for plotting ](https://fursham-h.github.io/R-datascience/articles/2_Data_visualisation_using_R/Lesson_intro.html#datastruct) | How should I format my data to facilitate visualisation in R? <br> How do I reshape my data? |
 |10:20|2. [R packages for data visualisation](https://fursham-h.github.io/R-datascience/articles/2_Data_visualisation_using_R/Lesson_intro.html#rpackages) | What packages can I use to plot data? |
 |10:40|**Break and prepare for hands-on session**||
