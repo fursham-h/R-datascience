@@ -1,0 +1,125 @@
+    Welcome to CDN mini-workshop EtherPad!!
+
+
+This pad is synchronized as you type, so that everyone viewing this page sees the same text. This allows you to collaborate seamlessly on documents.
+
+---------------------------------------------
+Lesson: R basics for Data analysis
+Date: 14th April 2021
+Time: 10am to 12pm
+---------------------------------------------
+
+## Lesson preparation ##
+Before the start of this lesson, please ensure that you have the required software installed on your computer.
+
+Please visit https://fursham-h.github.io/R-datascience/articles/Lesson_1.html for details on this installation and for more information on the schedule on this class.
+
+Looking forward to learning R with you soon!
+
+##############################################
+Questions gallery:
+
+Hi everyone
+
+Where do these packages come from?:
+From repositories such as:
+    - CRAN
+    - Bioconductor
+    - Github
+
+
+
+##############################################
+
+
+Check-in exercise:
+
+How would you use R in your work?
+
+Benedikt Berninger
+Marcelo
+Laia Torres MasjoanNot using R at the moment
+Sophie Péron
+Ana Beltran- not using R currently - analysing/plotting data?
+Alexis 3-4 x week, single-cell analysis (RNAseq +ATACseq)
+Youran single-cell seq data analysis: seurat & monocle so far
+Nicolas
+Not using R so far...
+
+
+Activity 1
+
+Which of the following are valid R variable names?
+
+Type the number "1" on variable names you think is valid in R and "0" on invalid names.
+
+min_height1111
+max.height1111
+_age0000
+.mass0?00
+MaxLength1111
+min-length000 (it is a funtion)
+2widths110
+celsius2kelvin111
+
+
+## LINK TO READ UP ON PATH TO DATA
+# https://www.howtogeek.com/670447/how-to-copy-the-full-path-of-a-file-on-windows-10/
+# https://www.switchingtomac.com/tutorials/osx/5-ways-to-reveal-the-path-of-a-file-on-macos/
+
+
+Activity 2:
+
+Write a single command (which can span multiple lines and includes pipes) that will produce a data frame that has the African values for lifeExp, country and year, but not for other Continents. 
+How many rows does your data frame have?
+
+Please type your answers out below 
+
+Group 1 (Room 1): 
+Group 2 (Room 2): 624
+ Africa <- gapminder %>% filter(continent == "Africa") %>% 
+  select(lifeExp, country, year)
+dim(Africa)
+
+http://swcarpentry.github.io/r-novice-gapminder/fig/13-dplyr-fig2.png
+
+
+# More examples on using dplyr
+# https://dplyr.tidyverse.org/articles/programming.html
+
+# dplyr cheatsheet
+# https://github.com/rstudio/cheatsheets/blob/master/data-transformation.pdf
+
+
+
+
+What is the one key thing you learn from this workshop?
+
+
+Benedikt Berningertotally new to coding, and R, so got out many basic operations
+Marcelo
+Laia Torres Masjoan
+Sophie Péron
+Ana Beltran
+Alexis
+Youran
+Nicolas
+
+
+What is the one thing this workshop can improve on?
+
+
+Benedikt Berningermaybe beofr starting to write the code, explain the logical operations that need to be done (e.g. in etherpad). 
+Marcelo
+Laia Torres Masjoan
+Sophie Péron
+Ana Beltran
+Alexis
+Youran
+Nicolas
+
+
+https://swirlstats.com/ 
+
+
+

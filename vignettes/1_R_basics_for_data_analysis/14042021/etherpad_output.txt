@@ -1,0 +1,116 @@
+    Welcome to CDN mini-workshop EtherPad!!
+
+
+This pad is synchronized as you type, so that everyone viewing this page sees the same text. This allows you to collaborate seamlessly on documents.
+
+---------------------------------------------
+Lesson: R basics for Data analysis
+Date: 14th April 2021
+Time: 10am to 12pm
+---------------------------------------------
+
+## Lesson preparation ##
+Before the start of this lesson, please ensure that you have the required software installed on your computer.
+
+Please visit https://fursham-h.github.io/R-datascience/articles/Lesson_1.html for details on this installation and for more information on the schedule on this class.
+
+Looking forward to learning R with you soon!
+
+##############################################
+Questions gallery:
+
+Testing: What do you mean Martina and Maria changed their colours?
+I cannot find the list with the names
+I see now the names but can't change the colour :)
+Had a problem (apparently) can now see colour wheel but colour I pick not staying
+Not that the colour matters just getting things to work...
+
+
+Managed! :)
+
+
+
+
+##############################################
+
+
+Check-in exercise:
+
+How would you use R in your work?
+
+Alfonso Aguilera
+Fazal Oozeer-to be able to check a large set of results
+Frederike Winkel - data analysis, coding, statistics
+Maria Conde-Dusman - to analyze RNAseq data
+Martyna Panasiuk - more flexible data analysis and visualisation options than in what I normally use (GraphPad)
+Megan Maloney to analyse large datasets & stats
+Paul Hopkins
+Rachel Moore
+Rita Sousa-Nunesanalyse various omic data; intersections of this; display complex data
+Valentina Marchica
+
+
+
+Activity 1
+
+Which of the following are valid R variable names?
+
+Type the number "1" on variable names you think is valid in R and "0" on invalid names.
+
+1 min_height 1110
+1 max.height 110
+0_age 00000
+0 .mass0000
+1 MaxLength 1111
+0 min-length1100
+0 2widths1010
+1 celsius2kelvin00
+
+
+## LINK TO READ UP ON PATH TO DATA
+# https://www.howtogeek.com/670447/how-to-copy-the-full-path-of-a-file-on-windows-10/
+# https://www.switchingtomac.com/tutorials/osx/5-ways-to-reveal-the-path-of-a-file-on-macos/
+
+
+# Link to illustration of group_by
+http://swcarpentry.github.io/r-novice-gapminder/fig/13-dplyr-fig2.png
+
+# dplyr cheatsheet
+# https://github.com/rstudio/cheatsheets/blob/master/data-transformation.pdf
+
+
+
+
+What is the one key thing you learn from this workshop?
+
+Alfonso Aguilera
+Fazal Oozeer-how to navigate in the R pages and learned the various commands
+Frederike Winkel how to arrange data, pipes and how to create variables and manipulate them/work with them
+Maria Conde-Dusman different packages and pipes
+Martyna Panasiuk using pipes and how easy data transformation is in R
+Megan Maloney
+Paul Hopkins
+Rachel Moore
+Rita Sousa-NunesR is not scary :) It's actually fun
+Valentina Marchica
+
+
+What is the one thing this workshop can improve on?
+
+Alfonso Aguilera
+Fazal Oozeer- face to face -very informative workshop 
+Frederike Winkel
+Maria Conde-Dusman
+Martyna Panasiuk maybe a little bit more about importing data from Excel, Matlab usually gives me issues with that but maybe in R it is simpler? Esp. if the Excel file is not arranged exactly the way I want and I would like to import it to R and transform into my desired table arrangement. Thank you for a very good workshop!
+Megan Maloney
+Paul Hopkins
+Rachel Moore
+Rita Sousa-NunesSet a piece of "homework" (challenging but not toooo challenging)
+Valentina Marchica
+
+Alfonso:12:22 1. Simple and very helpful data manipulation of complex datasets, making them more accesible and easy to process
+Alfonso:12:23 2. Maybe, use one example of a real biological dataset (e.g. RNA-seq)
+
+######>
+
+

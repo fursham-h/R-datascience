@@ -26,24 +26,15 @@ Check-in exercise:
 
 How would you use R in your work?
 
-Abi Gartner
-Adam Pavlinek
-Ali Asgar Bohra
-Alice Rossi
-Amy Shakeshaft
 Benedikt Berninger
-Catalina Moreno
-Clemens Kiecker
-Corinne Houart
-Daphna Fenchel
-Fiona Coutts
-Grant Wray
-Hannah Bruce
 Marcelo
-Marco massimo
-Noor AL-Hajri
-Pat Gordon
-Richard Taylor
+Laia Torres Masjoan
+Sophie Péron
+Ana Beltran
+Alexis
+Youran
+Nicolas
+
 
 ######>
 
@@ -82,15 +73,15 @@ Activity 2:
 Write a single command (which can span multiple lines and includes pipes) that will produce a data frame that has the African values for lifeExp, country and year, but not for other Continents. 
 How many rows does your data frame have and why?
 
-Please type your answers out below (1 answer per group)
+Please type your answers out below 
 
-Group 1
-Group 2
-Group 3
-Group 4
-Group 5
-Group 6
-Group 7
+
+Benedikt Berninger
+Marcelo
+Laia Torres Masjoan
+Sophie Péron
+Ana Beltran
+Alexis
 
 year_country_lifeExp_Africa <- gapminder %>%
                            filter(continent == "Africa") %>%
@@ -103,14 +94,13 @@ Activity 3:
 
 Calculate the average life expectancy per country. Which has the longest average life expectancy and which has the shortest average life expectancy?
 
-Please type your answers out below (1 answer per group)
-Group 1
-Group 2
-Group 3
-Group 4
-Group 5
-Group 6
-Group 7
+Please type your answers out below 
+
+Benedikt Berninger
+Marcelo
+Laia Torres Masjoan
+Sophie Péron
+Ana Beltran
 
 Self exercise:
 Calculate the average life expectancy in 2002 of 2 randomly selected countries for each continent. Then arrange the continent names in reverse order. Hint: Use the dplyr functions arrange() and sample_n(), they have similar syntax to other dplyr functions. Export data-frame to a tab-delimited text file.
@@ -122,51 +112,32 @@ Calculate the average life expectancy in 2002 of 2 randomly selected countries f
 
 What is the one key thing you learn from this workshop?
 
-Abi Gartner
-Adam Pavlinek
-Ali Asgar Bohra
-Alice Rossi
-Amy Shakeshaft
+
 Benedikt Berninger
-Catalina Moreno
-Clemens Kiecker
-Corinne Houart
-Daphna Fenchel
-Fiona Coutts
-Grant Wray
-Hannah Bruce
 Marcelo
-Marco massimo
-Noor AL-Hajri
-Pat Gordon
-Richard Taylor
+Laia Torres Masjoan
+Sophie Péron
+Ana Beltran
+Alexis
+Youran
+Nicolas
 
 
 What is the one thing this workshop can improve on?
 
-Abi Gartner
-Adam Pavlinek
-Ali Asgar Bohra
-Alice Rossi
-Amy Shakeshaft
-Benedikt Berninger
-Catalina Moreno
-Clemens Kiecker
-Corinne Houart
-Daphna Fenchel
-Fiona Coutts
-Grant Wray
-Hannah Bruce
-Marcelo
-Marco massimo
-Noor AL-Hajri
-Pat Gordon
-Richard Taylor
 
+Benedikt Berninger
+Marcelo
+Laia Torres Masjoan
+Sophie Péron
+Ana Beltran
+Alexis
+Youran
+Nicolas
 
 ######>
 
-
+Add a challenge!
 
 Questions:
 could you show how do you filter by column number instead of header? 

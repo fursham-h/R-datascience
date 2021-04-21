@@ -2,6 +2,8 @@
 ## save the script FIRST
 ## Move the right pane abit more
 
+## Talk about the console prompt
+
 # R as a calculator
 1 + 100
 
@@ -20,6 +22,8 @@ log(1)
 
 ?log()
 
+# Don't worry if you don't remember all functions
+
 
 # Comparing things
 
@@ -29,7 +33,7 @@ log(1)
 
 1 < 0
 
-
+ 
 # Variables and assignments
 
 x <- 1
@@ -44,13 +48,13 @@ y
 text <- "I love this course"
 text
 
-text <- "I love this course"
 
 #### Challenge 1
 
 # Installing packages
 install.packages("dplyr")
 
+### DO NOT RUN THIS CODE ON CDN-BC
 
 # Read data in R
 
@@ -58,12 +62,24 @@ download.file(url = "bit.ly/cdndata", destfile = "gapminder")
 gapminder <- read.csv("gapminder")
 gapminder <- read.delim("gapminder", sep = ",")
 
+# MAKE SURE EVERYONE HAVE SUCCESSFULLY DOWNLOADED THIS
+
+# READING EXCEL FILES
+install.packages("readxl")
+library(readxl)
+read_excel()
+
+## LINK TO READ UP ON PATH TO DATA
+# https://www.howtogeek.com/670447/how-to-copy-the-full-path-of-a-file-on-windows-10/
+# https://www.switchingtomac.com/tutorials/osx/5-ways-to-reveal-the-path-of-a-file-on-macos/
+
+
 # preview data-frame
+
+View(gapminder)
 
 head(gapminder)
 head(gapminder, 10)
-
-View(gapminder)
 
 str(gapminder)
 
@@ -121,8 +137,11 @@ year_country_gdp_euro <- gapminder %>%
 ### Show an image of how a group_by looks like
 #http://swcarpentry.github.io/r-novice-gapminder/fig/13-dplyr-fig2.png
 
-gapminder %>% str()
-gapminder %>% group_by(continent) %>% str()
+gapminder %>% 
+    str()
+gapminder %>% 
+    group_by(continent) %>% 
+    str()
 
 gdp_bycontinents <- gapminder %>%
     group_by(continent) %>%
@@ -134,18 +153,18 @@ gdp_bycontinents
 gapminder %>% 
     filter(year == 2002) %>% 
     group_by(continent) %>% 
-    count(sort = TRUE)
+    tally(sort = TRUE)
 
-gapminder %>%
-    group_by(continent) %>%
-    summarize(se_le = sd(lifeExp)/sqrt(n()))
+# gapminder %>%
+#     group_by(continent) %>%
+#     summarize(se_le = sd(lifeExp)/sqrt(n()))
 
 
-gapminder %>%
-    group_by(continent) %>%
-    summarize(
-        mean_le = mean(lifeExp),
-        se_le = sd(lifeExp)/sqrt(n()))
+# gapminder %>%
+#     group_by(continent) %>%
+#     summarize(
+#         mean_le = mean(lifeExp),
+#         se_le = sd(lifeExp)/sqrt(n()))
 
 ## Adding new variables/columns
 gdp_per_billion <- gapminder %>%
@@ -164,10 +183,14 @@ gdp_per_billion_above40 %>% head(10)
 ###### KEY TAKEAWAYS
 ###### LINK TO READ MORE
 
-# More examples of using dplyr
+# write data using R
+write.table(x = gapminder, file = "gapminder.txt", sep =",")
+write.table(x = gapminder, file = "gapminder.txt", quote = F, row.names = F, sep = "\t")
+
+# More examples on using dplyr
 # https://dplyr.tidyverse.org/articles/programming.html
 
-#dplyr cheatsheet
+# dplyr cheatsheet
 # https://github.com/rstudio/cheatsheets/blob/master/data-transformation.pdf
 
 
