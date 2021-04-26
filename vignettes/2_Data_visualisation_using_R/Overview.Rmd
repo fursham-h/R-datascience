@@ -32,6 +32,11 @@ Please install these packages by typing the following command in RStudio console
 install.packages("ggplot2", "ggpubr")
 ```
 
+During the lesson, we will be using etherpad, an online collaborative platform
+for our discussions and activities. The link to this workshop's etherpad page
+can be found [here](https://etherpad.wikimedia.org/p/KCL-DataViz-online). You may
+bookmark this page before the lesson commence!
+
 <br/ >
 
 ## Lesson schedule
