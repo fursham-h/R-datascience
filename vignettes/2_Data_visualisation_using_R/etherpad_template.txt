@@ -1,0 +1,126 @@
+Etherpad link: https://etherpad.wikimedia.org/p/KCL-DataViz-online
+Workshop homepage: https://fursham-h.github.io/R-datascience/articles/2_Data_visualisation_using_R/Overview.html
+
+
+######> PASTE THIS BLOCK BEFORE CLASSSSS
+
+Welcome to CDN mini-workshop EtherPad!!
+
+This pad is synchronized as you type, so that everyone viewing this page sees the same text. This allows you to collaborate seamlessly on documents.
+
+---------------------------------------------
+Lesson: Data Visualization using R
+Date: 28th April 2021
+Time: 10am to 12pm
+---------------------------------------------
+
+## Lesson preparation ##
+Before the start of this lesson, please ensure that you have the required software installed on your computer.
+Please visit https://fursham-h.github.io/R-datascience/articles/2_Data_visualisation_using_R/Overview.html for details on software installation and for more information on the schedule of this class.
+
+Looking forward to learn R with you soon!
+
+
+##########
+Class check-in: Please type your name below!
+
+Fursham
+
+
+
+
+######
+
+
+
+
+
+Activity 1:
+What are 2 things you like and 2 things you don't like about when using Excel/Graphpad?
+
+Activity 2:
+1) Install ggplot2, ggpubr, dplyr and tidyr
+2) Import dge_data.tsv into R as a data-frame.
+
+Activity 3:
+Modify the code below to change the color and size of the points on the point layer
+
+dotplot <- ggplot(dge, aes(x=A.TpM, y = B.TpM)) +
+    geom_point() +
+    labs(x = "Gene expression in sample A [TpM]", 
+         y = "Gene expression in sample B [TpM]") +
+    scale_x_continuous(trans = "log10") +
+    scale_y_continuous(trans = "log10")
+
+
+Activity 4:
+Modify the code below to change the shape of datapoints from the two groupings.
+
+dotplot.label <- ggplot(dge, aes(x=A.TpM, y= B.TpM, colour = group)) +
+    geom_point() +
+    scale_x_continuous(trans = "log10") +
+    scale_y_continuous(trans = "log10") + 
+    labs(x = "Gene expression in sample A [TpM]",
+         y = "Gene expression in sample B [TpM]",
+         colour = "") +
+    scale_colour_manual(values = c("grey80", "navyblue")) +
+    theme_minimal()
+
+Home activity (optional):
+Generate a Volcano Plot with log2FC as the x-axis and -log(FDR) as the y-axis.
+You may modify the colour, shape and/or size of each datapoint to best
+represent your data. As a bonus, you may attempt to label some differentially
+expressed genes (top 10 up- and down-regulated genes). 
+
+Send your graphs to me via email and I will anonymously upload your plots 
+to be shared with others.
+
+Closing activity
+
+What is the one key thing you learn from this workshop?
+
+
+Abi Gartner
+Adam Pavlinek
+Amy Shakeshaft
+Catalina
+Daphna Fenchel
+Fazal
+Grant Wray
+Hannah Bruce
+Marco Massimo
+Maria Conde-Dusman
+Noor Al-Hajri
+Richard Taylor
+Rita Sousa-Nunes
+Sophie Péron
+
+
+
+What is the one thing this workshop can improve on?
+
+
+Abi Gartner
+Adam Pavlinek
+Amy Shakeshaft
+Catalina
+Daphna Fenchel
+Fazal
+Grant Wray
+Hannah Bruce
+Marco Massimo
+Maria Conde-Dusman
+Noor Al-Hajri
+Richard Taylor
+Rita Sousa-Nunes
+Sophie Péron
+
+
+######>
+
+
+
+
+
+
+

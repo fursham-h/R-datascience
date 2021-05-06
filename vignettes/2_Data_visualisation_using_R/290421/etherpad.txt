@@ -1,0 +1,172 @@
+Welcome to CDN mini-workshop EtherPad!!
+
+This pad is synchronized as you type, so that everyone viewing this page sees the same text. This allows you to collaborate seamlessly on documents.
+
+---------------------------------------------
+Lesson: Data Visualization using R
+Date: 29th April 2021
+Time: 10am to 12pm
+---------------------------------------------
+
+## Lesson preparation ##
+Before the start of this lesson, please ensure that you have the required software installed on your computer.
+Please visit https://fursham-h.github.io/R-datascience/articles/2_Data_visualisation_using_R/Overview.html
+ham-h.github.io/R-datascience/articles/2_Data_visualisation_using_R/Overview.html for details on software installation and for more information on the schedule of this class.
+
+Looking forward to learn R with you soon!
+
+##################
+Class check-in: Please enter the following in the space below.
+Name; Fav animal; Fav day of the week; Commonly used software for dataviz
+
+Fursham; Cheetah; Monday; Excel
+Alexis; Jellyfish; Saturday; Graphpad Prism
+Pat; whale; Saturday; Excel/Prism
+Youran: cats/dogs, Friday, Excel
+Laia: cat, Friday, Excel/graphpad prism
+Benedikt Elephants & lions, Wednesday when there is Champions League, long time I didn't use software for dataviz
+
+##################
+    
+Activity 1:
+What are 2 things you like and 2 things you don't like about when using Excel/Graphpad?
+
+    
+## install packages; ggplot2, ggpubr; tidyr; dplyr
+install.packages("ggplot2")
+
+# to test if package is installed
+library(ggplot2)
+
+## importing dge_data.tsv
+dge <- read.delim("~/Downloads/dge_data.tsv")
+
+# if data is found in dekstop
+dge <- read.delim("~/Desktop/dge_data.tsv")
+
+# use a graphics interface to locate files
+dge <- read.delim(file.choose())
+    
+# importing tpm_matrix.tsv
+tpm <- read.delim("~/Downloads/tpm_matrix.tsv")
+    
+    # saving environment
+save.image()
+    
+ggplot(data = dge, mapping = aes())    
+    
+ggplot(data = dge, mapping = aes(x = A_vs_B.log2FC)) +
+    geom_density(colour = "darkred", fill = "purple4", size = 5)
+
+# Common ggplot geometry functions
+# - geom_point()
+# - geom_bar()
+# - geom_boxplot()
+# - geom_density()
+# - geom_jitter()
+# - geom_histogram()
+# - geom_violin()
+# - stat_ecdf()
+
+# possible arguments to modify plot aesthetics
+# colour
+# fill
+# size
+# alpha
+# shape
+
+# colour palette
+# http://sape.inf.usi.ch/quick-reference/ggplot2/colour
+    
+# modifying background themes
+http://www.sthda.com/english/wiki/ggplot2-themes-and-background-colors-the-3-elements
+
+## Plotting a bivariate graph
+ggplot(dge, aes(x = A.TpM, y = B.TpM)) +
+    geom_point() +
+    labs(x = "Gene expression in A [TpM]",
+         y = "Gene expression in B [TpM]")
+
+Activity 3:
+Modify the code below to change the color and size of the points on the point layer
+ggplot(dge, aes(x = A.TpM, y = B.TpM)) +
+    geom_point() +
+    labs(x = "Gene expression in A [TpM]",
+         y = "Gene expression in B [TpM]") +
+    scale_x_log10() +
+    scale_y_log10()
+
+# changing shape of datapoints
+# http://www.sthda.com/english/wiki/ggplot2-point-shapes
+
+## Adding a grouping variable
+dge <- dge %>% 
+    mutate(group = ifelse(A_vs_B.FDR < 0.05 & abs(A_vs_B.log2FC) > log2(1.5), "Regulated", "Non-regulated"))
+
+dge <- dge %>% 
+    arrange(group)
+
+# dge <- dge %>% 
+    # arrange(desc(group))
+
+ggplot(dge, aes(x = A.TpM, y = B.TpM, colour = group, alpha = group)) +
+    geom_point() +
+    labs(x = "Gene expression in A [TpM]",
+         y = "Gene expression in B [TpM]") +
+    scale_x_log10() +
+    scale_y_log10() +
+    scale_colour_manual(values = c("grey10", "indianred4")) +
+    scale_alpha_manual(values = c(0.2, 1))
+
+tpm <- tpm %>% 
+    gather(Sample, TpM, A_1:B_3) %>% 
+    mutate(Group = substr(Sample,start = 0, stop = 1))
+    
+
+my_comparisons <- list(c("A", "B"))
+# my_comparisons <- list(c("A", "B"), c("B", "C")) # multiple comparisons
+
+ggboxplot(tpm, x = "Group", y = "TpM", xlab = "", add = "jitter", facet.by = "Isoform",
+          fill = "Group", palette = "Paired") +
+    stat_compare_means(comparisons = my_comparisons, method = "t.test", label = "p.signif")
+    
+    
+    https://www.datanovia.com/en/blog/the-a-z-of-rcolorbrewer-palette/
+Hi Fursham, my internet connection is not stable enough. I quit for today, but more important that my folks takes the lesson! It's really very useful. Thanks so much!!!
+Don't worry! I will send you our script for you to test things out. Do let me know if you have any questions.
+
+    
+Closing activity
+
+What is the one key thing you learn from this workshop?
+
+
+What is the one thing this workshop can improve on?
+    
+    
+# https://www.r-graph-gallery.com/
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    

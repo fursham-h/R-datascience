@@ -1,0 +1,101 @@
+Welcome to CDN mini-workshop EtherPad!!
+
+This pad is synchronized as you type, so that everyone viewing this page sees the same text. This allows you to collaborate seamlessly on documents.
+
+---------------------------------------------
+Lesson: Data Visualization using R
+Date: 28th April 2021
+Time: 10am to 12pm
+---------------------------------------------
+
+## Lesson preparation ##
+Before the start of this lesson, please ensure that you have the required software installed on your computer.
+Please visit https://fursham-h.github.io/R-datascience/articles/2_Data_visualisation_using_R/Overview.html
+ham-h.github.io/R-datascience/articles/2_Data_visualisation_using_R/Overview.html for details on software installation and for more information on the schedule of this class.
+
+Looking forward to learn R with you soon!
+
+##################
+Class check-in: Please enter the following in the space below.
+Name; Fav animal; Commonly used software for dataviz
+
+Fursham; Cheetah; Excel
+Marco: Monkey, Excel
+Catalina; dog, Excel
+Fazal-Cat;Excel
+Richard; Fox; Excel/Prism
+Amy; dog; Prism
+Abi:Dog: Prism
+
+##################
+
+
+Activity 1:
+What are 2 things you like and 2 things you don't like about when using Excel/Graphpad?
+
+Activity (during break) 2:
+1) Install ggplot2, ggpubr, dplyr and tidyr
+2) Import dge_data.tsv into R as a data-frame.
+
+# Common ggplot geometry functions
+# - geom_point()
+# - geom_bar()
+# - geom_boxplot()
+# - geom_density()
+# - geom_jitter()
+# - geom_histogram()
+# - geom_violin()
+# - stat_ecdf()
+
+# colour palette
+# http://sape.inf.usi.ch/quick-reference/ggplot2/colour
+
+# shape palette
+# http://www.sthda.com/english/wiki/ggplot2-point-shapes
+
+
+Activity 3:
+Modify the code below to change the color and size of the points on the point layer
+
+dotplot <- ggplot(dge, aes(x=A.TpM, y = B.TpM)) +
+    geom_point() +
+    labs(x = "Gene expression in sample A [TpM]", 
+         y = "Gene expression in sample B [TpM]") +
+    scale_x_continuous(trans = "log10") +
+    scale_y_continuous(trans = "log10")
+    
+dge <- dge %>% 
+    mutate(group = ifelse(abs(A_vs_B.log2FC) > log2(1.5) & A_vs_B.FDR < 0.05, "Regulated", "Not-regulated"))
+    
+    
+    # https://www.r-graph-gallery.com/
+    
+    Closing activity
+
+What is the one key thing you learn from this workshop?
+learned to create initial plots on R. I need to follow up trying more.
+What is the one thing this workshop can improve on?
+    I would like to do another visualisation workshop, as the end part of session was very quick. It would be nice to try other plit types in future as well.
+    
+Home activity (optional):
+Generate a Volcano Plot with log2FC as the x-axis and -log(FDR) as the y-axis.
+You may modify the colour, shape and/or size of each datapoint to best
+represent your data. As a bonus, you may attempt to label some differentially
+expressed genes (top 10 up- and down-regulated genes). 
+
+hint: use ggrepel for labelling data
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
