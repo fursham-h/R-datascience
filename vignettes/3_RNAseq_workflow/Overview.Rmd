@@ -1,0 +1,122 @@
+---
+title: 'Workshop 3: Intro to RNAseq analysis'
+author: "Fursham Hamid"
+output: html_document
+---
+
+> ### Overview
+><br />
+> **Duration**: 4 hours (over 2 days)
+><br />
+><br />
+>
+> **Objectives**
+>
+> 1) Describe key reasons for learning shell.
+> 2) Navigate your file system using the command line.
+> 3) Interconvert between absolute and relative paths.
+> 4) View, search within, copy, move, and rename files. Create new directories.
+> 5) Use wildcards (*) to perform operations on multiple files.
+> 6) Employ the `grep` command to search for information within files.
+> 7) Print the results of a command to a file.
+> 8) Explain how a FASTQ file encodes per-bClean FASTQ reads using Trimmomatic.ase quality scores.
+> 9) Interpret a FastQC plot summarizing per-base quality across all reads.
+> 10) Clean FASTQ reads using Trimmomatic.
+> 11) Align and quantify reads using Kallisto
+><br />
+
+## Before starting the lesson
+Please make sure that you have the following software installed on your computer:
+
+### **The Bash Shell**  
+Bash is a commonly-used shell that gives you the power to do simple tasks more quickly. 
+
+### {.tabset}
+
+#### Windows
+[Video Tutorial](https://www.youtube.com/watch?v=339AEqk9c-8)
+
+1. Download the Git for Windows installer.
+2. Run the installer and follow the steps below:
+    1. Click on "Next" four times (two times if you've previously installed Git). You don't need to change anything in the Information, location, components, and start menu screens.
+    2. From the dropdown menu select "Use the nano editor by default" and click on "Next".
+    3. Ensure that "Git from the command line and also from 3rd-party software" is selected and click on "Next". (If you don't do this Git Bash will not work properly, requiring you to remove the Git Bash installation, re-run the installer and to select the "Git from the command line and also from 3rd-party software" option.)
+    4. Ensure that "Use the native Windows Secure Channel library" is selected and click on "Next".
+    5. Ensure that "Checkout Windows-style, commit Unix-style line endings" is selected and click on "Next".
+    6. Ensure that "Use Windows' default console window" is selected and click on "Next".
+    7. Ensure that "Enable file system caching" and "Enable Git Credential Manager" are selected and click on "Next".
+    8. Click on "Install".
+    9. Click on "Finish".
+3. If your "HOME" environment variable is not set (or you don't know what this is):
+    1. Open command prompt (Open Start Menu then type cmd and press [Enter])
+    2. Type the following line into the command prompt window exactly as shown:
+        `setx HOME "%USERPROFILE%"`
+    3. Press [Enter], you should see SUCCESS: Specified value was saved.
+    4. Quit command prompt by typing exit then pressing [Enter]
+
+This will provide you with both Git and Bash in the Git Bash program.
+
+
+#### MacOS
+The default shell in some versions of macOS is Bash, and Bash is available in 
+all versions, so no need to install anything. You access Bash from the Terminal 
+(found in `/Applications/Utilities`). See the Git installation video tutorial for a
+n example on how to open the Terminal. You may want to keep Terminal in your 
+dock for this workshop.
+
+To see if your default shell is Bash type `echo $SHELL` in Terminal and press 
+the enter/return key. If the message printed does not end with '/bash' then 
+your default is something else and you can run Bash by typing `bash`.
+
+
+#### Linux
+The default shell is usually Bash and there is usually no need to install anything.
+
+To see if your default shell is Bash type `echo $SHELL` in Terminal and press 
+the enter/return key. If the message printed does not end with '/bash' then 
+your default is something else and you can run Bash by typing `bash`.
+
+###
+
+### **Software to process RNAseq data**  
+
+|Software|Version|Manual|Available for|Description|
+|:---|:------------|:------------|:------------|:------------|
+|[FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)|0.11.9|[Link](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/)|Linux, MacOS, Windows|Quality control tool for high throughput sequence data.|
+|[Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic)|0.39|[Link](http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/TrimmomaticManual_V0.32.pdf)|Linux, MacOS, Windows|A flexible read trimming tool for Illumina NGS data.|
+|[Kallisto](https://pachterlab.github.io/kallisto/)|0.46.1|[Link](https://pachterlab.github.io/kallisto/manual)|Linux, MacOS, Windows|Quantifying abundances of transcripts from bulk and single-cell RNA-Seq data.|
+
+The above software are needed on day 2 of the workshop.Detailed instructions on
+installing these software can be found [here](https://fursham-h.github.io/R-datascience/articles/2_RNAseq_workflow/installations.html).
+We will explain how to install these software on day 1 of the workshop.
+
+### **Etherpad**  
+During the lesson, we will be using etherpad, an online collaborative platform
+for our discussions and activities. The link to this workshop's etherpad page
+can be found [here](https://etherpad.wikimedia.org/p/CDN-RNAseqIntro-online). You may
+bookmark this page before the lesson commence!
+
+<br/ >
+
+## Lesson schedule
+**Day 1**
+
+||||
+|:---|:------------|:------------|
+|10:00|[1. Introducing the Shell](https://datacarpentry.org/shell-genomics/01-introduction/index.html)| What is a command shell and why would I use one? <br>How can I move around on my computer? <br> How can I see what files and directories I have? <br> How can I specify the location of a file or directory on my computer? |
+|10:20|[2. Navigating files and directories ](https://datacarpentry.org/shell-genomics/02-the-filesystem/index.html) | How can I perform operations on files outside of my working directory?  <br> What are some navigational shortcuts I can use to make my work more efficient?  |
+|10:40|[3. Working with files and directories](https://datacarpentry.org/shell-genomics/03-working-with-files/index.html) | How can I view and search file contents? <br> How can I create, copy and delete files and directories? |
+|10:50|**Break**||
+|11:00|4. Retrieving and inspecting RNAseq files|  How do I download files from the internet? <br> How do I compress/decompress large files? <br> How do I preview large files in Shell?  |
+|11:30|5. Overview of RNAseq pipeline and installing softwares|  What is the general outline of an RNAseq data analysis? <br> How do I install command-line software?  |
+|12:00|Finish| |
+
+
+
+
+
+
+
+
+
+

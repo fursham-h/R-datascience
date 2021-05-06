@@ -1,0 +1,82 @@
+---
+title: "QuickStart Software Installation Instructions"
+author: "Fursham Hamid"
+output: html_document
+---
+
+## Software
+
+|Software|Version|Manual|Available for|Description|
+|:---|:------------|:------------|:------------|:------------|
+|[FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)|0.11.9|[Link](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/)|Linux, MacOS, Windows|Quality control tool for high throughput sequence data.|
+|[Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic)|0.39|[Link](http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/TrimmomaticManual_V0.32.pdf)|Linux, MacOS, Windows|A flexible read trimming tool for Illumina NGS data.|
+|[Kallisto](https://pachterlab.github.io/kallisto/)|0.46.1|[Link](https://pachterlab.github.io/kallisto/manual)|Linux, MacOS, Windows|Quantifying abundances of transcripts from bulk and single-cell RNA-Seq data.|
+
+## Installation
+
+These are the QuickStart installation instructions. They assume familiarity with the command line and with installation in general. As there are different operating systems and many different versions of operating systems and environments, these may not work on your computer. If an installation doesn’t work for you, please refer to the user guide for the tool, listed in the table above.
+
+The easiest way to download these software is using miniconda. Miniconda is a package manager that simplifies the installation process. Please first install miniconda3 (installation instructions below), and then proceed to the installation of individual tools.
+
+### Miniconda3
+Miniconda3 is available on Windows, MacOS and Linux operating systems.  
+Please download miniconda3 from the this [website](https://docs.conda.io/en/latest/miniconda.html).
+
+<br/>
+
+### FastQC
+The easiest way to install FastQC is using miniconda. To install, open your 
+Terminal or Command Prompt and type the folling in the console:
+
+```
+conda install -c bioconda fastqc=0.11.9
+```
+
+You may test your installion by running:
+```
+fastqc -h
+```
+
+<br/>
+
+### Trimmomatic
+Below are instructions on installing trimmomatic using miniconda. To install, open your 
+Terminal or Command Prompt and type the folling in the console:
+
+```
+conda install -c bioconda trimmomatic=0.39=0
+```
+
+You may test your installion by running:
+```
+trimmomatic
+```
+
+<br/>
+
+### Kallisto
+Below are instructions on installing Kallisto using miniconda. To install, open your 
+Terminal or Command Prompt and type the folling in the console:
+
+```
+conda install -c bioconda kallisto=0.46.1=0
+```
+
+You may test your installion by running:
+```
+kallisto
+```
+
+<br/>
+<br/>
+
+
+
+
+
+
+
+
+
+
+
