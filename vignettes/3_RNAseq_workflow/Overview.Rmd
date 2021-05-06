@@ -14,15 +14,14 @@ output: html_document
 >
 > 1) Describe key reasons for learning shell.
 > 2) Navigate your file system using the command line.
-> 3) Interconvert between absolute and relative paths.
-> 4) View, search within, copy, move, and rename files. Create new directories.
-> 5) Use wildcards (*) to perform operations on multiple files.
-> 6) Employ the `grep` command to search for information within files.
-> 7) Print the results of a command to a file.
-> 8) Explain how a FASTQ file encodes per-bClean FASTQ reads using Trimmomatic.ase quality scores.
-> 9) Interpret a FastQC plot summarizing per-base quality across all reads.
-> 10) Clean FASTQ reads using Trimmomatic.
-> 11) Align and quantify reads using Kallisto
+> 3) View, search within, copy, move, and rename files. Create new directories.
+> 4) Retrieve RNAseq files using shell
+> 5) Employ the `grep` command to search for information within files.
+> 6) Print the results of a command to a file.
+> 7) Explain how a FASTQ file encodes per-base quality scores.
+> 8) Interpret a FastQC plot summarizing per-base quality across all reads.
+> 9) Clean FASTQ reads using Trimmomatic.
+> 10) Align and quantify reads using Kallisto
 ><br />
 
 ## Before starting the lesson
