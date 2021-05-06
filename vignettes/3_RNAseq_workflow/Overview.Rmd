@@ -28,9 +28,8 @@ output: html_document
 Please make sure that you have the following software installed on your computer:
 
 ### **The Bash Shell**  
-Bash is a commonly-used shell that gives you the power to do simple tasks more quickly. 
-
-### {.tabset}
+Bash is a commonly-used shell that gives you the power to do simple tasks more quickly.  
+Below are the instructions on installing Shell for the 3 main Computer Operating Systems:
 
 #### Windows
 [Video Tutorial](https://www.youtube.com/watch?v=339AEqk9c-8)
@@ -75,7 +74,6 @@ To see if your default shell is Bash type `echo $SHELL` in Terminal and press
 the enter/return key. If the message printed does not end with '/bash' then 
 your default is something else and you can run Bash by typing `bash`.
 
-###
 
 ### **Software to process RNAseq data**  
 
@@ -86,7 +84,7 @@ your default is something else and you can run Bash by typing `bash`.
 |[Kallisto](https://pachterlab.github.io/kallisto/)|0.46.1|[Link](https://pachterlab.github.io/kallisto/manual)|Linux, MacOS, Windows|Quantifying abundances of transcripts from bulk and single-cell RNA-Seq data.|
 
 The above software are needed on day 2 of the workshop.Detailed instructions on
-installing these software can be found [here](https://fursham-h.github.io/R-datascience/articles/2_RNAseq_workflow/installations.html).
+installing these software can be found [here](https://fursham-h.github.io/R-datascience/articles/3_RNAseq_workflow/installations.html).
 We will explain how to install these software on day 1 of the workshop.
 
 ### **Etherpad**  
@@ -110,8 +108,8 @@ bookmark this page before the lesson commence!
 |11:30|5. Overview of RNAseq pipeline and installing softwares|  What is the general outline of an RNAseq data analysis? <br> How do I install command-line software?  |
 |12:00|Finish| |
 
-
-
+**Day 2**  
+~To be annouced~
 
 
 
