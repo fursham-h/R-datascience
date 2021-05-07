@@ -1,8 +1,10 @@
 ---
-title: "QuickStart Software Installation Instructions"
+title: "Setup Instructions"
 author: "Fursham Hamid"
 output: html_document
 ---
+# Setup required for workshop Day 1 {#bashday1}
+
 ## Bash Shell
 Bash is a commonly-used shell that gives you the power to do simple tasks more quickly.  
 Below are the instructions on installing Shell for the 3 main Computer Operating Systems:
@@ -55,6 +57,8 @@ The default shell is usually Bash and there is usually no need to install anythi
 To see if your default shell is Bash type `echo $SHELL` in Terminal and press 
 the enter/return key. If the message printed does not end with '/bash' then 
 your default is something else and you can run Bash by typing `bash`.
+
+# Setup required for workshop Day 2 {#bashday2}
 
 ## Software to process RNAseq data
 
