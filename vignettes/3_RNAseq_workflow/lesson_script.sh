@@ -19,6 +19,10 @@ pwd
 cd /
 
 # SHOW FILESYSTEMS ON VARIOUS OS
+# MacOS: https://raw.githubusercontent.com/fursham-h/R-datascience/master/vignettes/3_RNAseq_workflow/images/mac_filesystem.png
+# Windows: https://sites.google.com/site/bccollaborativecomputing/_/rsrc/1415055705292/class-7-operating-systems-ii/ntfs_fs_structure.png
+
+# list files
 ls
 
 # Adding flags
@@ -66,6 +70,7 @@ cd ../Desktop
 
 # ACTIVITY 2
 ### SEE IMG FILE
+# https://raw.githubusercontent.com/fursham-h/R-datascience/master/vignettes/3_RNAseq_workflow/images/Activity2.png
 
 ### Making folders and subfolders
 mkdir test_folder
@@ -156,10 +161,21 @@ gzip SRR7311317_1.fastq
 
 
 ## TALK ABOUT RNASEQ
+# https://raw.githubusercontent.com/fursham-h/R-datascience/master/vignettes/3_RNAseq_workflow/images/RNAseq_workflow.png
+
+## Saving history
 
 
 
+########## TO OPEN HTML #############
+#mac
+open
 
+# windows
+start
+
+# linux
+xdg-open
 
 
 
