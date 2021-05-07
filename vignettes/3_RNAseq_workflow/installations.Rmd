@@ -37,7 +37,7 @@ Below are the instructions on installing Shell for the 3 main Computer Operating
 
 To open the Bash Shell, type "Git Bash" on the search toolbar at the bottom 
 of your screen and press enter. This should open a window as shown below.
-```{r}
+```{r echo=FALSE}
 knitr::include_graphics("./images/1620376325317.jpg")
 ```
 
@@ -73,8 +73,8 @@ your default is something else and you can run Bash by typing `bash`.
 
 ## How to install the above software
 
-Here, we provide two ways to install the above software; (1) using miniconda package
-manger or (2) installing binaries from command-line.  
+Here, we provide two ways to install the above software; [(1) using miniconda package
+manger](#miniconda) or [(2) installing binaries from command-line](#bin).
 
 ### Installing via miniconda {#miniconda}
 The easiest way to download these software is using miniconda. 
@@ -85,8 +85,9 @@ proceed to the installation of individual tools.
 For users having issues installing miniconda3 or other softwares using miniconda3
 package manager, please refer to the [alternative method](#bin) below.
 
+<br/> 
 
-### Miniconda3
+#### Miniconda3
 Miniconda3 is available on Windows, MacOS and Linux operating systems.  
 Please download Miniconda3 64-bit (Python 3.9) from the this 
 [website](https://docs.conda.io/en/latest/miniconda.html) 
@@ -101,15 +102,18 @@ and follow the instructions below. (For MacOSX users, choose Miniconda3 MacOSX 6
 Miniconda3 as my default Python 3.9**. Click "Install".
 7. Click on "Finish"
 
+To check if miniconda3 is successfully installed, open Terminal (MacOS) or 
+Git Bash (Windows) and type `conda`. This should print out a list of conda
+functions and instructions.
 
 <br/>
 
-### FastQC
-The easiest way to install FastQC is using miniconda. To install, open your 
-Terminal or Command Prompt and type the folling in the console:
+#### FastQC
+To install, open Terminal (MacOS) or 
+Git Bash (Windows) and type the following in the console:
 
 ```
-conda install -c bioconda fastqc=0.11.9
+conda install -c bioconda fastqc
 ```
 
 You may test your installion by running:
@@ -119,12 +123,12 @@ fastqc -h
 
 <br/>
 
-### Trimmomatic
-Below are instructions on installing trimmomatic using miniconda. To install, open your 
-Terminal or Command Prompt and type the following in the console:
+#### Trimmomatic
+Open Terminal (MacOS) or 
+Git Bash (Windows) and type the following in the console:
 
 ```
-conda install -c bioconda trimmomatic=0.39=0
+conda install -c bioconda trimmomatic
 ```
 
 You may test your installion by running:
@@ -134,20 +138,73 @@ trimmomatic
 
 <br/>
 
-### Kallisto
-Below are instructions on installing Kallisto using miniconda. To install, open your 
-Terminal or Command Prompt and type the folling in the console:
+#### Kallisto
+Open Terminal (MacOS) or 
+Git Bash (Windows) and type the following in the console:
 
 ```
-conda install -c bioconda kallisto=0.46.1=0
+conda install -c bioconda kallisto
 ```
 
 You may test your installion by running:
 ```
 kallisto
 ```
+<br/>
 
 ### Installing binaries using command-line {#bin}
+To install the above programs using this alternative method, follow these
+set of instructions **carefully**:  
+
+1. Open Terminal (MacOS) or Git Bash (Windows) and type the following in the console:
+```
+cd ~
+mkdir -p src
+mkdir -p bin
+```
+2. Check if you have Java installed by typing:
+```
+java -version
+```
+If you don't see something like this,
+```
+>java -version
+openjdk version "11.0.2" 2019-01-15
+OpenJDK Runtime Environment AdoptOpenJDK (build 11.0.2+9)
+OpenJDK 64-Bit Server VM AdoptOpenJDK (build 11.0.2+9, mixed mode)
+```
+you will need to install java first from this [website](https://adoptopenjdk.net/)  
+
+3. Install FastQC by typing the following in Terminal (MacOS) or 
+Git Bash (Windows):
+```
+curl -O https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.9.zip
+unzip fastqc_v0.11.9.zip -d src
+cp -r src/FastQC/* bin
+```
+4. Install Trimmomatic by typing the following in Terminal (MacOS) or 
+Git Bash (Windows):
+```
+curl -O http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/Trimmomatic-0.39.zip
+unzip Trimmomatic-0.39.zip -d src
+echo '#!/bin/bash' > ~/bin/trimmomatic
+echo 'java -jar ~/src/Trimmomatic-0.39/trimmomatic-0.39.jar $@' >> ~/bin/trimmomatic
+chmod +x ~/bin/trimmomatic
+```
+5. Install Kallisto by typing the following in Terminal (MacOS) or 
+Git Bash (Windows):
+```
+# for mac
+curl -O https://github.com/pachterlab/kallisto/releases/download/v0.46.1/kallisto_mac-v0.46.1.tar.gz
+tar -zxvf kallisto_mac-v0.46.1.tar.gz -C src
+cp src/kallisto/kallisto bin
+
+# for windows
+curl -O https://github.com/pachterlab/kallisto/releases/download/v0.46.1/kallisto_windows-v0.46.1.zip
+unzip kallisto_windows-v0.46.1.zip -d src
+cp src/kallisto/kallisto.exe bin
+
+```
 
 <br/>
 <br/>
