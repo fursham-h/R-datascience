@@ -3,6 +3,13 @@ title: "Setup Instructions"
 author: "Fursham Hamid"
 output: html_document
 ---
+
+```{r include=FALSE}
+knitr::opts_chunk$set(
+    fig.path = "man/figures/"
+)
+```
+
 # Setup required for workshop Day 1 {#bashday1}
 
 ## Bash Shell
@@ -36,7 +43,7 @@ Below are the instructions on installing Shell for the 3 main Computer Operating
 To open the Bash Shell, type "Git Bash" on the search toolbar at the bottom 
 of your screen and press enter. This should open a window as shown below.
 <p align="center">
-  <img src="reference/figures/1620376325317.jpg" width="450"/>
+  <img src="1620376325317.jpg" width="450"/>
 </p>
 
 #### MacOS
@@ -70,6 +77,10 @@ your default is something else and you can run Bash by typing `bash`.
 
 ## How to install the above software
 
+Here, we provide two ways to install the above software; (1) using miniconda package
+manger or (2) installing binaries from command-line.  
+
+### Installing using miniconda
 The easiest way to download these software is using miniconda. 
 Miniconda is a package manager that simplifies the installation process. 
 Please first install miniconda3 (installation instructions below), and then 
@@ -79,7 +90,7 @@ For users having issues installing miniconda3 or the other softwares using minic
 package manager, please refer to [alternative section]() below to install
 these softwares using
 
-###
+
 ### Miniconda3
 Miniconda3 is available on Windows, MacOS and Linux operating systems.  
 Please download miniconda3 from the this [website](https://docs.conda.io/en/latest/miniconda.html).
@@ -103,7 +114,7 @@ fastqc -h
 
 ### Trimmomatic
 Below are instructions on installing trimmomatic using miniconda. To install, open your 
-Terminal or Command Prompt and type the folling in the console:
+Terminal or Command Prompt and type the following in the console:
 
 ```
 conda install -c bioconda trimmomatic=0.39=0
