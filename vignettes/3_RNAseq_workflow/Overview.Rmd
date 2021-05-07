@@ -27,13 +27,13 @@ output: html_document
 ## Before starting the lesson
 In this workshop, we will be using UNIX Shell to navigate around our computer
 filesystem and to process publicly-available RNAseq data. Please refer to this
-[setup instructions]() to check if your operating system comes pre-installed
+[setup instructions](https://fursham-h.github.io/R-datascience/articles/3_RNAseq_workflow/installations.html#bashday1) to check if your operating system comes pre-installed
 with Shell.  
 
 We will also be using several command-line programs to process reads from RNAseq
 experiments. **These programs will be required only for day 2 of the workshop, and
 we will briefly go through the installation process during day 1**. For instructions
-on installing these software, please refer to this [setup instructions](). 
+on installing these software, please refer to this [setup instructions](https://fursham-h.github.io/R-datascience/articles/3_RNAseq_workflow/installations.html#bashday2). 
 
 During the lesson, we will be using etherpad, an online collaborative platform
 for our discussions and activities. The link to this workshop's etherpad page
