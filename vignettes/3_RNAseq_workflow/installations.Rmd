@@ -93,6 +93,8 @@ Please download Miniconda3 64-bit (Python 3.9) from the this
 [website](https://docs.conda.io/en/latest/miniconda.html) 
 and follow the instructions below. (For MacOSX users, choose Miniconda3 MacOSX 64-bit pkg).
 
+*For Windows user*  
+
 1. Open the installer.
 2. Click "Next" to begin installation process.
 3. Click "I Agree".
@@ -101,6 +103,15 @@ and follow the instructions below. (For MacOSX users, choose Miniconda3 MacOSX 6
 6. **Important: Select both Add Miniconda3 to my PATH environment variable and Register 
 Miniconda3 as my default Python 3.9**. Click "Install".
 7. Click on "Finish"
+
+*For MacOS user*  
+
+1. Open the installer.
+2. Click "Continue" to begin installation process.
+3. Click "Continue" on the next two menu pages.
+4. When prompted, select "Agree".
+5. Click "Install".
+6. Done!
 
 To check if miniconda3 is successfully installed, open Terminal (MacOS) or 
 Git Bash (Windows) and type `conda`. This should print out a list of conda
