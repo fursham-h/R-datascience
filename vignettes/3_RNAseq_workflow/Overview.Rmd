@@ -25,69 +25,16 @@ output: html_document
 ><br />
 
 ## Before starting the lesson
-Please make sure that you have the following software installed on your computer:
+In this workshop, we will be using UNIX Shell to navigate around our computer
+filesystem and to process publicly-available RNAseq data. Please refer to this
+[setup instructions]() to check if your operating system comes pre-installed
+with Shell.  
 
-### **The Bash Shell**  
-Bash is a commonly-used shell that gives you the power to do simple tasks more quickly.  
-Below are the instructions on installing Shell for the 3 main Computer Operating Systems:
+We will also be using several command-line programs to process reads from RNAseq
+experiments. **These programs will be required only for day 2 of the workshop, and
+we will briefly go through the installation process during day 1**. For instructions
+on installing these software, please refer to this [setup instructions](). 
 
-#### Windows
-[Video Tutorial](https://www.youtube.com/watch?v=339AEqk9c-8)
-
-1. Download the Git for Windows installer.
-2. Run the installer and follow the steps below:
-    1. Click on "Next" four times (two times if you've previously installed Git). You don't need to change anything in the Information, location, components, and start menu screens.
-    2. From the dropdown menu select "Use the nano editor by default" and click on "Next".
-    3. Ensure that "Git from the command line and also from 3rd-party software" is selected and click on "Next". (If you don't do this Git Bash will not work properly, requiring you to remove the Git Bash installation, re-run the installer and to select the "Git from the command line and also from 3rd-party software" option.)
-    4. Ensure that "Use the native Windows Secure Channel library" is selected and click on "Next".
-    5. Ensure that "Checkout Windows-style, commit Unix-style line endings" is selected and click on "Next".
-    6. Ensure that "Use Windows' default console window" is selected and click on "Next".
-    7. Ensure that "Enable file system caching" and "Enable Git Credential Manager" are selected and click on "Next".
-    8. Click on "Install".
-    9. Click on "Finish".
-3. If your "HOME" environment variable is not set (or you don't know what this is):
-    1. Open command prompt (Open Start Menu then type cmd and press [Enter])
-    2. Type the following line into the command prompt window exactly as shown:
-        `setx HOME "%USERPROFILE%"`
-    3. Press [Enter], you should see SUCCESS: Specified value was saved.
-    4. Quit command prompt by typing exit then pressing [Enter]
-
-This will provide you with both Git and Bash in the Git Bash program.
-
-
-#### MacOS
-The default shell in some versions of macOS is Bash, and Bash is available in 
-all versions, so no need to install anything. You access Bash from the Terminal 
-(found in `/Applications/Utilities`). See the Git installation video tutorial for a
-n example on how to open the Terminal. You may want to keep Terminal in your 
-dock for this workshop.
-
-To see if your default shell is Bash type `echo $SHELL` in Terminal and press 
-the enter/return key. If the message printed does not end with '/bash' then 
-your default is something else and you can run Bash by typing `bash`.
-
-
-#### Linux
-The default shell is usually Bash and there is usually no need to install anything.
-
-To see if your default shell is Bash type `echo $SHELL` in Terminal and press 
-the enter/return key. If the message printed does not end with '/bash' then 
-your default is something else and you can run Bash by typing `bash`.
-
-
-### **Software to process RNAseq data**  
-
-|Software|Version|Manual|Available for|Description|
-|:---|:------------|:------------|:------------|:------------|
-|[FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/)|0.11.9|[Link](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/Help/)|Linux, MacOS, Windows|Quality control tool for high throughput sequence data.|
-|[Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic)|0.39|[Link](http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/TrimmomaticManual_V0.32.pdf)|Linux, MacOS, Windows|A flexible read trimming tool for Illumina NGS data.|
-|[Kallisto](https://pachterlab.github.io/kallisto/)|0.46.1|[Link](https://pachterlab.github.io/kallisto/manual)|Linux, MacOS, Windows|Quantifying abundances of transcripts from bulk and single-cell RNA-Seq data.|
-
-The above software are needed on day 2 of the workshop.Detailed instructions on
-installing these software can be found [here](https://fursham-h.github.io/R-datascience/articles/3_RNAseq_workflow/installations.html).
-We will explain how to install these software on day 1 of the workshop.
-
-### **Etherpad**  
 During the lesson, we will be using etherpad, an online collaborative platform
 for our discussions and activities. The link to this workshop's etherpad page
 can be found [here](https://etherpad.wikimedia.org/p/CDN-RNAseqIntro-online). You may
