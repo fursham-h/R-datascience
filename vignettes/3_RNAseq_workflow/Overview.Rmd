@@ -43,7 +43,7 @@ bookmark this page before the lesson commence!
 <br/ >
 
 ## Lesson schedule
-**Day 1**
+**Day 1 [11th May 2021]**
 
 ||||
 |:---|:------------|:------------|
@@ -55,7 +55,7 @@ bookmark this page before the lesson commence!
 |11:30|5. Overview of RNAseq pipeline and installing softwares|  What is the general outline of an RNAseq data analysis? <br> How do I install command-line software?  |
 |12:00|Finish| |
 
-**Day 2**  
+**Day 1 [25th May 2021]**  
 ~To be announced~
 
 
