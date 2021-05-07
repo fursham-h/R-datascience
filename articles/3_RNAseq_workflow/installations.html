@@ -136,10 +136,7 @@ Below are the instructions on installing Shell for the 3 main Computer Operating
 </ol>
 </li>
 </ol>
-<p>To open the Bash Shell, type “Git Bash” on the search toolbar at the bottom of your screen and press enter. This should open a window as shown below.</p>
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">knitr</span><span class="fu">::</span><span class="fu"><a href="https://rdrr.io/pkg/knitr/man/include_graphics.html">include_graphics</a></span><span class="op">(</span><span class="st">"./images/1620376325317.jpg"</span><span class="op">)</span></code></pre></div>
-<p><img src="images/1620376325317.jpg"><!-- --></p>
+<p>To open the Bash Shell, type “Git Bash” on the search toolbar at the bottom of your screen and press enter. This should open a window as shown below. <img src="images/1620376325317.jpg"><!-- --></p>
 </div>
 <div id="macos" class="section level4">
 <h4 class="hasAnchor">
@@ -204,16 +201,16 @@ Below are the instructions on installing Shell for the 3 main Computer Operating
 <div id="how-to-install-the-above-software" class="section level2">
 <h2 class="hasAnchor">
 <a href="#how-to-install-the-above-software" class="anchor"></a>How to install the above software</h2>
-<p>Here, we provide two ways to install the above software; (1) using miniconda package manger or (2) installing binaries from command-line.</p>
+<p>Here, we provide two ways to install the above software; <a href="#miniconda">(1) using miniconda package manger</a> or <a href="#bin">(2) installing binaries from command-line</a>.</p>
 <div id="miniconda" class="section level3">
 <h3 class="hasAnchor">
 <a href="#miniconda" class="anchor"></a>Installing via miniconda</h3>
 <p>The easiest way to download these software is using miniconda. Miniconda is a package manager that simplifies the installation process. Please first install miniconda3 (installation instructions below), and then proceed to the installation of individual tools.</p>
 <p>For users having issues installing miniconda3 or other softwares using miniconda3 package manager, please refer to the <a href="#bin">alternative method</a> below.</p>
-</div>
-<div id="miniconda3" class="section level3">
-<h3 class="hasAnchor">
-<a href="#miniconda3" class="anchor"></a>Miniconda3</h3>
+<p><br></p>
+<div id="miniconda3" class="section level4">
+<h4 class="hasAnchor">
+<a href="#miniconda3" class="anchor"></a>Miniconda3</h4>
 <p>Miniconda3 is available on Windows, MacOS and Linux operating systems.<br>
 Please download Miniconda3 64-bit (Python 3.9) from the this <a href="https://docs.conda.io/en/latest/miniconda.html">website</a> and follow the instructions below. (For MacOSX users, choose Miniconda3 MacOSX 64-bit pkg).</p>
 <ol style="list-style-type: decimal">
@@ -226,37 +223,84 @@ Please download Miniconda3 64-bit (Python 3.9) from the this <a href="https://do
 <strong>Important: Select both Add Miniconda3 to my PATH environment variable and Register Miniconda3 as my default Python 3.9</strong>. Click “Install”.</li>
 <li>Click on “Finish”</li>
 </ol>
+<p>To check if miniconda3 is successfully installed, open Terminal (MacOS) or Git Bash (Windows) and type <code>conda</code>. This should print out a list of conda functions and instructions.</p>
 <p><br></p>
 </div>
-<div id="fastqc" class="section level3">
-<h3 class="hasAnchor">
-<a href="#fastqc" class="anchor"></a>FastQC</h3>
-<p>The easiest way to install FastQC is using miniconda. To install, open your Terminal or Command Prompt and type the folling in the console:</p>
-<pre><code>conda install -c bioconda fastqc=0.11.9</code></pre>
+<div id="fastqc" class="section level4">
+<h4 class="hasAnchor">
+<a href="#fastqc" class="anchor"></a>FastQC</h4>
+<p>To install, open Terminal (MacOS) or Git Bash (Windows) and type the following in the console:</p>
+<pre><code>conda install -c bioconda fastqc</code></pre>
 <p>You may test your installion by running:</p>
 <pre><code>fastqc -h</code></pre>
 <p><br></p>
 </div>
-<div id="trimmomatic" class="section level3">
-<h3 class="hasAnchor">
-<a href="#trimmomatic" class="anchor"></a>Trimmomatic</h3>
-<p>Below are instructions on installing trimmomatic using miniconda. To install, open your Terminal or Command Prompt and type the following in the console:</p>
-<pre><code>conda install -c bioconda trimmomatic=0.39=0</code></pre>
+<div id="trimmomatic" class="section level4">
+<h4 class="hasAnchor">
+<a href="#trimmomatic" class="anchor"></a>Trimmomatic</h4>
+<p>Open Terminal (MacOS) or Git Bash (Windows) and type the following in the console:</p>
+<pre><code>conda install -c bioconda trimmomatic</code></pre>
 <p>You may test your installion by running:</p>
 <pre><code>trimmomatic</code></pre>
 <p><br></p>
 </div>
-<div id="kallisto" class="section level3">
-<h3 class="hasAnchor">
-<a href="#kallisto" class="anchor"></a>Kallisto</h3>
-<p>Below are instructions on installing Kallisto using miniconda. To install, open your Terminal or Command Prompt and type the folling in the console:</p>
-<pre><code>conda install -c bioconda kallisto=0.46.1=0</code></pre>
+<div id="kallisto" class="section level4">
+<h4 class="hasAnchor">
+<a href="#kallisto" class="anchor"></a>Kallisto</h4>
+<p>Open Terminal (MacOS) or Git Bash (Windows) and type the following in the console:</p>
+<pre><code>conda install -c bioconda kallisto</code></pre>
 <p>You may test your installion by running:</p>
 <pre><code>kallisto</code></pre>
+<p><br></p>
+</div>
 </div>
 <div id="bin" class="section level3">
 <h3 class="hasAnchor">
 <a href="#bin" class="anchor"></a>Installing binaries using command-line</h3>
+<p>To install the above programs using this alternative method, follow these set of instructions <strong>carefully</strong>:</p>
+<ol style="list-style-type: decimal">
+<li>Open Terminal (MacOS) or Git Bash (Windows) and type the following in the console:</li>
+</ol>
+<pre><code>cd ~
+mkdir -p src
+mkdir -p bin</code></pre>
+<ol start="2" style="list-style-type: decimal">
+<li>Check if you have Java installed by typing:</li>
+</ol>
+<pre><code>java -version</code></pre>
+<p>If you don’t see something like this,</p>
+<pre><code>&gt;java -version
+openjdk version "11.0.2" 2019-01-15
+OpenJDK Runtime Environment AdoptOpenJDK (build 11.0.2+9)
+OpenJDK 64-Bit Server VM AdoptOpenJDK (build 11.0.2+9, mixed mode)</code></pre>
+<p>you will need to install java first from this <a href="https://adoptopenjdk.net/">website</a></p>
+<ol start="3" style="list-style-type: decimal">
+<li>Install FastQC by typing the following in Terminal (MacOS) or Git Bash (Windows):</li>
+</ol>
+<pre><code>curl -O https://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_v0.11.9.zip
+unzip fastqc_v0.11.9.zip -d src
+cp -r src/FastQC/* bin</code></pre>
+<ol start="4" style="list-style-type: decimal">
+<li>Install Trimmomatic by typing the following in Terminal (MacOS) or Git Bash (Windows):</li>
+</ol>
+<pre><code>curl -O http://www.usadellab.org/cms/uploads/supplementary/Trimmomatic/Trimmomatic-0.39.zip
+unzip Trimmomatic-0.39.zip -d src
+echo '#!/bin/bash' &gt; ~/bin/trimmomatic
+echo 'java -jar ~/src/Trimmomatic-0.39/trimmomatic-0.39.jar $@' &gt;&gt; ~/bin/trimmomatic
+chmod +x ~/bin/trimmomatic</code></pre>
+<ol start="5" style="list-style-type: decimal">
+<li>Install Kallisto by typing the following in Terminal (MacOS) or Git Bash (Windows):</li>
+</ol>
+<pre><code># for mac
+curl -O https://github.com/pachterlab/kallisto/releases/download/v0.46.1/kallisto_mac-v0.46.1.tar.gz
+tar -zxvf kallisto_mac-v0.46.1.tar.gz -C src
+cp src/kallisto/kallisto bin
+
+# for windows
+curl -O https://github.com/pachterlab/kallisto/releases/download/v0.46.1/kallisto_windows-v0.46.1.zip
+unzip kallisto_windows-v0.46.1.zip -d src
+cp src/kallisto/kallisto.exe bin
+</code></pre>
 <p><br><br></p>
 </div>
 </div>
