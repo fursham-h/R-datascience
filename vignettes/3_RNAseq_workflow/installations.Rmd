@@ -4,11 +4,6 @@ author: "Fursham Hamid"
 output: html_document
 ---
 
-```{r include=FALSE}
-knitr::opts_chunk$set(
-    fig.path = "man/figures/"
-)
-```
 
 # Setup required for workshop Day 1 {#bashday1}
 
@@ -42,9 +37,10 @@ Below are the instructions on installing Shell for the 3 main Computer Operating
 
 To open the Bash Shell, type "Git Bash" on the search toolbar at the bottom 
 of your screen and press enter. This should open a window as shown below.
-<p align="center">
-  <img src="https://github.com/fursham-h/R-datascience/blob/master/man/figures/1620376325317.jpg" width="450"/>
-</p>
+```{r}
+knitr::include_graphics("./images/1620376325317.jpg")
+```
+
 
 #### MacOS
 The default shell in some versions of macOS is Bash, and Bash is available in 
@@ -92,7 +88,19 @@ package manager, please refer to the [alternative method](#bin) below.
 
 ### Miniconda3
 Miniconda3 is available on Windows, MacOS and Linux operating systems.  
-Please download miniconda3 from the this [website](https://docs.conda.io/en/latest/miniconda.html).
+Please download Miniconda3 64-bit (Python 3.9) from the this 
+[website](https://docs.conda.io/en/latest/miniconda.html) 
+and follow the instructions below. (For MacOSX users, choose Miniconda3 MacOSX 64-bit pkg).
+
+1. Open the installer.
+2. Click "Next" to begin installation process.
+3. Click "I Agree".
+4. Select "Just Me" and click "Next".
+5. Click "Next" to install to default destination.
+6. **Important: Select both Add Miniconda3 to my PATH environment variable and Register 
+Miniconda3 as my default Python 3.9**. Click "Install".
+7. Click on "Finish"
+
 
 <br/>
 
