@@ -44,9 +44,9 @@ knitr::include_graphics("./images/1620376325317.jpg")
 
 #### MacOS
 The default shell in some versions of macOS is Bash, and Bash is available in 
-all versions, so no need to install anything. You access Bash from the Terminal 
-(found in `/Applications/Utilities`). To open Terminal, press Command-Spacebar 
-to open Spotlight search and type "Terminal". You may want to keep Terminal in your 
+all versions, so no need to install anything. You can access Bash from the Terminal 
+(found in `/Applications/Utilities`). To open Terminal, press `Command+Spacebar` 
+to activate Spotlight and type "Terminal". You may want to keep Terminal in your 
 dock for this workshop.
 
 To see if your default shell is Bash type `echo $SHELL` in Terminal and press 
