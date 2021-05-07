@@ -43,7 +43,7 @@ Below are the instructions on installing Shell for the 3 main Computer Operating
 To open the Bash Shell, type "Git Bash" on the search toolbar at the bottom 
 of your screen and press enter. This should open a window as shown below.
 <p align="center">
-  <img src="1620376325317.jpg" width="450"/>
+  <img src="https://github.com/fursham-h/R-datascience/blob/master/man/figures/1620376325317.jpg" width="450"/>
 </p>
 
 #### MacOS
@@ -80,15 +80,14 @@ your default is something else and you can run Bash by typing `bash`.
 Here, we provide two ways to install the above software; (1) using miniconda package
 manger or (2) installing binaries from command-line.  
 
-### Installing using miniconda
+### Installing via miniconda {#miniconda}
 The easiest way to download these software is using miniconda. 
 Miniconda is a package manager that simplifies the installation process. 
 Please first install miniconda3 (installation instructions below), and then 
 proceed to the installation of individual tools.  
 
-For users having issues installing miniconda3 or the other softwares using miniconda3
-package manager, please refer to [alternative section]() below to install
-these softwares using
+For users having issues installing miniconda3 or other softwares using miniconda3
+package manager, please refer to the [alternative method](#bin) below.
 
 
 ### Miniconda3
@@ -139,6 +138,8 @@ You may test your installion by running:
 ```
 kallisto
 ```
+
+### Installing binaries using command-line {#bin}
 
 <br/>
 <br/>
