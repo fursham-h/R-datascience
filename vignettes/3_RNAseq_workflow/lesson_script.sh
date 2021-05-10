@@ -1,3 +1,9 @@
+# open class
+## what will we be doing today 
+## use etherpad for checkin
+## screen management and zoom reactions
+## recording 
+
 ### WHY SHOULD I USE A SHELL
 # A shell is a computer program that presents a command line interface which 
 # allows you to control your computer using commands entered with a keyboard 
