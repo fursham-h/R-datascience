@@ -150,6 +150,7 @@ head SRR7311317_1.fastq
 head -n 4 SRR7311317_1.fastq
 tail -n 4 SRR7311317_1.fastq
 
+
 # previewing gzip files
 gunzip -c SRR7311317_2.fastq.gz | head
 
