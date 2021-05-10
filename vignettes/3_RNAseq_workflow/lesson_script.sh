@@ -34,6 +34,8 @@ cd /
 # list files
 ls
 
+# UP ARROW TO RETRIEVE HISTORY
+
 # Adding flags
 ls -l
 
@@ -83,17 +85,24 @@ cd ../Desktop
 
 ### Making folders and subfolders
 mkdir test_folder
-mkdir -p "test_folder/test folder"
+mkdir test_folder2
+mkdir test_folder/subfolder
+mkdir -p test_folder/subfolder
+mkdir -p "test_folder/sub folder 2"
 
 ## Making text files
 touch test_file.txt
+touch test_file2.txt
+touch test_file3.txt
 ls -l 
 
 ## copying files
 cp test_file.txt test_folder
 ls -l test_folder
 
-### USE MV TO MOVE FILES
+### USE MV TO MOVE FILES and RENAME
+mv *.txt test_folder/subfolder
+mv test_folder2 renamed_folder
 
 ## Edit text files directly in terminal
 cd test_folder
