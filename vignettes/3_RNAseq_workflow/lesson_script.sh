@@ -4,23 +4,26 @@
 # instead of controlling graphical user interfaces (GUIs) with a mouse/keyboard 
 # combination.
 
-# 1. Many bioinformatics tools can only be used through a command line interface
+# 1. Many bioinformatics tools can ONLY be used through a command line interface
 # 2. Allow automation of work, making it less boring
 # 3. Automation also makes your work less error-prone
 # 4. Makes your work more reproducible
 # 5. Operate cloud computing
 
 ## Navigating your file system
+#### Open Git Bash on windows
+#### Open Terminal on Mac
 
 # printing working directory
 pwd
 
-# changing directory
-cd /
 
 # SHOW FILESYSTEMS ON VARIOUS OS
 # MacOS: https://raw.githubusercontent.com/fursham-h/R-datascience/master/vignettes/3_RNAseq_workflow/images/mac_filesystem.png
 # Windows: https://sites.google.com/site/bccollaborativecomputing/_/rsrc/1415055705292/class-7-operating-systems-ii/ntfs_fs_structure.png
+
+# changing directory
+cd /
 
 # list files
 ls
