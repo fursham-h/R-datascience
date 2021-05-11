@@ -46,7 +46,7 @@ man ls
 clear
 
 ### ls other directories and tab completion
-ls -l home
+ls -l dev
 ls -l ~
 ls -l <drag directory>
 ls -l d<tab>
