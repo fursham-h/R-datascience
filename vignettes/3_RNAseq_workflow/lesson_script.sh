@@ -1,6 +1,9 @@
 # open class
 ## what will we be doing today 
-## use etherpad for checkin
+### First workshop of this series. Intro to RNAseq
+### Check if everyone have check if they have bash installed
+### Lesson materials https://fursham-h.github.io/R-datascience/articles/3_RNAseq_workflow/Overview.html
+## use etherpad for checkin https://etherpad.wikimedia.org/p/CDN-RNAseqIntro-online
 ## screen management and zoom reactions
 ## recording 
 
@@ -19,6 +22,11 @@
 ## Navigating your file system
 #### Open Git Bash on windows
 #### Open Terminal on Mac
+
+## DONT WORRY IF YOU CANT CATCH UP
+# PASTE SECTIONS ON ETHERPAD
+# SAVE HISTORY
+# PROVIDE YOU WITH THE CODE FOR TODAY
 
 # printing working directory
 pwd
@@ -191,7 +199,7 @@ grep NN SRR7311317_1.fastq > Ns.txt
 grep NN SRR7311317_1.fastq >> Ns.txt
 grep -B1 -A2 NN SRR7311317_1.fastq | head
 
-# ACTIVITY 5
+# ACTIVITY 5 (5 mins)
 # Report the following to a text file
 # 1. count the number of sequences in SRR7311317_1.fastq
 # 2. count the number of sequences in SRR7311317_1.fastq containing illumina adapter sequences (CTGTCTCTTATACACATCT)
