@@ -82,8 +82,14 @@ cd ~/Downloads
 cd ../Desktop
 
 # ACTIVITY 2
-### SEE IMG FILE
+### Refer to the image file below
 # https://raw.githubusercontent.com/fursham-h/R-datascience/master/vignettes/3_RNAseq_workflow/images/Activity2.png
+#
+## Answer the question by typing "1" on your option below
+#1)
+#2)
+#3)
+#4)
 
 ### Making folders and subfolders
 mkdir test_folder
@@ -121,6 +127,14 @@ rm -r test_folder
 
 ## BREAKKKK and ACTIVITY 3
 # Create the following filestructure in your home folder (~)
+# ~
+# ↳ RNAseq_workshop
+#   ↳ logs
+#   ↳ metadata
+#   ↳ originals
+#     ↳ FASTQ
+#   ↳ outputs
+#   ↳ scripts
 
 ## Working with files
 cd ~
@@ -137,8 +151,8 @@ cd RNAseq_workshop/originals/FASTQ
 which curl
 which wget
 
-curl ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR731/007/SRR7311317/SRR7311317_1.fastq.gz --output SRR7311317_1.fastq.gz
-curl ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR731/007/SRR7311317/SRR7311317_2.fastq.gz --output SRR7311317_2.fastq.gz
+curl -O ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR731/007/SRR7311317/SRR7311317_1.fastq.gz
+curl -O ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR731/007/SRR7311317/SRR7311317_2.fastq.gz
 
 # show GEO example
 # fastq-dump: https://github.com/ncbi/sra-tools/wiki/02.-Installing-SRA-Toolkit
@@ -157,7 +171,11 @@ wc - l SRR7311317_1.fastq
 # previewing gzip files
 gunzip -c SRR7311317_2.fastq.gz | head
 
+# ACTIVITY 4 (2 min)
+### Using one line of code, print out the number of lines in SRR7311317_2.fastq.gz
 
+
+# Print out entire file content
 cat SRR7311317_1.fastq
 # CAN CANCEL COMMAND WITH CTRL-Z
 less SRR7311317_1.fastq
@@ -173,7 +191,7 @@ grep NN SRR7311317_1.fastq > Ns.txt
 grep NN SRR7311317_1.fastq >> Ns.txt
 grep -B1 -A2 NN SRR7311317_1.fastq | head
 
-# ACTIVITY 4
+# ACTIVITY 5
 # Report the following to a text file
 # 1. count the number of sequences in SRR7311317_1.fastq
 # 2. count the number of sequences in SRR7311317_1.fastq containing illumina adapter sequences (CTGTCTCTTATACACATCT)
@@ -187,6 +205,11 @@ gzip SRR7311317_1.fastq
 
 ## Saving history
 
+
+# Closing activity 
+#1) What is the one thing you learn today?
+
+#2) What is the one thing this workshop can improve on?
 
 
 ########## TO OPEN HTML #############
