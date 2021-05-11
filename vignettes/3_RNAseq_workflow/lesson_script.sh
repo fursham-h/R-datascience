@@ -89,8 +89,7 @@ cd ../Desktop
 mkdir test_folder
 mkdir test_folder2
 mkdir test_folder/subfolder
-mkdir -p test_folder/subfolder
-mkdir -p "test_folder/sub folder 2"
+mkdir "test_folder/sub folder 2"
 
 ## Making text files
 touch test_file.txt
