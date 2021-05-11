@@ -51,7 +51,7 @@ bookmark this page before the lesson commence!
 |10:20|[2. Navigating files and directories ](https://datacarpentry.org/shell-genomics/02-the-filesystem/index.html) | How can I perform operations on files outside of my working directory?  <br> What are some navigational shortcuts I can use to make my work more efficient?  |
 |10:40|[3. Working with files and directories](https://datacarpentry.org/shell-genomics/03-working-with-files/index.html) | How can I view and search file contents? <br> How can I create, copy and delete files and directories? |
 |10:50|**Break**||
-|11:00|4. Retrieving and inspecting RNAseq files|  How do I download files from the internet? <br> How do I compress/decompress large files? <br> How do I preview large files in Shell?  |
+|11:00|4. [Retrieving and inspecting RNAseq files](https://datacarpentry.org/wrangling-genomics/02-quality-control/index.html)|  How do I download files from the internet? <br> How do I compress/decompress large files? <br> How do I preview large files in Shell?  |
 |11:30|5. Overview of RNAseq pipeline and installing softwares|  What is the general outline of an RNAseq data analysis? <br> How do I install command-line software?  |
 |12:00|Finish| |
 
