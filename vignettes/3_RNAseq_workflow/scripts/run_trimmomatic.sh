@@ -8,8 +8,8 @@ mkdir -p ~/RNAseq_workshop/outputs/trimmed_FASTQ
 
 trimmomatic PE \
     ./originals/FASTQ/SRR7311317_1.fastq.gz ./originals/FASTQ/SRR7311317_2.fastq.gz \
-    ./outputs/trimmed_FASTQ/SRR7311317_1.fastqc.gz ./outputs/trimmed_FASTQ/SRR7311317_1.unpaired.fastqc.gz \
-    ./outputs/trimmed_FASTQ/SRR7311317_2.fastqc.gz ./outputs/trimmed_FASTQ/SRR7311317_2.unpaired.fastqc.gz \
-    ILLUMINACLIP:./scripts/Nextera_TruSeq-PE.fa:2:30:10:2:keepBothReads SLIDINGWINDOW:4:30 MINLEN:40
+    ./outputs/trimmed_FASTQ/SRR7311317_1.trimmed.fastqc.gz ./outputs/trimmed_FASTQ/SRR7311317_1.unpaired.fastqc.gz \
+    ./outputs/trimmed_FASTQ/SRR7311317_2.trimmed.fastqc.gz ./outputs/trimmed_FASTQ/SRR7311317_2.unpaired.fastqc.gz \
+    ILLUMINACLIP:./scripts/Nextera_TruSeq-PE.fa:2:40:15 SLIDINGWINDOW:4:20 HEADCROP:7 MINLEN:35
 
 echo "Completed....."
