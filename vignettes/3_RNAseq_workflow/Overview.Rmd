@@ -55,13 +55,24 @@ You may bookmark this page before the lesson commence!
 |10:40|[3. Working with files and directories](https://datacarpentry.org/shell-genomics/03-working-with-files/index.html) | How can I view and search file contents? <br> How can I create, copy and delete files and directories? |
 |10:50|**Break**||
 |11:00|4. [Retrieving and inspecting RNAseq files](https://datacarpentry.org/wrangling-genomics/02-quality-control/index.html)|  How do I download files from the internet? <br> How do I compress/decompress large files? <br> How do I preview large files in Shell?  |
-|11:30|5. [Overview of RNAseq pipeline](https://raw.githubusercontent.com/fursham-h/R-datascience/master/vignettes/3_RNAseq_workflow/images/RNAseq_workflow.png
-) and [installing softwares]()|  What is the general outline of an RNAseq data analysis? <br> How do I install command-line software?  |
+|11:30|5. [Overview of RNAseq pipeline](https://raw.githubusercontent.com/fursham-h/R-datascience/master/vignettes/3_RNAseq_workflow/images/RNAseq_workflow.png) and installing softwares|  What is the general outline of an RNAseq data analysis? <br> How do I install command-line software?  |
 |12:00|Finish| |
 
-**Day 1 [25th May 2021]**  
-~To be announced~
+<br/>
+<br/> 
 
+**Day 2 [25th May 2021]**  
+
+||||
+|:---|:------------|:------------|
+|10:00|1. Check-in and brief lesson overview| |
+|10:15|2. Recap of commands learnt so far| |
+|10:20|[3. Overview of RNAseq pipeline ](https://raw.githubusercontent.com/fursham-h/R-datascience/master/vignettes/3_RNAseq_workflow/images/RNAseq_workflow.png) | What is the general workflow of a typical RNAseq pipeline? <br> What tools are available to process RNAseq reads based on my desired research outcome?  |
+|10:30|[4. Quality control of RNAseq reads](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) | How do I check the quality of my sequencing reads to make an informed decision on the degree of trimming needed? <br> How do I write a script to perform repititive task? |
+|10:50|**Break**||
+|11:00|[5. Read trimming](http://www.usadellab.org/cms/?page=trimmomatic)|  How do I trim my reads to obtain high-quality sequences for subsequent steps of the workflow? <br> How do I determine the adaptor sequence to remove from my reads? |
+|11:30|[6. Mapping and quantifying reads to the transcriptome](https://pachterlab.github.io/kallisto/manual)| What are indices? <br> How do I determine the strandness of my reads? <br> How do I align my reads to the transcriptome? |
+|11:50|Feedback and questions| |
 
 
 
