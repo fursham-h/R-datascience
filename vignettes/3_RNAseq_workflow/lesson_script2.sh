@@ -72,6 +72,7 @@ echo "Completed......"
 ##########################################
 
 # Save the contents of the script file by pressing Ctrl+O [that is not a zero] and then enter
+# Exit nano by pressing Ctrl+X
 
 # To run the script, run this command:
 bash run_fastqc.sh
@@ -145,16 +146,16 @@ ls -l ~/RNAseq_workshop/outputs/FastQC_trimmed/
 
 # check quality of trimmed reads
 #mac
-open ~/RNAseq_workshop/outputs/FastQC_trimmed/SRR7311317_1.trimmed.fastqc_fastqc.html
-open ~/RNAseq_workshop/outputs/FastQC_trimmed/SRR7311317_2.trimmed.fastqc_fastqc.html
+open ~/RNAseq_workshop/outputs/FastQC_trimmed/SRR7311317_1.trimmed_fastqc.html
+open ~/RNAseq_workshop/outputs/FastQC_trimmed/SRR7311317_2.trimmed_fastqc.html
 
 # windows
-start ~/RNAseq_workshop/outputs/FastQC_trimmed/SRR7311317_1.trimmed.fastqc_fastqc.html
-start ~/RNAseq_workshop/outputs/FastQC_trimmed/SRR7311317_2.trimmed.fastqc_fastqc.html
+start ~/RNAseq_workshop/outputs/FastQC_trimmed/SRR7311317_1.trimmed_fastqc.html
+start ~/RNAseq_workshop/outputs/FastQC_trimmed/SRR7311317_2.trimmed_fastqc.html
 
 # linux
-xdg-open ~/RNAseq_workshop/outputs/FastQC_trimmed/SRR7311317_1.trimmed.fastqc_fastqc.html
-xdg-open ~/RNAseq_workshop/outputs/FastQC_trimmed/SRR7311317_2.trimmed.fastqc_fastqc.html
+xdg-open ~/RNAseq_workshop/outputs/FastQC_trimmed/SRR7311317_1.trimmed_fastqc.html
+xdg-open ~/RNAseq_workshop/outputs/FastQC_trimmed/SRR7311317_2.trimmed_fastqc.html
 
 
 
@@ -171,7 +172,7 @@ curl -O https://raw.githubusercontent.com/fursham-h/R-datascience/master/vignett
 cat run_kallisto.sh
 
 # Run kallisto mapping and quantitation
-bash run_kasllisto.sh
+bash run_kallisto.sh
 
 # check out output directory
 ls -l ~/RNAseq_workshop/outputs/kallisto
