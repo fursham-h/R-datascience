@@ -41,7 +41,7 @@ gzip SRR7311317_1.fastq
 # Recap on RNA-seq pipeline
 # https://raw.githubusercontent.com/fursham-h/R-datascience/master/vignettes/3_RNAseq_workflow/images/RNAseq_workflow.png
 
-## Checking RNAseq read quality using FastQC
+## PART1: Quality control of RNAseq reads
 
 # to check fastqc arguments:
 fastqc -h
@@ -64,11 +64,34 @@ fastqc ./originals/FASTQ/*.fastq.gz -o ./outputs/FASTQC/
 
 ##########################################
 
+ls -l ~/RNAseq_workshop/outputs/FASTQC
+
+## Open SRR7311317_1_fastqc.html
+#mac
+open ~/RNAseq_workshop/outputs/FASTQC/SRR7311317_1_fastqc.html
+
+# windows
+start ~/RNAseq_workshop/outputs/FASTQC/SRR7311317_1_fastqc.html
+
+# linux
+xdg-open ~/RNAseq_workshop/outputs/FASTQC/SRR7311317_1_fastqc.html
+xdg-open ~/RNAseq_workshop/outputs/FASTQC/SRR7311317_2_fastqc.html
+
+## Example of a bad sequencing experiment
+# https://www.bioinformatics.babraham.ac.uk/projects/fastqc/bad_sequence_fastqc.html
+
+## We will need to trim the 5'end of the read to obtain a high-quality set of reads
+
+## PART2: Read trimming
+
+# to see trimmomatic arguments
+trimmomatic -h
 
 
 
-
-
+# Download all scripts and files required
+curl -O https://raw.githubusercontent.com/fursham-h/R-datascience/master/vignettes/3_RNAseq_workflow/scripts/run_trimmomatic.sh
+curl -O https://raw.githubusercontent.com/fursham-h/R-datascience/master/vignettes/3_RNAseq_workflow/scripts/Nextera_TruSeq-PE.fa
 
 
 
