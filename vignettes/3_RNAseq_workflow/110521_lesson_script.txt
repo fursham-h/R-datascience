@@ -1,0 +1,227 @@
+
+# FILESYSTEMS ON VARIOUS OS
+# MacOS: https://raw.githubusercontent.com/fursham-h/R-datascience/master
+/vignettes/3_RNAseq_workflow/images/mac_filesystem.png
+# Windows: https://sites.google.com/site/bccollaborativecomputing/_/rsrc/1415055705292/class-7-operating-systems-ii/ntfs_fs_structure.png
+
+# Open your terminal or git bash
+
+# printing working directory
+pwd
+
+
+# changing working directory
+cd /
+
+# list files
+ls
+
+# You can press on up-arrow to show previous typed codes
+
+# Adding flags
+ls -l
+
+# show function help page
+man ls
+# note to windows user: man function may not be available on git bash
+# alternatively use --help
+ls - - help
+
+# clearing screens
+clear
+
+### ls other directories and tab completion
+ls -l dev
+ls -l ~
+ls -l <drag directory>
+ls -l <copy and paste path from finder or windows explorer>
+ls -l d<tab>
+ls -l b<tab>
+
+# using wildcards
+ls -l bin/b*
+
+### ACTIVITY 1 (2 mins)
+# Do each of the following tasks from your current directory using a single ls command for each:
+# 
+#     List all of the files in /usr/bin that start with the letter ‘c’.
+#     List all of the files in /usr/bin that contain the letter ‘a’.
+#     List all of the files in /usr/bin that end with the letter ‘o’.
+
+
+### Changing directory
+cd ~/Desktop
+
+# if directory is not present, an error will appear
+cd Downloads
+## cd: /home/cdn-bc/Desktop/Documents: No such file or directory
+
+# moving up one directory
+cd ..
+
+## Full paths vs relative paths
+cd ~/Desktop
+cd ~/Downloads
+cd ../Desktop
+
+# ACTIVITY 2 (2min)
+### Refer to the image file below
+# https://raw.githubusercontent.com/fursham-h/R-datascience/master/vignettes/3_RNAseq_workflow/images/Activity2.png
+#
+## Answer the question by typing "1" on your option below
+#1)11111
+#2)
+#3)
+#4) 1111111
+
+Answer: 4
+
+### Making folders and subfolders
+mkdir test_folder
+mkdir test_folder2
+mkdir test_folder/subfolder
+mkdir "test_folder/sub folder 2"
+
+## copying files
+cp test_file.txt test_folder
+ls -l test_folder
+
+### mv to move files
+mv *.txt test_folder/subfolder
+
+### mv to rename file
+mv test_folder2 renamed_folder
+
+## Edit text files directly in terminal
+cd test_folder
+nano test_file.txt
+
+#### edit the text file as how you normally do
+#### save file contents using ctrl+S (or cmd+s on MacOS)
+#### exit nano using ctrl+X
+
+# Preview a text file (first 10 lines by default)
+head test_file.txt
+
+# Preview the first 4 lines of a text file
+cat -n test_file.txt
+
+## Deleting files
+rm test_file.txt
+
+## deleting folders
+cd ..
+rm -r test_folder
+
+## BREAKKKK (10 mins) and ACTIVITY 3
+# Create the following filestructure in your home folder (~)
+# ~
+# ↳ RNAseq_workshop
+#   ↳ logs
+#   ↳ metadata
+#   ↳ originals
+#     ↳ FASTQ
+#   ↳ outputs
+#   ↳ scripts
+
+Answer:
+cd ~
+mkdir RNAseq_workshop
+mkdir RNAseq_workshop/logs
+mkdir RNAseq_workshop/metadata
+mkdir RNAseq_workshop/originals
+mkdir RNAseq_workshop/originals/FASTQ
+mkdir RNAseq_workshop/outputs
+mkdir RNAseq_workshop/scripts
+
+# CLASS RESUME AT 1130am #################
+
+# Popular RNAseq data repository
+# https://www.ncbi.nlm.nih.gov/geo/
+# https://www.ebi.ac.uk/ena/browser/home
+
+## Downloading FASTQ file(s)
+cd ~/RNAseq_workshop/originals/FASTQ
+
+## Sample ENA https://www.ebi.ac.uk/ena/browser/view/PRJNA476008
+
+# There are two functions commonly used to download files from internet (curl or wget)
+## Some operating systems may not have either of this function
+## To check if you have curl or wget, type these:
+which curl
+which wget
+# and you should get a path to the script if the function is present
+
+# installing fastq read pair from SRR7311317
+curl -O ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR731/007/SRR7311317/SRR7311317_1.fastq.gz
+curl -O ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR731/007/SRR7311317/SRR7311317_2.fastq.gz
+
+# decompress files.
+## This is needed to if you wish to preview the files
+## However, most RNAseq tools can process compressed files, so you don't need
+## to decompress to use these tools (FastQC, Trimmomatic, Kallisto etc)
+gunzip SRR7311317_1.fastq.gz
+
+# preview first 10 lines of FASTQ file
+head SRR7311317_1.fastq
+
+# preview first 4 lines of FASTQ file
+## each sequence contain 4 lines of information
+### Line 1: sequence ID
+### Line2: called sequence
+### Line 3: default + character
+### Line 4: sequence quality
+head -n 4 SRR7311317_1.fastq
+
+# preview last 4 lines of FASTQ file
+tail -n 4 SRR7311317_1.fastq
+
+
+# SEARCH for PATTERN USING GREP
+## grep will output all lines that contain the pattern
+grep NN SRR7311317_1.fastq
+
+# you can preview the first 10 lines by "piping" grep into head as such:
+grep NN SRR7311317_1.fastq | head
+
+# you can also count the number of sequence with said pattern using wc
+## wc is short for word count. the -l flag will count the number of lines, instead of
+## the number of word (default)
+grep NN SRR7311317_1.fastq | wc -l
+
+# Saving output of grep to a text file.
+## The > operator will create a file named Ns.txt and flush the output of grep into said file
+## If Ns.txt already exist, > will overwrite existing content of Ns.txt
+## To apped the content instead of overwriting, use >> 
+grep NN SRR7311317_1.fastq > Ns.txt
+grep NN SRR7311317_1.fastq >> Ns.txt
+
+# specifying -B and -A flag allow you to return the number of lines preceding (-B) and
+## following (-A) the grep hits. The value after -B and -A specify the number of lines
+grep -B1 -A2 NN SRR7311317_1.fastq | head
+
+# ACTIVITY 5 (5 mins)
+# Report the following to a text file
+# 1. count the number of sequences in SRR7311317_1.fastq
+# 2. count the number of sequences in SRR7311317_1.fastq containing illumina adapter sequences (CTGTCTCTTATACACATCT) 
+
+Answer:
+## Each sequence ID begins with @SRR. You can use this pattern to search and for 
+## all sequence IDs and count them
+grep @SRR SRR7311317_1.fastq | wc -l > activity5.txt
+grep CTGTCTCTTATACACATCT SRR7311317_1.fastq | wc -l >> activity5.txt 
+
+
+# Compressing files
+gzip SRR7311317_1.fastq
+
+
+## Typical RNAseq workflow
+# https://raw.githubusercontent.com/fursham-h/R-datascience/master/vignettes/3_RNAseq_workflow/images/RNAseq_workflow.png
+
+## Saving history
+history > ~/RNAseq_workshop/logs/history.txt
+
+#### END OF WORKSHOP 1
+
+
