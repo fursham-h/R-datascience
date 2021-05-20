@@ -20,10 +20,11 @@ ls -l
 ls -l FASTQ
 man ls
 ls --help
+clear
 mkdir testfolder
 touch test.txt
 nano test.txt
-cp test.txt test
+cp test.txt testfolder
 mv test.txt test_new.txt
 mv test_new.txt testfolder
 rm -r testfolder
@@ -69,6 +70,8 @@ fastqc ./originals/FASTQ/*.fastq.gz -o ./outputs/FastQC/
 
 echo "Completed......"
 ##########################################
+
+# Save the contents of the script file by pressing Ctrl+O [that is not a zero] and then enter
 
 # To run the script, run this command:
 bash run_fastqc.sh
