@@ -133,7 +133,7 @@ rm test_file.txt
 cd ..
 rm -r test_folder
 
-## BREAKKKK and ACTIVITY 3
+## BREAKKKK (x mins) and ACTIVITY 3
 # Create the following filestructure in your home folder (~)
 # ~
 # ↳ RNAseq_workshop
@@ -146,14 +146,21 @@ rm -r test_folder
 
 ## Working with files
 cd ~
-mkdir -p RNAseq_workshop/originals/FASTQ
-# press up arrow to see history of commands
-mkdir -p RNAseq_workshop/outputs
-mkdir -p RNAseq_workshop/scripts
+mkdir RNAseq_workshop
+mkdir RNAseq_workshop/logs
+mkdir RNAseq_workshop/metadata
+mkdir RNAseq_workshop/originals
+mkdir RNAseq_workshop/originals/FASTQ
+mkdir RNAseq_workshop/outputs
+mkdir RNAseq_workshop/scripts
+
+# Popular RNAseq data repository
+# https://www.ncbi.nlm.nih.gov/geo/
+# https://www.ebi.ac.uk/ena/browser/home
 
 
 ## Downloading FASTQ file(s)
-cd RNAseq_workshop/originals/FASTQ
+cd ~/RNAseq_workshop/originals/FASTQ
 
 ## Sample ENA https://www.ebi.ac.uk/ena/browser/view/PRJNA476008
 which curl
@@ -218,6 +225,16 @@ gzip SRR7311317_1.fastq
 #1) What is the one thing you learn today?
 
 #2) What is the one thing this workshop can improve on?
+
+################################################################################
+## Day2
+
+## Go through RNAseq pipeline again
+## Write script
+## Run FastQC
+## Run Trimmomatic
+## Run Kallisto
+
 
 
 ########## TO OPEN HTML #############

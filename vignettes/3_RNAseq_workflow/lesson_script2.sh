@@ -187,7 +187,7 @@ less ~/RNAseq_workshop/outputs/kallisto/abundance.tsv
 # What can this workshop improve on in the future?
 
 
-
+# Would you like a final workshop on Single-cell RNAseq analysis before the summer break?
 
 
 
