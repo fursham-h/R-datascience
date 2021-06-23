@@ -25,6 +25,8 @@ navbar:
           href: articles/2_Data_visualisation_using_R/Overview.html
         - text: "3) Introduction to RNAseq data analysis"
           href: articles/3_RNAseq_workflow/Overview.html
+        - text: "4) scRNA-seq analysis using Seurat"
+          href: articles/4_scRNAseq_seurat/Overview.html
   right:
     - icon: 'fab fa-github fa-lg'
       href: https://github.com/fursham-h/R-datascience
