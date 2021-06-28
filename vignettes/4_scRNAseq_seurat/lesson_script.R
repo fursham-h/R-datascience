@@ -7,7 +7,7 @@
 ### 4. Normalize and scale count matrix
 ### 5. Reduce dimensionality using PCA and UMAP
 ### 6. Identify clusters
-### 7. 
+### 7. Perform differential expression
 
 #>>>>>>>> NEED NOT PASTE
 ### Check if everyone have Seurat and Tidyverse installed
@@ -20,19 +20,19 @@
 ## Recap on previous lesson and how this lesson is a continuation
 #>>>>>>>> 
 
-
+## Overview of seurat pipeline 
+https://raw.githubusercontent.com/fursham-h/R-datascience/077e0f6da54d13153aa2c88ae615a1efaa913294/vignettes/4_scRNAseq_seurat/cropped_seurat_workflow.png
 
 ## Inputs for scRNA-seq analysis
 ### 1. A count matrix (most basic)
 ### 2. Output files from cellranger software (10x genomics)
 
-
+# References 
 ## Data used in this lesson:
 ### Childhood Cerebellar Tumors Mirror Conserved Fetal Transcriptional Programs
 ### https://www.nature.com/articles/s41586-019-1158-7
 ### Find information on downloading datasets from "Data availability" section
 ### https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE118068
-
 
 ## Workflow used
 # https://satijalab.org/seurat/articles/pbmc3k_tutorial.html
