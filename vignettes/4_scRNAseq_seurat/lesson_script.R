@@ -9,17 +9,23 @@
 ### 6. Identify clusters
 ### 7. 
 
+#>>>>>>>> NEED NOT PASTE
 ### Check if everyone have Seurat and Tidyverse installed
-### Lesson materials https://fursham-h.github.io/R-datascience/articles/3_RNAseq_workflow/Overview.html <<<< CHANGE
+### Check if everyone have data in ~
+### Lesson materials https://fursham-h.github.io/R-datascience/articles/4_scRNAseq_seurat/Overview.html
 ## use etherpad for checkin https://etherpad.wikimedia.org/p/CDN-scRNAseq-online
 ## screen management and zoom reactions
 ## recording 
 
 ## Recap on previous lesson and how this lesson is a continuation
+#>>>>>>>> 
+
+
 
 ## Inputs for scRNA-seq analysis
 ### 1. A count matrix (most basic)
 ### 2. Output files from cellranger software (10x genomics)
+
 
 ## Data used in this lesson:
 ### Childhood Cerebellar Tumors Mirror Conserved Fetal Transcriptional Programs
@@ -34,7 +40,11 @@
 ## Useful Seurat commands
 # https://satijalab.org/seurat/articles/essential_commands.html
 
+
+
 #### PART 1: Creating Seurat Object
+
+## Open a new R script in RStudio
 
 # Load R libraries
 library(Seurat)
@@ -69,7 +79,7 @@ e14.seurat.crblm <- CreateSeuratObject(counts = e14.crblm, project = "e14")
 
 #### PART 2: Inspecting Seurat Objects
 
-## typing out variable name gives a summary of the Seurat Object
+## typing out variable name gives a description of the Seurat Object
 e14.seurat.crblm
 
 # get cell barcodes (ID)
@@ -143,10 +153,32 @@ seurat.merged <- merge(e14.seurat.crblm, y = c(e16.seurat.crblm, e18.seurat.crbl
 ## c) 19401
 ## d) 7383
 
+######>>>> PASTE ANSWERs LATER
 # Ans: c
 
 # check by typing:
 seurat.merged
+######>>>> 
+
+
+# What is the highest number of genes detected in a cell?
+
+## a) 7168
+## b) 10288
+## c) 3986
+## d) 4508
+
+######>>>> PASTE ANSWERs LATER
+# Ans: a
+
+# check by typing:
+seurat.merged$nFeature_RNA %>% max()
+
+## PRO TIP:
+To identify which cell has the highest number of genes, type:
+seurat.merged[[]][which(seurat.merged$nFeature_RNA == max(seurat.merged$nFeature_RNA)),]
+######>>>> 
+
 ###################
 
 
@@ -390,10 +422,13 @@ VlnPlot(seurat.merged, "Id2",idents = c(4,7))
 # Trajectory analyses: https://satijalab.org/signac/articles/monocle.html
 # Probabilistic assigning of cell identity: https://github.com/Irrationone/cellassign
 # Identifying gene programs: https://github.com/dylkot/cNMF
+# covariates. 
 
 
+# Closing activity 
+#1) What is the one thing you learn today?
 
-
+#2) What is the one thing this workshop can improve on?
 
 
 
