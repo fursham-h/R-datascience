@@ -89,7 +89,7 @@ colnames(e14.seurat.crblm) %>% head()
 ## IMPORTANT. Try to have gene_names as features, rather than gene_id
 rownames(e14.seurat.crblm) %>% head()
 
-# View default assay
+# View default assay 
 DefaultAssay(e14.seurat.crblm)
 
 # View count data
@@ -102,16 +102,20 @@ e14.seurat.crblm[[]] %>% head()
 e14.seurat.crblm@meta.data %>% head()
 
 # to view specific columns from metadata
-e14.seurat.crblm$nCount_RNA %>% head()
+e14.seurat.crblm[["nCount_RNA"]] %>% head()
 e14.seurat.crblm[[c("nCount_RNA", "orig.ident")]] %>% head()
+e14.seurat.crblm$nCount_RNA %>% head()
+
 
 # To add new metadata column
 e14.seurat.crblm$region <- "Cerebellum"
 ## same as 
 ## e14.seurat.crblm[["region"]] <- "Cerebellum"
 
-
-
+# check default cell identities 
+Idents(e14.seurat.crblm) 
+#changing identities
+Idents(e14.seurat.crblm) <- e14.seurat.crblm$region
 
 
 
@@ -144,8 +148,11 @@ e18.seurat.crblm <- CreateSeuratObject(counts = e18.crblm, project = "e18")
 # simple merging of 3 objects
 seurat.merged <- merge(e14.seurat.crblm, y = c(e16.seurat.crblm, e18.seurat.crblm), add.cell.ids = c("e14", "e16", "e18")) 
 
+
+
 #### Activity 2 ####
 
+# type an "x" beside your answer
 # What is the total number of cells?
 
 ## a) 27998
@@ -200,7 +207,8 @@ seurat.merged[[]] %>% tail()
 # Create region metadata for all samples
 seurat.merged$region <- "Cerebellum"
 
-
+# check identity of cells
+Idents(seurat.merged) %>% levels() 
 
 
 
@@ -213,13 +221,13 @@ str_subset(rownames(seurat.merged), "^mt-")
 ## to calculate the percentage of reads that mapped to mitochondrial genome
 seurat.merged$"percent.mt" <- PercentageFeatureSet(seurat.merged, pattern = "^mt-")
 
-# To create violin plot contain continuous values
+# To create violin plot of continuous values
 VlnPlot(seurat.merged, features = c("nFeature_RNA", "nCount_RNA", "percent.mt"))
 
 
 #### Activity 3 ####
 
-# change the Identity of cells back to "region"
+# change the Identity of cell to values from column "region" 
 
 Idents(seurat.merged) <- seurat.merged$region
 ###################
@@ -369,9 +377,9 @@ cluster.markers <- FindAllMarkers(seurat.merged, only.pos = TRUE, min.pct = 0.25
 # Inspecting data
 cluster.markers %>% head()
 
-top3 <- cluster.markers %>% 
+top5 <- cluster.markers %>% 
     group_by(cluster) %>% 
-    top_n(n = 3, wt = avg_log2FC)
+    top_n(n = 5, wt = avg_log2FC)
 View(top3)
 
 # 0: Granule cells (Atoh1, Mfap4, )
@@ -386,9 +394,6 @@ View(top3)
 # 9: Endothelial (Cldn5)
 # 10: 
 
-top5 <- cluster.markers %>%
-    group_by(cluster) %>%
-    top_n(n = 5, wt = avg_log2FC)
 DoHeatmap(seurat.merged, features = top5$gene) + NoLegend()
 
 
