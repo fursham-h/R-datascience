@@ -113,7 +113,7 @@ e14.seurat.crblm$region <- "Cerebellum"
 ## e14.seurat.crblm[["region"]] <- "Cerebellum"
 
 # check default cell identities 
-Idents(e14.seurat.crblm) 
+Idents(e14.seurat.crblm) %>% levels()
 #changing identities
 Idents(e14.seurat.crblm) <- e14.seurat.crblm$region
 
@@ -377,9 +377,9 @@ cluster.markers <- FindAllMarkers(seurat.merged, only.pos = TRUE, min.pct = 0.25
 # Inspecting data
 cluster.markers %>% head()
 
-top5 <- cluster.markers %>% 
+top3 <- cluster.markers %>% 
     group_by(cluster) %>% 
-    top_n(n = 5, wt = avg_log2FC)
+    top_n(n = 3, wt = avg_log2FC)
 View(top3)
 
 # 0: Granule cells (Atoh1, Mfap4, )
