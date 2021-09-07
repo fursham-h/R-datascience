@@ -9,6 +9,14 @@ in using easy to comprehend R functions for routine data analysis.
 
 |Lesson title|Date(s)|Pre-requisite|Sign-up link|
 |:----------|:---------|:-----|:----|
+|[Interactive reporting using R Notebook]|Tue, 28th September, 10am-12pm|Basics in using R|[Link]()|
+|[Python basics]|Tue, 26th October, 10am-12pm|None|TBC|
+|[Differential expression analysis using DESeq2]|Tue, 30th October, 10am-12pm |Basics in using R <br> Knowledge of RNA-seq pipeline|TBC|
+
+### Past workshops
+
+|Lesson title|Date(s)|Pre-requisite|Sign-up link|
+|:----------|:---------|:-----|:----|
 |[R basics for data analysis (Repeat)](https://fursham-h.github.io/R-datascience/articles/1_R_basics_for_data_analysis/Overview.html)|Wed, 14th April, 10am-12pm|None|[Link](https://forms.office.com/r/CN0ukPPvwX)|
 |[Data visualisation using R](https://fursham-h.github.io/R-datascience/articles/2_Data_visualisation_using_R/Overview.html)|Wed, 28th April, 10am-12pm<br>Thurs, 29th April, 10am-12pm|Basics in using R|[Link](https://forms.office.com/r/acX9AbJ474)|
 |[Introduction to RNAseq data analysis](https://fursham-h.github.io/R-datascience/articles/3_RNAseq_workflow/Overview.html) <br>[Day 1]: Introduction to the Command Line for Genomics <br>[Day 2]: RNAseq data Retrieval, Quality Control and quantification|<br>Tue, 11th May, 10am-12pm <br> <br>Tue, 25th May, 10am-12pm |None|[Link](https://forms.office.com/r/MyRDXB1gdE)|
