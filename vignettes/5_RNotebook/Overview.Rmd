@@ -12,53 +12,63 @@ output: html_document
 >
 > **Objectives**
 >
-1) Create a R Notebook and export as HTML
+1) Create an R Notebook and export it as HTML
 2) Configure Notebook title and metadata
-3) Add text to Notebook and format it using Markdown
+3) Add text to Notebook and format it using RMarkdown
 4) Write codes in chunks to output standard tables and plots
 5) Generate interactive tables and plots
 ><br />
 
-## Before starting the lesson
-In this workshop, we will be using R programming language to process scRNA-seq
-data. Please ensure that you have both R and RStudio installed on your computer.
-Refer to the links below for instructions to download these software.
+## Lesson preparations
+In this workshop, we will create a dynamic report using R Notebook. 
+Please ensure that you have **BOTH** R and RStudio installed on your computer.
+Click on the links below to download these software.
 
-* Latest version of R
+* Latest version of R 
     - [For Windows](https://cran.r-project.org/bin/windows/base/)
     - [For Mac](https://cran.r-project.org/bin/macosx/)
     - [For Linux](https://cran.r-project.org/bin/linux/)
         
 * [Latest version of RStudio](https://rstudio.com/products/rstudio/download/)
 
+<br/ >
 
-In addition, we will be using several R packages to facilitate this analysis.
-To download these R packages on your computer, open RStudio and copy the following
-block of code into the console and press Enter:
-```{r eval=F}
-install.packages("Seurat")
-install.packages("tidyverse")
-```
+Several dependencies are required to create an R Notebook. To facilitate the
+timeliness of the lesson, please follow these instructions to set this up 
+(clicking the instructions will bring up an image illustrating each step):
+
+1. [In RStudio, click File > New file > R Notebook](https://raw.githubusercontent.com/fursham-h/R-datascience/master/vignettes/5_RNotebook/RStudio-notebeook.png)
+2. [Click `Yes` when prompted to install required packages](https://raw.githubusercontent.com/fursham-h/R-datascience/master/vignettes/5_RNotebook/Rnotebook-message.PNG)
+
+Upon successful installation, a new R Notebook document will open in RStudio.
+If you encounter errors during this installation, please e-mail me with a 
+description of the error.
+
+<br/ >
 
 During the lesson, we will be using etherpad, an online collaborative platform
 for our discussions and activities. You may bookmark this 
-[etherpad page](https://etherpad.wikimedia.org/p/CDN-scRNAseq-online) before 
+[etherpad page](https://etherpad.wikimedia.org/p/CDN-RNotebook) before 
 the lesson commence!
 
 <br/ >
 
-## Lesson materials
-In this workshop, we will be using [Seurat 4.0](https://satijalab.org/seurat/index.html), 
-a powerful R package to analyze scRNA-seq data. This steps of this workflow is 
-well-documented and we will be using these vignettes for our references:
-
-1. [PBMC Guided tutorial](https://satijalab.org/seurat/articles/pbmc3k_tutorial.html)
-2. [Cell-Cycle Socring and Regression](https://satijalab.org/seurat/articles/cell_cycle_vignette.html)
+## Lesson schedule
 
 
+||||
+|:---|:------------|:------------|
+|10:00| Overview | What is the purpose of an R Notebook <br> How does an R Notebook improve my workflow? |
+|10:10|1. [Creating](https://bookdown.org/yihui/rmarkdown/notebook.html#creating-a-notebook) and [saving](https://bookdown.org/yihui/rmarkdown/notebook.html#saving-and-sharing) R Notebooks| How do I create an R Notebook> <br> Where can I find the output HTML file? |
+|10:25|2. [Adding and formatting text in RMarkdown format](https://rmarkdown.rstudio.com/lesson-8.html) | How do I add text descriptions? <br> How do I format text? |
+|11:00|**Break**||
+|11:10|3. [Writing code in R Notebook](https://rmarkdown.rstudio.com/lesson-3.html) |  How do I add code into my document? <br> How do I configure the output of my code? |
+|11:20|3. Creating interactive [plots](https://plotly.com/ggplot2/getting-started/) and [tables](https://rstudio.github.io/DT/) |  How do I add plots and tables to my HTML document? <br> How do I make my plots and tables interactive to users?|
+|12:00|Finish| |
 
 
-
+<br/ >
+<br/ >
 
 
 
