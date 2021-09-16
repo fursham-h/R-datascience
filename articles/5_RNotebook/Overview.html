@@ -104,18 +104,18 @@
 <p><br><strong>Duration</strong>: 2 hours <br><br></p>
 <p><strong>Objectives</strong></p>
 <ol style="list-style-type: decimal">
-<li>Create a R Notebook and export as HTML</li>
+<li>Create an R Notebook and export it as HTML</li>
 <li>Configure Notebook title and metadata</li>
-<li>Add text to Notebook and format it using Markdown</li>
+<li>Add text to Notebook and format it using RMarkdown</li>
 <li>Write codes in chunks to output standard tables and plots</li>
 <li>Generate interactive tables and plots <br>
 </li>
 </ol>
 </blockquote>
-<div id="before-starting-the-lesson" class="section level2">
+<div id="lesson-preparations" class="section level2">
 <h2 class="hasAnchor">
-<a href="#before-starting-the-lesson" class="anchor"></a>Before starting the lesson</h2>
-<p>In this workshop, we will be using R programming language to process scRNA-seq data. Please ensure that you have both R and RStudio installed on your computer. Refer to the links below for instructions to download these software.</p>
+<a href="#lesson-preparations" class="anchor"></a>Lesson preparations</h2>
+<p>In this workshop, we will create a dynamic report using R Notebook. Please ensure that you have <strong>BOTH</strong> R and RStudio installed on your computer. Click on the links below to download these software.</p>
 <ul>
 <li>Latest version of R
 <ul>
@@ -126,21 +126,68 @@
 </li>
 <li><a href="https://rstudio.com/products/rstudio/download/">Latest version of RStudio</a></li>
 </ul>
-<p>In addition, we will be using several R packages to facilitate this analysis. To download these R packages on your computer, open RStudio and copy the following block of code into the console and press Enter:</p>
-<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"Seurat"</span><span class="op">)</span>
-<span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html">install.packages</a></span><span class="op">(</span><span class="st">"tidyverse"</span><span class="op">)</span></code></pre></div>
-<p>During the lesson, we will be using etherpad, an online collaborative platform for our discussions and activities. You may bookmark this <a href="https://etherpad.wikimedia.org/p/CDN-scRNAseq-online">etherpad page</a> before the lesson commence!</p>
+<p><br></p>
+<p>Several dependencies are required to create an R Notebook. To facilitate the timeliness of the lesson, please follow these instructions to set this up (clicking the instructions will bring up an image illustrating each step):</p>
+<ol style="list-style-type: decimal">
+<li><a href="https://raw.githubusercontent.com/fursham-h/R-datascience/master/vignettes/5_RNotebook/RStudio-notebeook.png">In RStudio, click File &gt; New file &gt; R Notebook</a></li>
+<li><a href="https://raw.githubusercontent.com/fursham-h/R-datascience/master/vignettes/5_RNotebook/Rnotebook-message.PNG">Click <code>Yes</code> when prompted to install required packages</a></li>
+</ol>
+<p>Upon successful installation, a new R Notebook document will open in RStudio. If you encounter errors during this installation, please e-mail me with a description of the error.</p>
+<p><br></p>
+<p>During the lesson, we will be using etherpad, an online collaborative platform for our discussions and activities. You may bookmark this <a href="https://etherpad.wikimedia.org/p/CDN-RNotebook">etherpad page</a> before the lesson commence!</p>
 <p><br></p>
 </div>
-<div id="lesson-materials" class="section level2">
+<div id="lesson-schedule" class="section level2">
 <h2 class="hasAnchor">
-<a href="#lesson-materials" class="anchor"></a>Lesson materials</h2>
-<p>In this workshop, we will be using <a href="https://satijalab.org/seurat/index.html">Seurat 4.0</a>, a powerful R package to analyze scRNA-seq data. This steps of this workflow is well-documented and we will be using these vignettes for our references:</p>
-<ol style="list-style-type: decimal">
-<li><a href="https://satijalab.org/seurat/articles/pbmc3k_tutorial.html">PBMC Guided tutorial</a></li>
-<li><a href="https://satijalab.org/seurat/articles/cell_cycle_vignette.html">Cell-Cycle Socring and Regression</a></li>
-</ol>
+<a href="#lesson-schedule" class="anchor"></a>Lesson schedule</h2>
+<table class="table">
+<colgroup>
+<col width="13%">
+<col width="43%">
+<col width="43%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td align="left">10:00</td>
+<td align="left">Overview</td>
+<td align="left">What is the purpose of an R Notebook <br> How does an R Notebook improve my workflow?</td>
+</tr>
+<tr class="even">
+<td align="left">10:10</td>
+<td align="left">1. <a href="https://bookdown.org/yihui/rmarkdown/notebook.html#creating-a-notebook">Creating</a> and <a href="https://bookdown.org/yihui/rmarkdown/notebook.html#saving-and-sharing">saving</a> R Notebooks</td>
+<td align="left">How do I create an R Notebook&gt; <br> Where can I find the output HTML file?</td>
+</tr>
+<tr class="odd">
+<td align="left">10:25</td>
+<td align="left">2. <a href="https://rmarkdown.rstudio.com/lesson-8.html">Adding and formatting text in RMarkdown format</a>
+</td>
+<td align="left">How do I add text descriptions? <br> How do I format text?</td>
+</tr>
+<tr class="even">
+<td align="left">11:00</td>
+<td align="left"><strong>Break</strong></td>
+<td align="left"></td>
+</tr>
+<tr class="odd">
+<td align="left">11:10</td>
+<td align="left">3. <a href="https://rmarkdown.rstudio.com/lesson-3.html">Writing code in R Notebook</a>
+</td>
+<td align="left">How do I add code into my document? <br> How do I configure the output of my code?</td>
+</tr>
+<tr class="even">
+<td align="left">11:20</td>
+<td align="left">3. Creating interactive <a href="https://plotly.com/ggplot2/getting-started/">plots</a> and <a href="https://rstudio.github.io/DT/">tables</a>
+</td>
+<td align="left">How do I add plots and tables to my HTML document? <br> How do I make my plots and tables interactive to users?</td>
+</tr>
+<tr class="odd">
+<td align="left">12:00</td>
+<td align="left">Finish</td>
+<td align="left"></td>
+</tr>
+</tbody>
+</table>
+<p><br><br></p>
 </div>
   </div>
 
