@@ -6,21 +6,17 @@ output: html_document
 
 > ### Overview
 ><br />
-> **Duration**: 3 hours
+> **Duration**: 2 hours
 ><br />
 ><br />
 >
 > **Objectives**
 >
-1) Describe scRNA-seq workflow using Seurat
-2) Create and interact with Seurat Objects 
-3) Perform QC on dataset and filter out poor-quality cells
-4) Normalize and scale scRNA-seq data
-5) Determine cell phases and regress out cell cycle genes
-6) Reduce data complexity using linear and non-linear dimensionality reduction
-7) Cluster cells into transcriptomically similar groups
-8) Identify differentially expressed markers
-9) Visualize scRNA-seq data using high-quality plots
+1) Create a R Notebook and export as HTML
+2) Configure Notebook title and metadata
+3) Add text to Notebook and format it using Markdown
+4) Write codes in chunks to output standard tables and plots
+5) Generate interactive tables and plots
 ><br />
 
 ## Before starting the lesson
