@@ -1,0 +1,83 @@
+---
+title: 'Workshop 5: Dynamic data reporting using R Notebook '
+author: "Fursham Hamid"
+output: html_document
+---
+
+> ### Overview
+><br />
+> **Duration**: 3 hours
+><br />
+><br />
+>
+> **Objectives**
+>
+1) Describe scRNA-seq workflow using Seurat
+2) Create and interact with Seurat Objects 
+3) Perform QC on dataset and filter out poor-quality cells
+4) Normalize and scale scRNA-seq data
+5) Determine cell phases and regress out cell cycle genes
+6) Reduce data complexity using linear and non-linear dimensionality reduction
+7) Cluster cells into transcriptomically similar groups
+8) Identify differentially expressed markers
+9) Visualize scRNA-seq data using high-quality plots
+><br />
+
+## Before starting the lesson
+In this workshop, we will be using R programming language to process scRNA-seq
+data. Please ensure that you have both R and RStudio installed on your computer.
+Refer to the links below for instructions to download these software.
+
+* Latest version of R
+    - [For Windows](https://cran.r-project.org/bin/windows/base/)
+    - [For Mac](https://cran.r-project.org/bin/macosx/)
+    - [For Linux](https://cran.r-project.org/bin/linux/)
+        
+* [Latest version of RStudio](https://rstudio.com/products/rstudio/download/)
+
+
+In addition, we will be using several R packages to facilitate this analysis.
+To download these R packages on your computer, open RStudio and copy the following
+block of code into the console and press Enter:
+```{r eval=F}
+install.packages("Seurat")
+install.packages("tidyverse")
+```
+
+During the lesson, we will be using etherpad, an online collaborative platform
+for our discussions and activities. You may bookmark this 
+[etherpad page](https://etherpad.wikimedia.org/p/CDN-scRNAseq-online) before 
+the lesson commence!
+
+<br/ >
+
+## Lesson materials
+In this workshop, we will be using [Seurat 4.0](https://satijalab.org/seurat/index.html), 
+a powerful R package to analyze scRNA-seq data. This steps of this workflow is 
+well-documented and we will be using these vignettes for our references:
+
+1. [PBMC Guided tutorial](https://satijalab.org/seurat/articles/pbmc3k_tutorial.html)
+2. [Cell-Cycle Socring and Regression](https://satijalab.org/seurat/articles/cell_cycle_vignette.html)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

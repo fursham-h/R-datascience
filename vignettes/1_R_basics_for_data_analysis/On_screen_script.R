@@ -24,6 +24,13 @@ log(1)
 
 # Don't worry if you don't remember all functions
 
+# Installing packages
+install.packages("dplyr")
+
+# Working with directories
+getwd()
+setwd()
+list.files()
 
 # Comparing things
 
@@ -45,14 +52,37 @@ x
 y <- x * 2
 y
 
-text <- "I love this course"
+# variables and comparisons
+
+
+
+# Data structures
+
+text <- "Jack and the beanstalk"
 text
+print(text)
+
+list <- c("one", "two", "three")
+list <- 1:10
+list <- rep(5,2)
+
+
+
+# matrix
+
+# data-frame
+
+df <- data.frame(animal = c("cat", "dog"),
+    colour = c("red", "black"))
+
+## subset a list (if there is time)
+
+
 
 
 #### Challenge 1
 
-# Installing packages
-install.packages("dplyr")
+
 
 ### DO NOT RUN THIS CODE ON CDN-BC
 
