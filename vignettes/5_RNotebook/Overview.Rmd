@@ -14,7 +14,7 @@ output: html_document
 >
 1) Create an R Notebook and export it as HTML
 2) Configure Notebook title and metadata
-3) Add text to Notebook and format it using RMarkdown
+3) Add text to Notebook and format it using Markdown
 4) Write codes in chunks to output standard tables and plots
 5) Generate interactive tables and plots
 ><br />
@@ -59,8 +59,9 @@ the lesson commence!
 ||||
 |:---|:------------|:------------|
 |10:00| Overview | What is the purpose of an R Notebook <br> How does an R Notebook improve my workflow? |
-|10:10|1. [Creating](https://bookdown.org/yihui/rmarkdown/notebook.html#creating-a-notebook) and [saving](https://bookdown.org/yihui/rmarkdown/notebook.html#saving-and-sharing) R Notebooks| How do I create an R Notebook> <br> Where can I find the output HTML file? |
-|10:25|2. [Adding and formatting text in RMarkdown format](https://rmarkdown.rstudio.com/lesson-8.html) | How do I add text descriptions? <br> How do I format text? |
+|10:10|1. [Creating](https://bookdown.org/yihui/rmarkdown/notebook.html#creating-a-notebook) and [saving](https://bookdown.org/yihui/rmarkdown/notebook.html#saving-and-sharing) R Notebooks| How do I create an R Notebook? <br> Where can I find the output HTML file? |
+|10:15|1. [Configuring R Notebook](https://bookdown.org/yihui/rmarkdown/html-document.html)| How do I change theme of HTML document? <br> How do I add tables of content? |
+|10:25|2. [Adding and formatting text in Markdown format](https://rmarkdown.rstudio.com/lesson-8.html) | How do I add text descriptions? <br> How do I format text? |
 |11:00|**Break**||
 |11:10|3. [Writing code in R Notebook](https://rmarkdown.rstudio.com/lesson-3.html) |  How do I add code into my document? <br> How do I configure the output of my code? |
 |11:20|3. Creating interactive [plots](https://plotly.com/ggplot2/getting-started/) and [tables](https://rstudio.github.io/DT/) |  How do I add plots and tables to my HTML document? <br> How do I make my plots and tables interactive to users?|
