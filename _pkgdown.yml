@@ -27,6 +27,8 @@ navbar:
           href: articles/3_RNAseq_workflow/Overview.html
         - text: "4) scRNA-seq analysis using Seurat"
           href: articles/4_scRNAseq_seurat/Overview.html
+        - text: "5) Dynamic Reporting using RNotebook"
+          href: articles/5_RNotebook/Overview.html
   right:
     - icon: 'fab fa-github fa-lg'
       href: https://github.com/fursham-h/R-datascience
