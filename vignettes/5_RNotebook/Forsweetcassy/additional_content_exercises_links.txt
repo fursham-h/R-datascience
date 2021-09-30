@@ -1,0 +1,96 @@
+
+Exercise 1:
+Which of these metadata will produce desired output?
+
+1.
+title: "Differential Expression analyses"
+output: html_notebook:
+        theme: cerulean
+
+
+
+2.
+title: Differential Expression analyses
+output:
+    html_notebook:
+        theme: cerulean
+
+
+
+3.
+title: "Differential Expression analyses"
+output:
+    html_notebook:
+        theme:cerulean
+
+
+Type a "1" beside the correct answer
+
+1.
+2.
+3.
+
+
+Exercise 2:
+
+List down, in bullet forms, your 3 favorite dishes.
+For the first dish, insert an image.
+For the second dish, bold the text.
+For the third dish, create a hyperlink to a recipe of the dish.
+
+
+Answer:
+1. ![Hainanese chicken rice](https://www.seriouseats.com/thmb/WONXcV5Azzx--q9Q6zVUON_4EX8=/735x0/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2013__08__20130624-257009-chicken-rice-set-edit-ba8ce18fa35d4493927d91b6e7d25a02.jpg)
+2. **Laksa**
+3. [Sushi](https://www.bbcgoodfood.com/videos/techniques/how-make-sushi-video)
+
+
+
+Exercise 3:
+Install these 3 packages (if you haven't done so) and load them into
+your Notebook WITHOUT SHOWING THE CODE AND OUTPUT.
+
+- tidyverse
+- DT
+- plotly
+
+Answer:
+```{r loadpackages, include=FALSE}
+#install.packages(c("tidyverse", "DT", "plotly"))
+library(tidyverse)
+library(DT)
+library(plotly)
+```
+
+
+# Links to resources
+
+- Different output formats: https://rmarkdown.rstudio.com/lesson-9.html
+- Different HTML document themes: https://www.datadreaming.org/post/r-markdown-theme-gallery/
+- Packages that offer even more themes: https://github.com/juba/rmdformats
+- Other options to be added to Metadata: https://bookdown.org/yihui/rmarkdown/html-document.html#html-document
+- Markdown CheatSheet: https://www.markdownguide.org/cheat-sheet/
+- Using custom CSS formatting: https://bookdown.org/yihui/rmarkdown-cookbook/html-css.html#html-css
+- Formatting of DT tables: https://rstudio.github.io/DT/
+- Formatting of plotly plots: https://plotly.com/ggplot2/getting-started/
+
+
+
+
+# Feedback form
+https://forms.office.com/r/k3cB73xexX
+
+# Homework
+
+- Create a simple tutorial on 'How to plot data in R' using R Notebook.
+- It should include the required steps including installation of dependencies,
+importing of data and plotting of data.
+- You may use your own data as an example, or use built-in data that comes with
+R (type `data()` in console to retrieve this list of data).
+- Render your tutorial as a HTML document and email it to me.
+
+
+
+
+
+

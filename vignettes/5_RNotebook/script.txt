@@ -1,0 +1,258 @@
+
+## OPEN
+## Make sure u have R and RStudio installed
+## CHECK-IN EXERCISE
+## ETHERPAD. Code and additional resources will be pasted
+## RECORDING
+
+## WHY create a dynamic report
+
+## SCREEN MANAGEMENT
+
+## RMARKDOWN vs RNOTEBOOK
+## RMARKDOWN used to share reproducible code
+## RNOTEBOOK to share data, and the co
+
+
+---
+title: Creating an R Notebook 
+author: Fursham Hamid
+date: "`r Sys.Date()`"
+output: 
+    html_notebook:
+        theme: cerulean         # additional themes and resources
+        toc: true
+        toc_depth: 1
+        toc_float: true
+        number_sections: true
+---
+
+Exercise 1:
+Which of these metadata will produce desired output?
+
+1.
+title: "Differential Expression analyses"
+output: html_notebook:
+        theme: cerulean
+
+
+
+2.
+title: Differential Expression analyses
+output:
+    html_notebook:
+        theme: cerulean
+
+
+
+3.
+title: "Differential Expression analyses"
+output:
+    html_notebook:
+        theme:cerulean
+
+
+Type a "1" beside the correct answer
+
+1.
+2.
+3.
+
+
+Text can be written anywhere within the document. 
+Text written on a new line will not be rendered as a new paragraph.
+
+To create a new paragraph, leave a linespace from the previous sentence.
+
+Headers and sub-headers can be created using the `#` symbol. The depth of the sub-headers
+depend on the number of `#` symbol; 1 symbol represents the top-most layer.
+
+# Formatting text in Markdown format
+
+You will also notice that the table of contents is automatically updated
+to include level1 headers. 
+
+Below is how you write a sub-header
+
+## Create bullet points
+
+Bullets points can be created as such (make sure you leave a space before writing your bullet points):
+
+- Point 1
+- Point 2 
+
+Substituting hyphen with a number will create numbered bullet points:
+
+1. Point 1
+2. Point 2
+
+## Formatting text
+
+There are several ways to make standard types of formatted text:
+
+- *italics*
+- **bold**
+- `code`
+- [weblinks](https://www.google.com/)
+
+## Adding in-line image
+
+You can add an image into text using the following syntax:
+
+![](https://raw.githubusercontent.com/fursham-h/R-datascience/master/vignettes/5_RNotebook/Rnotebook-message.PNG)
+
+
+Exercise 2:
+
+List down, in bullet forms, your 3 favorite dishes.
+For the first dish, insert an image.
+For the second dish, bold the text.
+For the third dish, create a hyperlink to a recipe of the dish.
+
+
+Answer:
+1. ![Hainanese chicken rice](https://www.seriouseats.com/thmb/WONXcV5Azzx--q9Q6zVUON_4EX8=/735x0/__opt__aboutcom__coeus__resources__content_migration__serious_eats__seriouseats.com__recipes__images__2013__08__20130624-257009-chicken-rice-set-edit-ba8ce18fa35d4493927d91b6e7d25a02.jpg)
+2. **Laksa**
+3. [Sushi](https://www.bbcgoodfood.com/videos/techniques/how-make-sushi-video)
+
+
+
+# Writing code in RNotebook
+
+The simplest way to write code is using the ` symbol. You have to specify
+the language to be interpreted. For example, the line below will return the 
+value of 1+1 using R language:
+
+`r 1+1`
+
+A better way is to write your code in "chunks". To create code chunks,
+click the `+C` button at the top of this document, and select your language:
+
+```{r writingcode}
+# you may name your code chunk by typing a string after "r" above
+
+# sames rules of writing a script applies here. Comments begin with a #
+1+1
+
+# The entire chunk can be executed by clicking the 
+# "play" button at the top right hand side of the chunk
+# REMEMBER TO RUN THE CHUNK EVERYTIME THE CODE CHANGES
+```
+
+You may configure the output of each chunk by clicking the "cogwheel" button at the top right
+corner of the chunk:
+
+```{r configoutput, echo=FALSE}
+# In this example, only the output is shown
+1+1
+```
+
+
+Exercise 3:
+Install these 3 packages (if you haven't done so) and load them into
+your Notebook WITHOUT SHOWING THE CODE AND OUTPUT.
+
+- tidyverse
+- DT
+- plotly
+
+Answer:
+```{r loadpackages, include=FALSE}
+#install.packages(c("tidyverse", "DT", "plotly"))
+library(tidyverse)
+library(DT)
+library(plotly)
+```
+
+
+# Display interactive tables from data-frame/matrix
+
+You can display data-frames or matrices as tables
+natively by printing the table out within a code-chunk
+
+```{r}
+# mtcars is a data-frame that comes with tidyverse package
+# typing the name of this variable will display the contents
+mtcars
+```
+
+The table above is static. This can be easily made interactive using the DT package.
+
+
+```{r}
+datatable(mtcars)
+```
+
+Bonus: you may apply add-ons to your table to allow filtering and exporting of data
+```{r}
+datatable(mtcars, extensions = "Buttons", options = list(dom = "Blfrtip",
+                           buttons = c("copy", "csv", "excel"),
+                           scrollX = TRUE), filter = "top")
+```
+
+# Create interactive plots
+
+Create basic plots the same way as you normally do within a code chunk.
+
+```{r}
+plot <- ggplot(mtcars, aes(x=mpg, y = disp)) + geom_point()
+plot
+```
+
+You may configure the figure dimension by changing the
+chunk properties.
+
+```{r, fig.width=8, fig.height=8}
+plot
+```
+
+
+
+```{r}
+ggplotly(plot)
+```
+
+
+# Links to resources
+
+- Different output formats: https://rmarkdown.rstudio.com/lesson-9.html
+- Different HTML document themes: https://www.datadreaming.org/post/r-markdown-theme-gallery/
+- Packages that offer even more themes: https://github.com/juba/rmdformats
+- Other options to be added to Metadata: https://bookdown.org/yihui/rmarkdown/html-document.html#html-document
+- Markdown CheatSheet: https://www.markdownguide.org/cheat-sheet/
+- Using custom CSS formatting: https://bookdown.org/yihui/rmarkdown-cookbook/html-css.html#html-css
+- Formatting of DT tables: https://rstudio.github.io/DT/
+- Formatting of plotly plots: https://plotly.com/ggplot2/getting-started/
+
+
+
+
+# Feedback form
+https://forms.office.com/r/k3cB73xexX
+
+# Homework
+
+- Create a simple tutorial on 'How to plot data in R' using R Notebook.
+- It should include the required steps including installation of dependencies,
+importing of data and plotting of data.
+- You may use your own data as an example, or use built-in data that comes with
+R (type `data()` in console to retrieve this list of data).
+- Render your tutorial as a HTML document and email it to me.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

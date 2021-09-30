@@ -1,15 +1,16 @@
 ---
-title: "R Notebook"
+title: Creating an R Notebook 
+author: Fursham Hamid
+date: "`r Sys.Date()`"
 output: 
     html_notebook:
-        theme: cerulean
+        theme: cerulean         # additional themes and resources
         toc: true
         toc_depth: 1
         toc_float: true
         number_sections: true
-author: "Fursham Hamid"
-date: "`r Sys.Date()`"
 ---
+
 
 Text can be written anywhere within the document. 
 Text written on a new line will not be rendered as a new paragraph.
@@ -21,9 +22,14 @@ depend on the number of `#` symbol; 1 symbol represents the top-most layer.
 
 # Formatting text in Markdown format
 
+You will also notice that the table of contents is automatically updated
+to include level1 headers. 
+
+Below is how you write a sub-header
+
 ## Create bullet points
 
-Bullets points can be created as such:
+Bullets points can be created as such (make sure you leave a space before writing your bullet points):
 
 - Point 1
 - Point 2 
@@ -46,12 +52,15 @@ There are several ways to make standard types of formatted text:
 
 You can add an image into text using the following syntax:
 
-![](Rnotebook-message.PNG)
+![](https://raw.githubusercontent.com/fursham-h/R-datascience/master/vignettes/5_RNotebook/Rnotebook-message.PNG)
+
+
 
 # Writing code in RNotebook
 
 The simplest way to write code is using the ` symbol. You have to specify
-the language to be interpreted. For example:
+the language to be interpreted. For example, the line below will return the 
+value of 1+1 using R language:
 
 `r 1+1`
 
@@ -59,42 +68,46 @@ A better way is to write your code in "chunks". To create code chunks,
 click the `+C` button at the top of this document, and select your language:
 
 ```{r writingcode}
+# you may name your code chunk by typing a string after "r" above
+
+# sames rules of writing a script applies here. Comments begin with a #
+1+1
+
+# The entire chunk can be executed by clicking the 
+# "play" button at the top right hand side of the chunk
+# REMEMBER TO RUN THE CHUNK EVERYTIME THE CODE CHANGES
+```
+
+You may configure the output of each chunk by clicking the "cogwheel" button at the top right
+corner of the chunk:
+
+```{r configoutput, echo=FALSE}
+# In this example, only the output is shown
 1+1
 ```
 
-You may configure the output of each chunk.
 
-The example below will only return the value
-```{r confoutput, echo=FALSE}
-1+1
-```
 
-The example below will only run the code, but will not output anything
-```{r loadtidyverse, include=FALSE}
-# install.packages(tidyverse)
-library(tidyverse)
-```
 
-# Create interactive tables from data-frame/matrix
+# Display interactive tables from data-frame/matrix
 
 You can display data-frames or matrices as tables
 natively by printing the table out within a code-chunk
 
 ```{r}
+# mtcars is a data-frame that comes with tidyverse package
+# typing the name of this variable will display the contents
 mtcars
 ```
 
-The table above is static. This can be made interactive using the DT package.
+The table above is static. This can be easily made interactive using the DT package.
 
 
 ```{r}
-library(DT)
 datatable(mtcars)
 ```
 
 Bonus: you may apply add-ons to your table to allow filtering and exporting of data
-
-
 ```{r}
 datatable(mtcars, extensions = "Buttons", options = list(dom = "Blfrtip",
                            buttons = c("copy", "csv", "excel"),
@@ -106,44 +119,25 @@ datatable(mtcars, extensions = "Buttons", options = list(dom = "Blfrtip",
 Create basic plots the same way as you normally do within a code chunk.
 
 ```{r}
-ggplot(mtcars, aes(x=mpg, y = disp)) + geom_point()
+plot <- ggplot(mtcars, aes(x=mpg, y = disp)) + geom_point()
+plot
 ```
 
 
-Change figure dimensions. Add captions
+You may configure figure dimension and other options by changing the
+chunk properties.
 
-
-```{r include=FALSE}
-library(plotly)
+```{r, fig.width=8, fig.height=8}
+plot
 ```
+
+To create an interactive version of your ggplot, simple
+use function `ggplotly()` with the plot name as 
+input variable.
 
 ```{r}
-plot <- ggplot(mtcars, aes(x=mpg, y = disp)) + geom_point()
 ggplotly(plot)
 ```
-
-
-# Links to resources
-
-- Different HTML document themes: https://www.datadreaming.org/post/r-markdown-theme-gallery/
-- Markdown CheatSheet: https://www.markdownguide.org/cheat-sheet/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
