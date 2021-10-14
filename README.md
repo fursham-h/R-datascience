@@ -11,7 +11,7 @@ in using easy to comprehend R functions for routine data analysis.
 |:----------|:---------|:-----|:----|
 |[Dynamic data reporting using R Notebook](https://fursham-h.github.io/R-datascience/articles/5_RNotebook/Overview.html)|Tue, 28th September, 10am-12pm|Basics in using R|[Link](https://forms.office.com/r/0ZZB7f9Fru)|
 |[Statistical analysis in R]()|Tue, 26th October, 10am-12pm|None|[Link](https://forms.office.com/r/ufhsAChYyd)|
-|[Differential expression analysis using DESeq2]()|Tue, 30th November, 10am-12pm |Basics in using R <br> Knowledge of RNA-seq pipeline|TBC|
+|[Differential expression analysis using DESeq2]()|in 2022, TBC |None|TBC|
 |[Version control using Git]|in 2022, TBC |None|TBC|
 
 ### Past workshops
