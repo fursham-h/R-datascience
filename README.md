@@ -10,7 +10,7 @@ in using easy to comprehend R functions for routine data analysis.
 |Lesson title|Date(s)|Pre-requisite|Sign-up link|
 |:----------|:---------|:-----|:----|
 |[Dynamic data reporting using R Notebook](https://fursham-h.github.io/R-datascience/articles/5_RNotebook/Overview.html)|Tue, 28th September, 10am-12pm|Basics in using R|[Link](https://forms.office.com/r/0ZZB7f9Fru)|
-|[Statistical analysis in R]()|Tue, 26th October, 10am-12pm|None|[Link](https://forms.office.com/r/ufhsAChYyd)|
+|[Statistical analysis in R](https://fursham-h.github.io/R-datascience/articles/6_Stats/Overview.html)|Tue, 26th October, 10am-12pm|None|[Link](https://forms.office.com/r/ufhsAChYyd)|
 |[Differential expression analysis using DESeq2]()|in 2022, TBC |None|TBC|
 |[Version control using Git]|in 2022, TBC |None|TBC|
 
