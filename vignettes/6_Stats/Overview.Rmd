@@ -1,0 +1,96 @@
+---
+title: 'Workshop 6: Statistical analysis in R'
+author: "Fursham Hamid"
+output: html_document
+---
+
+> ### Overview
+><br />
+> **Duration**: 2 hours
+><br />
+><br />
+>
+> **Objectives**
+>
+1) Differentiate continuous and discrete variables
+2) Test variables for normality
+3) Perform parametric tests on continuous variables
+4) Perform nonparametric tests on discrete variables
+5) Test for correlation between variables
+><br />
+
+## Lesson preparations
+In this workshop, we will perform various statistical analyses using R and interpret
+the outputs together. 
+Please ensure that you have **BOTH** R and RStudio installed on your computer.
+Click on the links below to download these software.
+
+* Latest version of R 
+    - [For Windows](https://cran.r-project.org/bin/windows/base/)
+    - [For Mac](https://cran.r-project.org/bin/macosx/)
+    - [For Linux](https://cran.r-project.org/bin/linux/)
+        
+* [Latest version of RStudio](https://rstudio.com/products/rstudio/download/)
+
+<br/ >
+
+Most of the functions used in this lesson will be from the `stats` package,
+which is pre-built with R and RStudio. In addition, we will be manipulating
+and plotting data using the Tidyverse package. Please install `Tidyverse` 
+(if you have not) on your computer by typing the following command in RStudio
+console.
+
+```{r eval=F}
+install.packages("tidyverse")
+
+# to check if installation is successful,
+# run this and you should not see an error message
+library(tidyverse)
+```
+
+<br/ >
+During the lesson, we will be using etherpad, an online collaborative platform
+for our discussions and activities. You may bookmark this 
+[etherpad page](https://etherpad.wikimedia.org/p/CDN-Statistics) before 
+the lesson commence!
+
+<br/ >
+
+## Lesson schedule
+
+
+||||
+|:---|:------------|:------------|
+|10:00| Class check-in | |
+|10:05|1. [Overview on data types](https://statsandr.com/blog/variable-types-and-examples/) | What are the different data types? |
+|10:10|2. [Generate basic descriptive statistics](https://statsandr.com/blog/descriptive-statistics-in-r/)| How do I obtain mean, median and standard deviation for my dataset? <br> How do I breakdown these statistics for each of my samples? |
+|10:20|3. [Testing data for normality](http://www.sthda.com/english/wiki/normality-test-in-r) | How can I tell if my data is normally distributed? |
+|10:35|4. [One-sample tests of means](http://www.sthda.com/english/wiki/one-sample-t-test-in-r) | What is null and alternate hypothesis? <br> How do I test if the mean of my normally distributed data is significantly different from the null hypothesis? <br> What do I do if my data is not normally distributed?  |
+|11:00|**Break**||
+|11:10|5. [Two-sample tests of means](http://www.sthda.com/english/wiki/unpaired-two-samples-t-test-in-r) |  How do I compare the means of two of my samples? |
+|11:20|6. [More than 2 sample tests of means](http://www.sthda.com/english/wiki/one-way-anova-test-in-r) |  How do I compare the means of more than 2 samples? <br> What assumptions do these tests hold? |
+|11:35|7. [Testing categorical variables for independence](http://www.sthda.com/english/wiki/chi-square-test-of-independence-in-r)|  How do I perform statistical tests on categorical variables? |
+|11:50|8. [Test variables for correlation](http://www.sthda.com/english/wiki/correlation-test-between-two-variables-in-r)|  How do I test for correlation for two of my variables? |
+|12:00|Finish| |
+
+
+<br/ >
+<br/ >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
